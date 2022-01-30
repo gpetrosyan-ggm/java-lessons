@@ -3,7 +3,11 @@ package com.demo.lesson3.homework;
 public class TypesHomeWork {
 
     public static void main(String[] args) {
-
+        castExample();
+        toCelsius();
+        toFahrenheit();
+        factorial();
+        fibonacciSequence();
     }
 
     /**
@@ -15,13 +19,15 @@ public class TypesHomeWork {
      * long
      * <p>
      * char
-     * <p>
+     * <p>toFahrenheit(double celsius)
      * float
      * double
      * <p>
      * boolean
      */
     private static void typeExample() {
+
+
 
     }
 
@@ -30,6 +36,32 @@ public class TypesHomeWork {
      * short -> byte : հասկանալ ոնց է անցնում ու ոնց է արդյունքը ստանում
      */
     private static void castExample() {
+        byte b = 52;
+        short s = 12_674;
+        int i = 98_762;
+        double d = 40_367_854_001.754;
+        System.out.println("\npoxakerpum short  byte.");
+        b = (byte) s;
+        System.out.println("s u b"  +s+ "" +b);
+
+        System.out.println("\npoxakerpum int byte");
+        b = (byte) i;
+        System.out.println(" i u b "  + i + ""  +b);
+        b = (byte) d;
+        System.out.println("d u b "  +d+ " " +b );
+        s = (short) i;
+        System.out.println("i u s "  + i + "" +s);
+        s = (short) d;
+        System.out.println("d u s "  + d + " " +s);
+        i = (int) d;
+        System.out.println("d u i "  + d +  "" + i);
+
+//int-i u shorti ancum@ byte-in texi e unenum heteval kerp
+        // int ic hanvum e 256 * K, vortex kan drakan amboxakan tiv e, xi 256?
+        // byeti diapazon@ -128_ic 127 e, ir mej parunakum e 256 tiv zron neraral,
+        // isk inti u longe_i ancum@ shorti hanvum e 65_536 minev khattnvi short-i tiruyt,
+        // short-i tiruyt@ kazmum e -32768_ic 32767, vor@ parunakum e 65536 nih, neraran zron
+
 
         // 1. Автоматическое преобразование типов։ օրինակներ
 
@@ -53,18 +85,24 @@ public class TypesHomeWork {
     /**
      * Convert celsius to fahrenheit
      *
-     * @param celsius
      */
-    private static void toFahrenheit(double celsius) {
-
+    private static void toFahrenheit() {
+     int c = 31;
+     double k;
+     k = (273.15 - c);
+        System.out.println("erb c=31, k= "  +k);
     }
 
     /**
      * Convert fahrenheit to celsius
      *
-     * @param fahrenheit
      */
-    private static void toCelsius(double fahrenheit) {
+    private static void toCelsius() {
+    double c;
+    double k = 253;
+    c = 273.15 - k;
+    k = 253;
+        System.out.println("erb k=253, c = "  +c);
 
     }
 
@@ -73,10 +111,14 @@ public class TypesHomeWork {
      * <p>
      * {@url} https://futurenow.com.ua/ru/chto-takoe-chysla-fybonachchy-zolotoe-sechenye/
      *
-     * @param val the last value
      */
-    private static void fibonacciSequence(int val) {
-
+    private static void fibonacciSequence() {
+        int i = 0;
+        i = i ++;
+        int i1 = i + i++;
+        System.out.println(""   +i1);
+        int i2 = (i1 + i++);
+        System.out.println(""  +i1);
     }
 
     /**
@@ -84,10 +126,13 @@ public class TypesHomeWork {
      * <p>
      * {@url} https://skysmart.ru/articles/mathematic/chto-takoe-faktorial-chisla
      *
-     * @param n
      */
-    private static void factorial(int n) {
+    private static void factorial() {
+int i = 5;
+i = i * (i - 1) * (i - 2) * (i -3) * (i - 4);
 
+
+        System.out.println(" 5! "  +i );
     }
 
 }
