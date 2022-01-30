@@ -95,7 +95,7 @@ public class TypesHomeWork {
             System.out.println(" "  +i);
         }
         // 2. use method variables
-
+            // ay es mek@ chem ogum inch anem
     }
 
     /**
