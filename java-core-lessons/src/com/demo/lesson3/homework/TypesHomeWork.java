@@ -8,6 +8,7 @@ public class TypesHomeWork {
         toFahrenheit();
         factorial();
         fibonacciSequence();
+        typeExample();
     }
 
     /**
@@ -26,8 +27,20 @@ public class TypesHomeWork {
      * boolean
      */
     private static void typeExample() {
-
-
+    byte b = -17, y = 25;
+        System.out.println(b+ " " +y);
+    short s = 12_004,  h = -64;
+        System.out.println(s+ " " +  h);
+    int i = 127_873_942,  n = 84_845;
+        System.out.println(i+  "  " +n);
+    long l = 846_940_943, o = -89_237;
+        System.out.println(l+  "   "  + o);
+        char ch1, ch2;
+        ch1 = 'X';
+        ch2 = 'Y';
+        System.out.println(ch1 + "   " + ch2);
+     double d = 73.65,   u = -.67;
+        System.out.println(d+  "  "  +u);
 
     }
 
