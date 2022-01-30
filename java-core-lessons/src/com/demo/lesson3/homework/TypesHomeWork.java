@@ -132,6 +132,10 @@ public class TypesHomeWork {
         System.out.println(""   +i1);
         int i2 = (i1 + i++);
         System.out.println(""  +i1);
+        // es fibanachiii ter@ taxem, imast@ hakkanum em,
+        // skuuma 0 heto 1, veriin erku tver@ gumaruma irar, ttanum 1, heto et verjin 2 tverna gumarum irar stanum2,
+        // 2+1=3, 3+2=5, 5+3=8 u tenцharunak, hajord tiv@ ttacvum e tval tvin gumarac naxord tiv@,
+        // 0,1,2,3,5,8,13,21,34, .....
     }
 
     /**
