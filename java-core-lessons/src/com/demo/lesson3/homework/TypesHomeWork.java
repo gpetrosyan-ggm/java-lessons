@@ -9,6 +9,7 @@ public class TypesHomeWork {
         factorial();
         fibonacciSequence();
         typeExample();
+        scopeAndLifetimeExample();
     }
 
     /**
@@ -85,12 +86,14 @@ public class TypesHomeWork {
     /**
      * Область видимости и срок действия переменных
      *
-     * @param i input value
      */
-    private static void scopeAndLifetimeExample(int i) {
+    private static void scopeAndLifetimeExample() {
 
         // 1. use class variables
-
+        int i;
+        for (i = 0; i < 5; i++) {
+            System.out.println(" "  +i);
+        }
         // 2. use method variables
 
     }
@@ -102,8 +105,10 @@ public class TypesHomeWork {
     private static void toFahrenheit() {
      int c = 31;
      double k;
-     k = (273.15 - c);
-        System.out.println("erb c=31, k= "  +k);
+        double      a = 273.15;
+
+        System.out.println(    k = (a - c)  );
+        // vonc areci chkareca nenc anem vor patasxanum stavver k =
     }
 
     /**
@@ -113,9 +118,9 @@ public class TypesHomeWork {
     private static void toCelsius() {
     double c;
     double k = 253;
-    c = 273.15 - k;
-    k = 253;
-        System.out.println("erb k=253, c = "  +c);
+        double a = 273.15;
+
+        System.out.println(c = (a - k));
 
     }
 
