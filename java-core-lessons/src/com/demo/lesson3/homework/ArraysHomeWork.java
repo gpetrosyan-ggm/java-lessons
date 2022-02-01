@@ -68,4 +68,36 @@ public class ArraysHomeWork {
 
     }
 
+    private static void printArray(int[] arr) {
+        System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(i + ":  " + arr[i]);
+        }
+    }
+
+    private static void printArray(double[] arr) {
+        System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(i + ":  " + arr[i]);
+        }
+    }
+
+    private static void printArray(int[][] arr) {
+        System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.println(i + "-" + j + ":  " + arr[i][j]);
+            }
+        }
+    }
+
+    private static void printArray(double[][] arr) {
+        System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.println(i + "-" + j + ":  " + arr[i][j]);
+            }
+        }
+    }
+
 }

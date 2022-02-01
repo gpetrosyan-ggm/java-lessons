@@ -1,6 +1,6 @@
 package com.demo.lesson3.homework;
 
-public class StringsDemo {
+public class StringsHomeWork {
 
     public static void main(String[] args) {
         stringSimpleDemo();
