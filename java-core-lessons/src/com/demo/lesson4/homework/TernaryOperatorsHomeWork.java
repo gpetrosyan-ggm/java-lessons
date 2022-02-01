@@ -11,6 +11,7 @@ public class TernaryOperatorsHomeWork {
     }
 
     /**
+     * exp ? exp1 : exp2
      * Print 'Yes', if b is true, other wise print 'No'.
      *
      * @param b the boolean value
