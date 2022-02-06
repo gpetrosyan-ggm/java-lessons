@@ -12,10 +12,14 @@ public class StringsHomeWork {
         // stringConcatDemo();
     }
 
+    private static void stringPrintDemo() {
+    }
+
     /**
      * Declare new string and print it.
      */
     private static void stringSimpleDemo() {
+
 
     }
 

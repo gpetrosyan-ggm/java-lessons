@@ -17,6 +17,13 @@ public class TernaryOperatorsHomeWork {
      * @param b the boolean value
      */
     private static void simpleDemo(boolean b) {
+        int n = 1;
+        int m = 2;
+        int val = b ? n : m;
+        System.out.println(val);
+        // esi @ndhanrapes chhaskaca te xi patasxan@ true kam false chi berum,
+        // qo orinakn el usumnasireci eli ban chhaskaca, kxndreyi sra vra ushadrutyun darcneiq
+
 
     }
 
