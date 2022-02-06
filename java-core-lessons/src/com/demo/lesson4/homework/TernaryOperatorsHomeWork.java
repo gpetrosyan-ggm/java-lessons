@@ -21,8 +21,7 @@ public class TernaryOperatorsHomeWork {
         int m = 2;
         int val = b ? n : m;
         System.out.println(val);
-        // esi @ndhanrapes chhaskaca te xi patasxan@ true kam false chi berum,
-        // qo orinakn el usumnasireci eli ban chhaskaca, kxndreyi sra vra ushadrutyun darcneiq
+
 
 
     }

@@ -28,8 +28,8 @@ public class LogicalOperatorsHomeWork {
         System.out.println("LOGICAL XOR(^)- "  + (a ^ b));
         System.out.println("SHORT LOGICAL AND(&&)- "  +(a && b));
         System.out.println("SHORT LOGICAL OR(||)- "  + (a || b));
-        System.out.println("UNARY NOT(!)- "  + (! a));
-        System.out.println("UNARY NOT(!)- "  +(! b));
+        System.out.println("UNARY NOT(!)- "  + (!a));
+        System.out.println("UNARY NOT(!)- "  +(!b));
 
 
         // tarberutyun@ kam nshani mek hatanoci (|) ev 2 hatanoci (||) kayanum e nranum, vor

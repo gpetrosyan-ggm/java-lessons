@@ -35,9 +35,9 @@ public class ArithmeticOperatorsHomeWork {
         int c1 = n + m;
         int c2 = n - m;
         int c3 = n * m;
-        double c4 = n / m;
+        double c4 = (double) n / m;
         int c5 = n / m;
-        double c6 = n % m;
+        double c6 = (double) n % m;
         double c = (c1 + c2 * c3 - c4) % c5;
         System.out.println(" c1 = "  + c1);
         System.out.println(" c2 = "  + c2);
@@ -67,7 +67,7 @@ public class ArithmeticOperatorsHomeWork {
        int k2 =  m -= 9;
        int k3 = n *= (6 - m);
        int k4 = m /= 3;
-       double k5 = m/= 3;
+       double k5 = m/= 3.0;
        double k6 = m %= n;
         System.out.println(" k1 = "  + k1 );
         System.out.println(" k2 = "  + k2 );
@@ -92,13 +92,13 @@ public class ArithmeticOperatorsHomeWork {
         int b2 = ++n + 1;
         int b3 = n++ / 3;
         int b4 = ++n/3;
-        double b5 = n++ /3;
+        double b5 = n++ /3.0;
         System.out.println(" b1 = "  + b1);
         System.out.println(" b2 = "  + b2);
         System.out.println(" b3 = "  + b3);
         System.out.println(" b4 = "  + b4);
         System.out.println(" b5 = "  + b5);
-        // xi bouble chem stanum, kotorakain tiv@ xi e misht .0
+
 
     }
 

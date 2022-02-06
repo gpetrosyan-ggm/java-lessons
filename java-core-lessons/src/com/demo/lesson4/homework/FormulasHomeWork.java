@@ -27,11 +27,7 @@ public class FormulasHomeWork {
 
         int c2 = (a + b) * (a + b);
         System.out.println("c2 =  "  + c2);
-        // tarberak 3
-        int c3 =(2 * a * b) + (b *= b) + (a *= a);
-        System.out.println(" c3 = "  +c3);
-        // pastoren tvyal havasarman mej ete gumarelineri tex@ poxem ardyunq@ kpoxvi
-        // ete skzbum grem a *= a, dranic heto havasrman mej grvac a-n haskanum e a qarakusi
+
 
 
 
@@ -50,8 +46,7 @@ public class FormulasHomeWork {
         System.out.println(" d1 = "  + d1 );
         int d2 = (a - b) * (a - b);
         System.out.println(" d2 = "  + d2);
-        int d3 = -2 * a * b + (a *= a) + (b *= b);
-        System.out.println(" d3 = "  + d3);
+
 
     }
 
@@ -68,10 +63,7 @@ public class FormulasHomeWork {
         System.out.println(" b1 = "  + b1);
         int b2 = (a + b) * (a - b);
         System.out.println(" b2 = "  + b2);
-        int b3 = (a *=a) - (b *= b);
-        System.out.println(" b3 = "  + b3);
-        // es en haskaca vor a *=a -n greluc partadir petq e pakagceri mej gres
-        // ete iranic baci eli gorcoxutyun ka tvyal havasarman mej
+
 
     }
 
@@ -88,8 +80,7 @@ public class FormulasHomeWork {
         System.out.println(" k1 = "  + k1);
         int k2 = a * a * a - b * b * b;
         System.out.println(" k2 = " + k2);
-        // sran 3-rd tarberak chgka a *= a tarberakov, xoranard chem kara
-        // ete 4 astichan liner et karayi, mi hat veragreyi ira qarakusun heto eli noriv qarakusi barcracneyi
+
 
     }
 

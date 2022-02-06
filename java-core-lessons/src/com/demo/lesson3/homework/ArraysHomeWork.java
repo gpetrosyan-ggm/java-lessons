@@ -27,6 +27,14 @@ public class ArraysHomeWork {
      * 2. Print the array
      */
     private static void oneDimensionalArraySimpleDemo() {
+        int[] a = new int[5];
+        a[0] = 1;
+        a[1] = 2;
+        a[2] = 3;
+        a[3] = 4;
+        a[4] = 5;
+
+        System.out.println(a[4]);
 
 
     }
@@ -40,6 +48,12 @@ public class ArraysHomeWork {
      * @param index the index of element which need to print
      */
     private static void oneDimensionalArrayDemo(int size, int index) {
+        int [][] i = new int [4] [3];
+        int [][] j = new int [5] [3];
+
+
+
+
 
     }
 
@@ -52,7 +66,18 @@ public class ArraysHomeWork {
      * 2. Print the array
      */
     private static void multiDimensionalArraySimpleDemo() {
+        int [][] i = {
+                {2, 3, 8, 18, -1},
+                {91, 87, 1, 7, 22},
+                {-8, 13, 99, 0, 44},
+                {7, 6, 5, 4, 3},
+        };
+        double [][] j = new double[4][3];
+        j[1][2] = 5;
+        j[1][1] = 12 % 5 - .7;
 
+        printArray(i);
+        printArray(j);
     }
 
     /**
@@ -70,6 +95,7 @@ public class ArraysHomeWork {
     }
 
     private static void printArray(int[] arr) {
+
         System.out.println();
         for (int i = 0; i < arr.length; i++) {
             System.out.println(i + ":  " + arr[i]);
