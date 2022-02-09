@@ -7,6 +7,7 @@ public class SwitchHomeWork {
         simpleSwitchGroupDemo();
         simpleSwitchNestedDemo();
         calculateCredit(36, 1_000_010);
+        calculateCred(24,1_100_111);
     }
 
     /**
@@ -153,7 +154,7 @@ public class SwitchHomeWork {
      */
     private static void calculateCredit(int monthCount, double creditPrice) {
         int discount = 0;
-        int bonus = 0;
+        int bonus =0;
         double finalPrice;
 
         switch (monthCount = 36) {
@@ -161,13 +162,13 @@ public class SwitchHomeWork {
             if (creditPrice >= 1000_000) {
                 bonus = 2;
                 discount = 5;
-            }
+            }else
             if (creditPrice > 500_000) {
                 bonus = 1;
                 discount = 3;
 
             }
-            System.out.println("1. " + (monthCount * 3000 + creditPrice) * (discount + bonus) / 100);
+            System.out.println("1. " + (monthCount * 3000 + creditPrice) + (discount + bonus) / 100);
             break;
         }
         switch (monthCount = 24) {
@@ -187,7 +188,61 @@ public class SwitchHomeWork {
 
 
         }
-    }
+
+
+
+
+    private static void calculateCred(int monthCount, double creditPrice) {
+        int discount = 0;
+        int bonus = 0;
+        double finalPrice;
+
+
+
+
+        switch (monthCount) {
+            case 1:
+                monthCount = 36;
+
+                if (creditPrice >= 1000_000) {
+
+                    System.out.println("hrrr");
+                    bonus = 2;
+                    discount = 5;
+                }
+
+                    System.out.println("1. " + (monthCount * 3000 + creditPrice) * (discount + bonus) / 100);
+
+                    break;
+
+                    case 2:
+                        monthCount = 24;
+
+                        finalPrice = (monthCount * 2000 + creditPrice);
+                        System.out.println("2. " + finalPrice);
+                        break;
+
+                    case 3:
+                        monthCount = 12;
+                        System.out.println("3. " + monthCount * 1000 + creditPrice);
+                        break;
+                    default:
+                        System.out.println("error");
+
+                }
+
+        }
+
+
+
+
+
+
+
+
+
+
+}
 // im jogelov chisht em grel, bayc patasxan chem stanum, defaulta linum
 
 

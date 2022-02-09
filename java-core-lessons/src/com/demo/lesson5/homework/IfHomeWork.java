@@ -8,7 +8,7 @@ public class IfHomeWork {
         simpleIfElseDemo();
         simpleIfElseIfElseDemo();
         simpleNestedIfDemo();
-        calculateCredit(17, 1_900_000);
+        calculateCredit(6, 900_000);
     }
 
     /**
@@ -108,10 +108,12 @@ public class IfHomeWork {
      * @param monthCount  the month count (ամիսների քանակը)
      * @param creditPrice the credit price value (վարկի գումարը)
      */
+    //  finalPrice = finalPrice * (discount + bonus) / 100 bazmapatkumi tex@ poxel u gumarum em drel
+    // bonus u discount@ 0 e, artadryal@ 0 kta,
     private static void calculateCredit(int monthCount, double creditPrice) {
         int discount = 0;
         int bonus = 0;
-        int k;
+        int k = 0;
         double finalPrice;
 
         if (monthCount >= 36) {
@@ -121,26 +123,21 @@ public class IfHomeWork {
                 discount = 5;
             }
             if (creditPrice > 500_000) {
-
                 bonus = 1;
                 discount = 3;
             }
-            finalPrice = (monthCount * k + creditPrice) * (discount + bonus) / 100;
-            System.out.println("1. " + finalPrice);
         } else if (monthCount >= 24) {
             k = 2000;
-            finalPrice = (monthCount * k + creditPrice);
-            System.out.println("2. " + finalPrice);
         } else if (monthCount >= 12) {
             k = 1000;
-            System.out.println("3. " + monthCount * k + creditPrice);
         } else if (monthCount < 12) {
             k = 500;
-            System.out.println("4. " + monthCount * k + creditPrice);
-
-        }else {
-
         }
+        finalPrice = (monthCount * k + creditPrice) + (discount + bonus) / 100;
+            System.out.println("ajqis senca chisht@ " + finalPrice);
+
+
+
     }
 
 
