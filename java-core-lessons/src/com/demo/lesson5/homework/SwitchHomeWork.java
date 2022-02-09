@@ -1,21 +1,24 @@
 package com.demo.lesson5.homework;
 
+import java.security.InvalidParameterException;
+
 public class SwitchHomeWork {
 
     public static void main(String[] args) {
         simpleSwitchDemo();
-        simpleSwitchGroupDemo();
+        simpleSwitchGroupDemo(1);
+        simpleSwitchGroupDemo(5);
         simpleSwitchNestedDemo();
         calculateCredit(36, 1_000_010);
-        calculateCred(24,1_100_111);
+        calculateCredit(40, 1_000_010);
     }
 
     /**
      * Write simple switch example (գրել պարզ switch֊ի օրինակ)
      */
     private static void simpleSwitchDemo() {
-        int saturday;
-        switch (saturday = 2) {
+        int a = 2;
+        switch (a) {
             case 1:
                 System.out.println("arajin or erkushabti");
                 break;
@@ -37,35 +40,21 @@ public class SwitchHomeWork {
             case 7:
                 System.out.println("hangstan or kiraki");
                 break;
-
-
         }
-
     }
 
     /**
      * Write simple switch with groups example  (գրել պարզ switch-ի օրինակ case֊երը գրուպ արած)
      */
-    private static void simpleSwitchGroupDemo() {
-        int i;                        // skzbum grel eyi  int saturday;
-        for (i = 1; i < 8; i++) {     // swich (saturdey = ?)
-            // heto poxeci senc sax patasxanneri hamar
-            switch (i) {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                    System.out.println("ashxatanqaiin or");
-                    break;
-                case 6:
-                case 7:
-                    System.out.println("hangstyan or (normal mardkanc mot)");
-                    break;
-
-
-            }
-
+    private static void simpleSwitchGroupDemo(int i) {
+        switch (i) {
+            case 1, 2, 3, 4, 5:
+                System.out.println("ashxatanqaiin or");
+                break;
+            case 6:
+            case 7:
+                System.out.println("hangstyan or (normal mardkanc mot)");
+                break;
         }
     }
 
@@ -73,14 +62,14 @@ public class SwitchHomeWork {
      * Write simple switch nested example (գրել պարզ switch֊ի օրինակ, որի մեջ էլի switch կա)
      */
     private static void simpleSwitchNestedDemo() {
-        int year;
-        int months;
+        int year = 0;
+        int months = 5;
 
-        switch (year = 0) {
+        switch (year) {
             case 0:
                 System.out.println("tari");
 
-                switch (months = 5) {
+                switch (months) {
                     case 1:
                         System.out.println("hunvar");
                         break;
@@ -117,10 +106,7 @@ public class SwitchHomeWork {
                     case 12:
                         System.out.println("dektember");
                         break;
-
-
                 }
-
         }
     }
 
@@ -147,104 +133,56 @@ public class SwitchHomeWork {
      * <p>
      * (discount = զեղջ, bonus = բոնուս)
      * if there are discount or bonus update finalPrice (եթե կա զեղջ կամ բոնուս ապա finalPrice փոխել ներքևի բանաձևով)
-     * finalPrice = finalPrice * (discount + bonus) / 100
+     * finalPrice += finalPrice * (discount + bonus) / 100
      *
      * @param monthCount  the month count (ամիսների քանակը)
      * @param creditPrice the credit price value (վարկի գումարը)
      */
     private static void calculateCredit(int monthCount, double creditPrice) {
-        int discount = 0;
-        int bonus =0;
-        double finalPrice;
-
-        switch (monthCount = 36) {
-            case 1:
-            if (creditPrice >= 1000_000) {
-                bonus = 2;
-                discount = 5;
-            }else
-            if (creditPrice > 500_000) {
-                bonus = 1;
-                discount = 3;
-
-            }
-            System.out.println("1. " + (monthCount * 3000 + creditPrice) + (discount + bonus) / 100);
-            break;
-        }
-        switch (monthCount = 24) {
-            case 2:
-            finalPrice = (monthCount * 2000 + creditPrice);
-            System.out.println("2. " + finalPrice);
-            break;
-        }
-        switch (monthCount = 12) {
-            case 3:
-            System.out.println("3. " + monthCount * 1000 + creditPrice);
-            break;
-            default: System.out.println("error");
-
+        if (monthCount != 12 &&
+            monthCount != 24 &&
+            monthCount != 36 &&
+            creditPrice <= 50_000) {
+            throw new InvalidParameterException("Invalid Month count");
         }
 
-
-
+        if (creditPrice <= 50_000) {
+            throw new InvalidParameterException("Invalid Credit price");
         }
 
-
-
-
-    private static void calculateCred(int monthCount, double creditPrice) {
-        int discount = 0;
+        int k = 0;
         int bonus = 0;
+        int discount = 0;
         double finalPrice;
-
-
-
 
         switch (monthCount) {
-            case 1:
-                monthCount = 36;
-
-                if (creditPrice >= 1000_000) {
-
-                    System.out.println("hrrr");
+            case 36:
+                k = 3000;
+                if (creditPrice > 1_000_000) {
                     bonus = 2;
-                    discount = 5;
+                } else if (creditPrice > 500_000) {
+                    bonus = 1;
                 }
-
-                    System.out.println("1. " + (monthCount * 3000 + creditPrice) * (discount + bonus) / 100);
-
-                    break;
-
-                    case 2:
-                        monthCount = 24;
-
-                        finalPrice = (monthCount * 2000 + creditPrice);
-                        System.out.println("2. " + finalPrice);
-                        break;
-
-                    case 3:
-                        monthCount = 12;
-                        System.out.println("3. " + monthCount * 1000 + creditPrice);
-                        break;
-                    default:
-                        System.out.println("error");
-
-                }
-
+            case 24:
+                k = 2000;
+            case 12:
+                k = 1000;
         }
 
+        if (k != 0) {
+            if (creditPrice > 1_000_000) {
+                discount = 5;
+            } else if (creditPrice > 500_000) {
+                discount = 3;
+            }
 
+            finalPrice = monthCount * k + creditPrice;
+            if (discount != 0 || bonus != 0) {
+                finalPrice += finalPrice * (discount + bonus) / 100;
+            }
+            System.out.println(finalPrice);
+        }
 
-
-
-
-
-
-
+    }
 
 }
-// im jogelov chisht em grel, bayc patasxan chem stanum, defaulta linum
-
-
-
-
