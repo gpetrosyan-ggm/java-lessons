@@ -8,12 +8,19 @@ public class WhileHomeWork {
 
         printOddNumbers(100);
         printEvenNumbers(100);
+        printEvenAndOddNumbers(100);
     }
 
     /**
      * Write simple while example (գրել պարզ while օրինակ)
      */
     private static void simpleWhileDemo() {
+        int i = 0;
+        while (i < 10){
+            System.out.println(i);
+            i++;
+        }
+        System.out.println("finish");
 
     }
 
@@ -21,7 +28,14 @@ public class WhileHomeWork {
      * Write simple do while example (գրել պարզ do-while օրինակ)
      */
     private static void simpleDoWhileDemo() {
-
+        int i = 10;
+        int j = 20;
+        do {
+            i += 2;
+            j--;
+        } while (j > i) ;
+            System.out.println(" i = " + i);
+            System.out.println(" j = " + j);
     }
 
     /**
@@ -30,7 +44,12 @@ public class WhileHomeWork {
      * @param num input value
      */
     private static void printOddNumbers(int num) {
-
+        int i = 1;
+        while (i <= num){
+            System.out.println(i);
+            i +=2;
+        }
+        System.out.println("finish");
     }
 
     /**
@@ -39,7 +58,12 @@ public class WhileHomeWork {
      * @param num input value
      */
     private static void printEvenNumbers(int num) {
-
+        int i = 2;
+        while (i <= num){
+            System.out.println(i);
+            i +=2;
+        }
+        System.out.println("finish");
     }
 
     /**
@@ -56,7 +80,19 @@ public class WhileHomeWork {
      * @param num input value
      */
     private static void printEvenAndOddNumbers(int num) {
+        int i = 0;
+        int j = 0;
+        while (i < num) {
+            i++;
+            if (i < num) {
+                j = i % 2;
+                System.out.println (i + " %2 =  "+ j + "  - odd");
+                i ++;
+                j = i  % 2;
+                System.out.println (i + " %2 =  "+ j + "  - even");
+            }
 
+        }
     }
 
 }
