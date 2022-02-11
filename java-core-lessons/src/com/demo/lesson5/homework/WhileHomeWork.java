@@ -9,6 +9,7 @@ public class WhileHomeWork {
 //        printOddNumbers(100);
 //        printEvenNumbers(100);
         printEvenAndOddNumbers(100);
+
     }
 
     /**
@@ -82,22 +83,24 @@ public class WhileHomeWork {
      */
     private static void printEvenAndOddNumbers(int num) {
         int i = 0;
-        int j = 0;
+        int j;
 
         // TODO  if (i < num) կարիք չկա, while֊ում ունես նույն պայմանը
         // TODO փորձի լուծես առանց 2 անգամ i++ օգտագործելով, կարաս if-ով կամ Ternary Operator-ով (exp1 ? exp2 : exp3).
-
+        // Ternary Operator-ov chkareca lucem, if-@ dzel em idealakani, avartakan ashxatanqa
         while (i < num) {
             i++;
-            if (i < num) {
-                j = i % 2;
+            j = i % 2;
+            if (j != 0) {
                 System.out.println(i + " % 2 =  " + j + "  - odd");
-                i++;
-                j = i % 2;
+            } else {
                 System.out.println(i + " % 2 =  " + j + "  - even");
             }
 
         }
+
     }
+
+
 
 }

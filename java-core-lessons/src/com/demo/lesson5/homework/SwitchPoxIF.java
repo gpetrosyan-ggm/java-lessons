@@ -4,11 +4,12 @@ import java.security.InvalidParameterException;
 
 public class SwitchPoxIF {
     public static void main(String[] args) {
-        SwitchIf(12, 300_000);
+        switchIf(12, 300_000);
     }
 
     // TODO method֊ի անունը սկսի փոքրատառով
-    private static void SwitchIf(int monthCount, double creditPrice) {
+    // ajqis vra
+    private static void switchIf(int monthCount, double creditPrice) {
         int k = 0;
         int bonus = 0;
         int discount = 0;
