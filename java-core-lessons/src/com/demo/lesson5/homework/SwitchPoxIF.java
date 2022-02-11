@@ -7,41 +7,42 @@ public class SwitchPoxIF {
         SwitchIf(12, 300_000);
     }
 
+    // TODO method֊ի անունը սկսի փոքրատառով
     private static void SwitchIf(int monthCount, double creditPrice) {
-            int k = 0;
-            int bonus = 0;
-            int discount = 0;
-            double finalPrice;
-            if (monthCount != 12 && monthCount != 24 && monthCount != 36 && creditPrice <= 50_000) {
-                throw new InvalidParameterException("Invalid Month count");
-            }
-            if (creditPrice <= 50_000) {
-                throw new InvalidParameterException("Invalid Credit price");
-            }
-            if (monthCount == 35) {
-                k = 3000;
+        int k = 0;
+        int bonus = 0;
+        int discount = 0;
+        double finalPrice;
+        if (monthCount != 12 && monthCount != 24 && monthCount != 36) {
+            throw new InvalidParameterException("Invalid Month count");
+        }
+        if (creditPrice <= 50_000) {
+            throw new InvalidParameterException("Invalid Credit price");
+        }
+        if (monthCount == 36) {
+            k = 3000;
             if (creditPrice > 1_000_000) {
                 bonus = 2;
             } else if (creditPrice > 500_000) {
                 bonus = 1;
             }
-            } else if (monthCount == 24) {
-                k = 2000;
-            } else if (monthCount == 12) {
-                k = 1000;
-            }
-                if (creditPrice > 1_000_000) {
-                    discount = 5;
-                } else if (creditPrice > 500_000) {
-                    discount = 3;
-                }
-                finalPrice = monthCount * k + creditPrice;
-                if (discount != 0 || bonus != 0) {
-                    finalPrice += finalPrice * (discount + bonus) / 100;
-                }
-                System.out.println(finalPrice);
-            }
+        } else if (monthCount == 24) {
+            k = 2000;
+        } else if (monthCount == 12) {
+            k = 1000;
+        }
+        if (creditPrice > 1_000_000) {
+            discount = 5;
+        } else if (creditPrice > 500_000) {
+            discount = 3;
+        }
+        finalPrice = monthCount * k + creditPrice;
+        if (discount != 0 || bonus != 0) {
+            finalPrice += finalPrice * (discount + bonus) / 100;
+        }
+        System.out.println(finalPrice);
     }
+}
 
 
 

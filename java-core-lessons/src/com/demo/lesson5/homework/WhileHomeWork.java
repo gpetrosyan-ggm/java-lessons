@@ -3,11 +3,11 @@ package com.demo.lesson5.homework;
 public class WhileHomeWork {
 
     public static void main(String[] args) {
-        simpleWhileDemo();
-        simpleDoWhileDemo();
+//        simpleWhileDemo();
+//        simpleDoWhileDemo();
 
-        printOddNumbers(100);
-        printEvenNumbers(100);
+//        printOddNumbers(100);
+//        printEvenNumbers(100);
         printEvenAndOddNumbers(100);
     }
 
@@ -16,7 +16,7 @@ public class WhileHomeWork {
      */
     private static void simpleWhileDemo() {
         int i = 0;
-        while (i < 10){
+        while (i < 10) {
             System.out.println(i);
             i++;
         }
@@ -33,9 +33,9 @@ public class WhileHomeWork {
         do {
             i += 2;
             j--;
-        } while (j > i) ;
-            System.out.println(" i = " + i);
-            System.out.println(" j = " + j);
+        } while (j > i);
+        System.out.println(" i = " + i);
+        System.out.println(" j = " + j);
     }
 
     /**
@@ -45,9 +45,9 @@ public class WhileHomeWork {
      */
     private static void printOddNumbers(int num) {
         int i = 1;
-        while (i <= num){
+        while (i <= num) {
             System.out.println(i);
-            i +=2;
+            i += 2;
         }
         System.out.println("finish");
     }
@@ -59,9 +59,9 @@ public class WhileHomeWork {
      */
     private static void printEvenNumbers(int num) {
         int i = 2;
-        while (i <= num){
+        while (i <= num) {
             System.out.println(i);
-            i +=2;
+            i += 2;
         }
         System.out.println("finish");
     }
@@ -73,23 +73,28 @@ public class WhileHomeWork {
      * 55 % 2 = 1
      * 6 % 2 = 0
      * example (օրինակ)
-     *      1 ֊ odd
-     *      2 ֊ even
-     *      3 ֊ odd
-     *      4 ֊ even
+     * 1 ֊ odd
+     * 2 ֊ even
+     * 3 ֊ odd
+     * 4 ֊ even
+     *
      * @param num input value
      */
     private static void printEvenAndOddNumbers(int num) {
         int i = 0;
         int j = 0;
+
+        // TODO  if (i < num) կարիք չկա, while֊ում ունես նույն պայմանը
+        // TODO փորձի լուծես առանց 2 անգամ i++ օգտագործելով, կարաս if-ով կամ Ternary Operator-ով (exp1 ? exp2 : exp3).
+
         while (i < num) {
             i++;
             if (i < num) {
                 j = i % 2;
-                System.out.println (i + " %2 =  "+ j + "  - odd");
-                i ++;
-                j = i  % 2;
-                System.out.println (i + " %2 =  "+ j + "  - even");
+                System.out.println(i + " % 2 =  " + j + "  - odd");
+                i++;
+                j = i % 2;
+                System.out.println(i + " % 2 =  " + j + "  - even");
             }
 
         }
