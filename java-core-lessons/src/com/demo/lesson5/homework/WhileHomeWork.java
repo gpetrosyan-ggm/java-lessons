@@ -100,8 +100,7 @@ public class WhileHomeWork {
     private static void printEvenAndOddNumbersTernary(int num) {
         int i = 0;
         while (i < num) {
-            i++;
-            System.out.println(i + ": " + (i % 2 == 0 ? "even" : "odd"));
+            System.out.println(++i + ": " + (i % 2 == 0 ? "even" : "odd"));
         }
     }
 
