@@ -8,8 +8,8 @@ public class WhileHomeWork {
 
 //        printOddNumbers(100);
 //        printEvenNumbers(100);
-        printEvenAndOddNumbers(100);
-
+//        printEvenAndOddNumbersIf(100);
+        printEvenAndOddNumbersTernary(100);
     }
 
     /**
@@ -81,13 +81,10 @@ public class WhileHomeWork {
      *
      * @param num input value
      */
-    private static void printEvenAndOddNumbers(int num) {
+    private static void printEvenAndOddNumbersIf(int num) {
         int i = 0;
         int j;
 
-        // TODO  if (i < num) կարիք չկա, while֊ում ունես նույն պայմանը
-        // TODO փորձի լուծես առանց 2 անգամ i++ օգտագործելով, կարաս if-ով կամ Ternary Operator-ով (exp1 ? exp2 : exp3).
-        // Ternary Operator-ov chkareca lucem, if-@ dzel em idealakani, avartakan ashxatanqa
         while (i < num) {
             i++;
             j = i % 2;
@@ -96,11 +93,16 @@ public class WhileHomeWork {
             } else {
                 System.out.println(i + " % 2 =  " + j + "  - even");
             }
-
         }
 
     }
 
-
+    private static void printEvenAndOddNumbersTernary(int num) {
+        int i = 0;
+        while (i < num) {
+            i++;
+            System.out.println(i + ": " + (i % 2 == 0 ? "even" : "odd"));
+        }
+    }
 
 }
