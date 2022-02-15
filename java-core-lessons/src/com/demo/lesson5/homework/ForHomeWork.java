@@ -3,13 +3,23 @@ package com.demo.lesson5.homework;
 public class ForHomeWork {
 
     public static void main(String[] args) {
+        printOddNumbers(100);
+        printEvenNumbers(50);
+        simpleWhileToForConvertDemo();
+        printEvenAndOddNumbersIf(25);
+
+
+
 
     }
 
     /**
      * Write simple for example (գրել պարզ for օրինակ)
      */
-    private static void simpleForDemo() {
+    private static void simpleForDemo(int num) {
+        for (int i = 0, j = 25; i < j; i++, j--){
+            System.out.println(i + ":" +j);
+        }
     }
 
     /**
@@ -22,6 +32,10 @@ public class ForHomeWork {
 //            i++;
 //        }
 //        System.out.println("finish");
+        for (int i = 0; i < 10; i++){
+            System.out.println(i);
+        }
+        System.out.println("AVART");
 
     }
 
@@ -31,7 +45,10 @@ public class ForHomeWork {
      * @param num input value
      */
     private static void printOddNumbers(int num) {
-
+        for (int i = 1; i < num; i += 2){
+            System.out.println(i);
+        }
+        System.out.println("AVART");
     }
 
     /**
@@ -40,6 +57,10 @@ public class ForHomeWork {
      * @param num input value
      */
     private static void printEvenNumbers(int num) {
+      for (int i = 0; i < num; i += 2){
+          System.out.println(i);
+      }
+        System.out.println("AVART");
     }
 
     /**
@@ -57,7 +78,15 @@ public class ForHomeWork {
      * @param num input value
      */
     private static void printEvenAndOddNumbersIf(int num) {
+               for (int i = 0, j = 0; i < num; i++, j = i % 2) {
+                   if (j != 0) {
+                System.out.println(i + "even");
+            } else {
+                System.out.println(i + "odd");
+            }
+        }
     }
+
 
     /**
      * Print simple array (տպել պարզ array 2 ձևով)
@@ -65,7 +94,12 @@ public class ForHomeWork {
      * foreach
      */
     private static void printArrayDemo(int[] arr) {
-
+         for (int i = 0; i < arr.length; i++) {
+             System.out.println(+arr[i]);
+             for (int a : arr) {
+                 System.out.println(+a);
+             }
+         }
     }
 
     /**
@@ -74,8 +108,20 @@ public class ForHomeWork {
      * foreach
      */
     private static void printArrayDemo(int[][] arr) {
+        for (int i = 0; i < arr.length; i++){
+            for (int j = 0; j < arr[i].length; j++){
+                System.out.println(i + "" + j +   + arr[i][j]);
+            }
+        }
+        for(int[] a: arr){
+            for(int b : a){
+                System.out.println(+ b);
+            }
+        }
 
-    }
+        }
+
+
 
     /**
      * Print simple array (տպել պարզ array 2 ձևով)
@@ -83,6 +129,21 @@ public class ForHomeWork {
      * foreach
      */
     private static void printArrayDemo(int[][][] arr) {
+        for (int i = 0; i < arr.length; i++){
+            for (int j = i; j < arr[i].length; j++){
+                for (int k = j; k < arr[i][j].length; k++){
+                    System.out.println(i +   + j +   + k +   + arr[i][j][k]);
+                }
+            }
+        }
+        for (int[][] a : arr){
+            for(int[] b : a){
+                for (int c : b){
+                    System.out.println( +c);
+                }
+            }
+
+        }
 
     }
 
