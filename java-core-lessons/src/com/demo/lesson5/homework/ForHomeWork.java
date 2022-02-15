@@ -3,17 +3,17 @@ package com.demo.lesson5.homework;
 public class ForHomeWork {
 
     public static void main(String[] args) {
-        simpleForDemo(10);
-        printOddNumbers(100);
-        printEvenNumbers(50);
-        simpleWhileToForConvertDemo();
-        printEvenAndOddNumbersIf(25);
+       // simpleForDemo(10);
+      // printOddNumbers(100);
+      //  printEvenNumbers(50);
+      //  simpleWhileToForConvertDemo();
+      //  printEvenAndOddNumbersIf(25);
 
-        int[] arr1 = {1, 2, 3, 4, 5};
-        printArrayDemo(arr1);
+      //  int[] arr1 = {1, 2, 3, 4, 5};
+      //  printArrayDemo(arr1);
 
-        int[][] arr2 = {{1, 2, 3}, {4, 5}};
-        printArrayDemo(arr2);
+       // int[][] arr2 = {{1, 2, 3}, {4, 5}};
+       // printArrayDemo(arr2);
 
         int[][][] arr = {{{1, 2}, {4, 5}}, {{7, 8}, {9}, {0, 10}}};
         printArrayDemo(arr);
@@ -111,7 +111,7 @@ public class ForHomeWork {
     private static void printArrayDemo(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(i + "-" + j + arr[i][j]); // TODO arr-ի դիմացի + նշանի ի՞մաստը
+                System.out.println(i + "-" + j + " : " +arr[i][j]); // TODO arr-ի դիմացի + նշանի ի՞մաստը
             }
         }
         for (int[] a : arr) {
@@ -132,20 +132,20 @@ public class ForHomeWork {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 for (int k = 0; k < arr[i][j].length; k++) {
-                    System.out.println(i + j + k + arr[i][j][k]);  // TODO run արա ու գտի սխալտ
+                    System.out.println(i + "- " + j + "-" + k + " : " + arr[i][j][k]);  // TODO run արա ու գտի սխալտ
                 }
             }
         }
-        System.out.println();
+       // System.out.println();
 
-        for (int[][] a : arr) {
-            for (int[] b : a) {
-                for (int c : b) {
-                    System.out.println(c);
-                }
-            }
+       // for (int[][] a : arr) {
+        //    for (int[] b : a) {
+             //   for (int c : b) {
+             //       System.out.println(c);
+               // }
+           // }
 
-        }
+       // }
 
     }
 
