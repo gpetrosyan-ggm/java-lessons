@@ -93,9 +93,9 @@ public class ForHomeWork {
     // TODO սխալա ու անհասկանալի լուծումը։
     private static void printArrayDemo(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(+arr[i]);// TODO arr-ի դիմացի + նշանի ի՞մաստը
+            System.out.println(arr[i]);// TODO arr-ի դիմացի + նշանի ի՞մաստը
             for (int a : arr) {
-                System.out.println(+a);// TODO a-ի դիմացի + նշանի ի՞մաստը
+                System.out.println(a);// TODO a-ի դիմացի + նշանի ի՞մաստը
             }
         }
     }
@@ -108,12 +108,12 @@ public class ForHomeWork {
     private static void printArrayDemo(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(i + "" + j + +arr[i][j]); // TODO arr-ի դիմացի + նշանի ի՞մաստը
+                System.out.println(i + "" + j + arr[i][j]); // TODO arr-ի դիմացի + նշանի ի՞մաստը
             }
         }
         for (int[] a : arr) {
             for (int b : a) {
-                System.out.println(+b); // TODO c-ի դիմացի + նշանի ի՞մաստը
+                System.out.println(b); // TODO c-ի դիմացի + նշանի ի՞մաստը
             }
         }
 
@@ -130,7 +130,7 @@ public class ForHomeWork {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr[i].length; j++) {
                 for (int k = j; k < arr[i][j].length; k++) {
-                    System.out.println(i + +j + +k + +arr[i][j][k]);  // TODO arr֊ի, j֊ի ու k֊ի դիմացի + նշանի ի՞մաստը
+                    System.out.println(i +  j +   k + +arr[i][j][k]);  // TODO arr֊ի, j֊ի ու k֊ի դիմացի + նշանի ի՞մաստը
                 }
             }
         }
@@ -139,7 +139,7 @@ public class ForHomeWork {
         for (int[][] a : arr) {
             for (int[] b : a) {
                 for (int c : b) {
-                    System.out.println(+c); // TODO c-ի դիմացի + նշանի ի՞մաստը
+                    System.out.println(c); // TODO c-ի դիմացի + նշանի ի՞մաստը
                 }
             }
 
