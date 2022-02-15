@@ -111,7 +111,7 @@ public class ForHomeWork {
     private static void printArrayDemo(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(i + "-" + j + " : " +arr[i][j]); // TODO arr-ի դիմացի + նշանի ի՞մաստը
+                System.out.println(i + "-" + j + " : " +arr[i][j]);
             }
         }
         for (int[] a : arr) {
@@ -132,7 +132,7 @@ public class ForHomeWork {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 for (int k = 0; k < arr[i][j].length; k++) {
-                    System.out.println(i + "- " + j + "-" + k + " : " + arr[i][j][k]);  // TODO run արա ու գտի սխալտ
+                    System.out.println(i + "- " + j + "-" + k + " : " + arr[i][j][k]);
                 }
             }
         }
