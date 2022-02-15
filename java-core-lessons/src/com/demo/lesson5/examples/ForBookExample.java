@@ -1,4 +1,4 @@
-package com.demo.lesson5.homework;
+package com.demo.lesson5.examples;
 
 public class ForBookExample {
     public static void main(String[] args){

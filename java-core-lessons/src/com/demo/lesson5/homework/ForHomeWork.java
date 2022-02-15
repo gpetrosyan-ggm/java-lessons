@@ -7,18 +7,14 @@ public class ForHomeWork {
         printEvenNumbers(50);
         simpleWhileToForConvertDemo();
         printEvenAndOddNumbersIf(25);
-
-
-
-
     }
 
     /**
      * Write simple for example (գրել պարզ for օրինակ)
      */
     private static void simpleForDemo(int num) {
-        for (int i = 0, j = 25; i < j; i++, j--){
-            System.out.println(i + ":" +j);
+        for (int i = 0, j = 25; i < j; i++, j--) {
+            System.out.println(i + ":" + j);
         }
     }
 
@@ -32,7 +28,7 @@ public class ForHomeWork {
 //            i++;
 //        }
 //        System.out.println("finish");
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             System.out.println(i);
         }
         System.out.println("AVART");
@@ -45,7 +41,7 @@ public class ForHomeWork {
      * @param num input value
      */
     private static void printOddNumbers(int num) {
-        for (int i = 1; i < num; i += 2){
+        for (int i = 1; i < num; i += 2) {
             System.out.println(i);
         }
         System.out.println("AVART");
@@ -57,9 +53,9 @@ public class ForHomeWork {
      * @param num input value
      */
     private static void printEvenNumbers(int num) {
-      for (int i = 0; i < num; i += 2){
-          System.out.println(i);
-      }
+        for (int i = 0; i < num; i += 2) {
+            System.out.println(i);
+        }
         System.out.println("AVART");
     }
 
@@ -78,8 +74,9 @@ public class ForHomeWork {
      * @param num input value
      */
     private static void printEvenAndOddNumbersIf(int num) {
-               for (int i = 0, j = 0; i < num; i++, j = i % 2) {
-                   if (j != 0) {
+        // TODO սխալա տպում կենտի ու զույգերի տեղը։ j փոփոխականի կարիք չկա եստեղ
+        for (int i = 0, j = 0; i < num; i++, j = i % 2) {
+            if (j != 0) {
                 System.out.println(i + "even");
             } else {
                 System.out.println(i + "odd");
@@ -93,13 +90,14 @@ public class ForHomeWork {
      * for( ; ; )
      * foreach
      */
+    // TODO սխալա ու անհասկանալի լուծումը։
     private static void printArrayDemo(int[] arr) {
-         for (int i = 0; i < arr.length; i++) {
-             System.out.println(+arr[i]);
-             for (int a : arr) {
-                 System.out.println(+a);
-             }
-         }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(+arr[i]);// TODO arr-ի դիմացի + նշանի ի՞մաստը
+            for (int a : arr) {
+                System.out.println(+a);// TODO a-ի դիմացի + նշանի ի՞մաստը
+            }
+        }
     }
 
     /**
@@ -108,19 +106,18 @@ public class ForHomeWork {
      * foreach
      */
     private static void printArrayDemo(int[][] arr) {
-        for (int i = 0; i < arr.length; i++){
-            for (int j = 0; j < arr[i].length; j++){
-                System.out.println(i + "" + j +   + arr[i][j]);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.println(i + "" + j + +arr[i][j]); // TODO arr-ի դիմացի + նշանի ի՞մաստը
             }
         }
-        for(int[] a: arr){
-            for(int b : a){
-                System.out.println(+ b);
+        for (int[] a : arr) {
+            for (int b : a) {
+                System.out.println(+b); // TODO c-ի դիմացի + նշանի ի՞մաստը
             }
         }
 
-        }
-
+    }
 
 
     /**
@@ -129,17 +126,20 @@ public class ForHomeWork {
      * foreach
      */
     private static void printArrayDemo(int[][][] arr) {
-        for (int i = 0; i < arr.length; i++){
-            for (int j = i; j < arr[i].length; j++){
-                for (int k = j; k < arr[i][j].length; k++){
-                    System.out.println(i +   + j +   + k +   + arr[i][j][k]);
+        // TODO init֊ի մասը սխալա գրած
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr[i].length; j++) {
+                for (int k = j; k < arr[i][j].length; k++) {
+                    System.out.println(i + +j + +k + +arr[i][j][k]);  // TODO arr֊ի, j֊ի ու k֊ի դիմացի + նշանի ի՞մաստը
                 }
             }
         }
-        for (int[][] a : arr){
-            for(int[] b : a){
-                for (int c : b){
-                    System.out.println( +c);
+        System.out.println();
+
+        for (int[][] a : arr) {
+            for (int[] b : a) {
+                for (int c : b) {
+                    System.out.println(+c); // TODO c-ի դիմացի + նշանի ի՞մաստը
                 }
             }
 
