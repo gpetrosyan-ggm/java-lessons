@@ -1,5 +1,6 @@
 package com.demo.lesson5.homework;
 
+// TODO որոշ տեղեռ {} չես դրել, սխալ չի, բայց լավ կլիներ լիներ
 public class JumpHomeWork {
 
     public static void main(String[] args) {
@@ -135,6 +136,7 @@ public class JumpHomeWork {
      * 2. Գրել 2 while ցիկլ մեկը մյուսի ներսում ու ինչ֊որ պայմանի դեպքում ներսի ցիկլում գրած,
      * բաց թողնել վերևի ցիկի տվյալ քայլը․
      */
+    // TODO սխալ ես հասկացել խնդիրը։ Գտնել ու դզել
     private static void continueGotoDemo() {
         persona :
         for (int i = 0; i < 10; i++) {
