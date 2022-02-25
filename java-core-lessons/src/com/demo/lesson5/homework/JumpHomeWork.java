@@ -142,30 +142,28 @@ public class JumpHomeWork {
         persona :
         for (int i = 0; i < 10; i++) {
             System.out.println("i = " + i);
-            senc:
             for (int j = 0; j < 5; j++) {
-
-                if (i == 3) {
-                    break senc;
+                if ((i - j) == 2) {
+                    continue persona;
                 }
 
                 System.out.println("j = " + j);
             }
         }
-        int i = 0;
-        chelsea :
-        while (i < 10){
-            i++;
-            System.out.println(" i = " + i);
-            int j =0;
-            abc :
-            while (j < 7) {
-                j++;
-                if (i == 3) break abc;
-                System.out.println(" j = " + j);
-            }
+     //   int i = 0;
+       // chelsea :
+       // while (i < 10){
+         //   i++;
+           // System.out.println(" i = " + i);
+         //   int j =0;
+           // abc :
+           // while (j < 7) {
+             //   j++;
+               // if (i == 3) break abc;
+               // System.out.println(" j = " + j);
+            //}
 
-        }
+        //}
 
     }
 
