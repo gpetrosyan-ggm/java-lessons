@@ -1,0 +1,23 @@
+-- General advices
+1. camelcase ֊ նշանակումա եթե բաղկացած է 2 կամ ավել բառերից, ուրեմն ամեն բառի առաջի տառը մեծատառ
+2. Class name - մեծատառով, camelcase
+3. Method name - փոքրատառով, camelcase
+4. Variable (փոփոխական) name - փոքրատառով, camelcase,
+                               փոփոխականի անունը պիտի ցույց տա թե ինչ է ինքը, կամ ինչ է պարունակում
+                               օրինակ․ անուն ֊ name, firstName, տարիք ֊ age, ազգանուն ֊ surname, lastName
+5. Style -  1. կլասսի վերջում միշտ դատարկ տող թող լինի
+            2. մեթոդների արանքԹ միշտ մի հատ դատարկ տող թող լինի
+            3. մեթոդի մեջ ավելրորդ դատարկ տողեր թող չլինի
+            4. Ctrl A (նշումա ամբողջ ֆայլը), հետո Ctrl Alt L - ռեֆատորա անում ստայլերը
+6. Առաջադրանքը ավարտոլուց հետո պարտադիր նայի, կարողա կարիք լինի որոշ բաներ մաքրել, կամ ավելի սիրուն լուծում տալ
+
+
+-- Git advices
+1. git status - git status (ցույցա տալիս տվյալ բռենչի փոփոխություննեը)
+2. git pull - git pull origin 'branch-name'  (github֊ից բերում 'branch-name' պարունակությունը)
+3. git push - git push origin 'branch-name'   (github֊ի 'branch-name' է ուղարկում commit֊ի պարունակությունը)
+4. git checkout - git checkout 'branch-name'  (գնում է 'branch-name' բռենչ)
+5. git checkout - git checkout -b 'branch-name'  (ստեղծում է 'branch-name' անունով բռենչ)
+6. git add - git add .  (բոլոր փոփոխություննեը ինդեքսավորումա)
+7. git commit - git commit -m "message"  (ինդեքսավորված փոփոխություննեը commit է անում ՛message՛֊ով)
+
