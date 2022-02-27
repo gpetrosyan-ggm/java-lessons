@@ -5,11 +5,17 @@ package com.demo.progresstests.exercies2;
 и число, меньше введенного с клавиатуры на 12.
  */
 
+import java.util.Scanner;
+
 public class Exercies2_7 {
     public static void main(String[] args) {
-        int a = 23;
-        System.out.println("1. " + (a + 6));
-        System.out.println("2. " + (a - 12));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Dzer na@ntreli tiv@ ... ");
+        int a = scanner.nextInt();
+
+        System.out.println("tarberak 1. " + (a + 6));
+        System.out.println("tarberak 2. " + (a - 12));
+        scanner.close();
 
     }
 }

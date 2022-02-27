@@ -4,9 +4,15 @@ package com.demo.progresstests.exercies2;
 и затем выводит на экран его квадрат и его же куб, а между ними знак &.
  */
 
+import java.util.Scanner;
+
 public class Exercies2_8 {
     public static void main(String[] args) {
-        int a = 12;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" greq dzer tiv@ ");
+
+        int a = scanner.nextInt();
         System.out.println((a * a) + " & " + (a * a * a));
+        scanner.close();
     }
 }

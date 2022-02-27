@@ -7,9 +7,15 @@ package com.demo.progresstests.exercies2;
 и число, больше введенного с клавиатуры на 1.
  */
 
+import java.util.Scanner;
+
 public class Exercies2_9 {
     public static void main(String[] args) {
-        int a = 25;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" greq dzer tiv@ ");
+
+        int a = scanner.nextInt();
         System.out.println((a - 1) + " " + a + " " + (a + 1));
+        scanner.close();
     }
 }

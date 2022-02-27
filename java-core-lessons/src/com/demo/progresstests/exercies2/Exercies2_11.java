@@ -7,13 +7,21 @@ package com.demo.progresstests.exercies2;
 разницу между вторым и первым.
  */
 
+import java.util.Scanner;
+
 public class Exercies2_11 {
     public static void main(String[] args) {
-        int a = 13;
-        int b = 7;
-        System.out.println(" a + b = " + (a + b));
-        System.out.println(" a * b = " + (a * b));
-        System.out.println(" a - b = " + (a - b));
-        System.out.println(" b - a = " + (b - a));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" greq dzer tiv@ ");
+
+        int a = scanner.nextInt();
+        System.out.println(" Dzer erkrord tiv@ xndrem ");
+
+        int b = scanner.nextInt();
+        System.out.println("tvyal tveri gumar@ " + (a + b));
+        System.out.println("irenc artadryal@   " + (a * b)); //произведение haskacel em artadryal@
+        System.out.println("1-ic hanac 2-rd@   " + (a - b));
+        System.out.println("2-ic hanac 1-in@   " + (b - a));
+        scanner.close();
     }
 }
