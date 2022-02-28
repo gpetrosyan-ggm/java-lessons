@@ -1,4 +1,4 @@
-package com.demo.progresstests;
+package com.demo.progresstests.exercies1;
 /*
 1.6
 Напишите фрагмент класса, в котором переменным а и Ь будут присваиваться числовые значения
