@@ -1,9 +1,10 @@
 1.6 Однозначное число - это число, состоящее из одной цифры.  Ուղղել համապատասխան խնդիրի լուծումը։
+// 1.6 - @ vonc er aveli chisht grel, 1. vonc es em grel, 2. int c = a * 10 +b, 3. te el c popoxakan chtam u miangamic Sistem.out.println("c = " + (a*10+b))
 
-2.5 Ոչ լիարժեքա լուծած, մի կետը կատարած չի։
+2.5 Ոչ լիարժեքա լուծած, մի կետը կատարած չի։ // произведение et bar@ cheyi haskacel, bayc man eka gta, terutyun@ shtkvec
 
-2.6 Ավելորդ ԲԱՆ(ԵՐ) կա գրած։ Գտնել և ջնջել։
+2.6 Ավելորդ ԲԱՆ(ԵՐ) կա գրած։ Գտնել և ջնջել։ // + u (), gtnvac ev vochnchacvac e
 
-2.10 Ավելորդ ԲԱՆ(ԵՐ) կա գրած։ Գտնել և ջնջել։
+2.10 Ավելորդ ԲԱՆ(ԵՐ) կա գրած։ Գտնել և ջնջել։ // anhetq korcreci
 
-2.20  S = ((a + b) / 2) + h.   https://doza.pro/art/math/geometry/area-trapezium
+2.20  S = ((a + b) / 2) + h.   https://doza.pro/art/math/geometry/area-trapezium // ov imana vor da sexan e

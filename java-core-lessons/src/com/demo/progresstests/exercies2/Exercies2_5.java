@@ -11,6 +11,7 @@ public class Exercies2_5 {
         int a = 5;
         int b = 7;
         System.out.println("a = " + a + "; b = " + b);
+        System.out.println("ayd tverio artadryal@ klini a * b = " + (a * b));
         System.out.println(" ayd tveri gumar@ klini a + b = " + (a + b));
     }
 }

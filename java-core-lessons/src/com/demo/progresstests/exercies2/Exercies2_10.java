@@ -14,8 +14,8 @@ public class Exercies2_10 {
         System.out.println(" greq dzer tiv@ ");
 
         int a = scanner.nextInt();
-        System.out.println(+a);
-        System.out.println(+(-a));
+        System.out.println(a);
+        System.out.println(-a);
         scanner.close();
     }
 }

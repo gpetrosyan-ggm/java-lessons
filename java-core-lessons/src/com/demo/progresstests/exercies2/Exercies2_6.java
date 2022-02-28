@@ -12,7 +12,7 @@ public class Exercies2_6 {
         System.out.println(" greq dzer tiv@ ");
 
         int i = scanner.nextInt();
-        System.out.println(+(i + 10));
+        System.out.println(i + 10);
         scanner.close();
     }
 

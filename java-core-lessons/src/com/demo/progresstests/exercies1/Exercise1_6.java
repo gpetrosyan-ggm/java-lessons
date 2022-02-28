@@ -11,7 +11,7 @@ package com.demo.progresstests.exercies1;
 
 public class Exercise1_6 {
     public static void main(String[] args) {
-        int a = 14;
+        int a = 4;
         int b = 9;
         int c;
         c = 10 * a + b;
