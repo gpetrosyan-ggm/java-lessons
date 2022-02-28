@@ -18,5 +18,6 @@ public class Exercies2_21 {
         String lastname = scanner.nextLine();
 
         System.out.println(" Dzer anunn e " + name + " " + lastname );
+        scanner.close();
     }
 }
