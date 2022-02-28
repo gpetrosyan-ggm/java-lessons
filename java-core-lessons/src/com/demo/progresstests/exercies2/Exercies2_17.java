@@ -24,5 +24,7 @@ public class Exercies2_17 {
         System.out.println(" tvyal orum ancel e " + (jam * 60 + rope) + " rope");
         System.out.println("orva avartin mnacel e " + ((24 * 60 * 60) - (jam * 60 + rope) * 60) + " varkyan");
         System.out.println("orva avartin mnacel e " + ((24 * 60) - (jam * 60 + rope)) + " rope");
+
+        scanner.close();
     }
 }

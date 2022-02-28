@@ -16,5 +16,7 @@ public class Exercies2_16 {
         double kabelt = scanner.nextDouble();
         System.out.println("heravorutyun@ metrov klini " + (kabelt * 185.2) + " metr");
         System.out.println("tvyal heravorutyn@ kilometrov" + (kabelt * 185.2 / 1000) + " km ");
+
+        scanner.close();
     }
 }

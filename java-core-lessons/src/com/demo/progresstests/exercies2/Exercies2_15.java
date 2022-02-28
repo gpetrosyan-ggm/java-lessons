@@ -14,5 +14,7 @@ public class Exercies2_15 {
 
         double ves = scanner.nextDouble();
         System.out.println(" dzer qash@ kilogramnerov klini " + (ves / 1000) + " kg");
+
+        scanner.close();
     }
 }
