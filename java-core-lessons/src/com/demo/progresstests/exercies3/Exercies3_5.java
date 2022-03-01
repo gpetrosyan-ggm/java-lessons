@@ -7,12 +7,6 @@ package com.demo.progresstests.exercies3;
 что размеры сторон треугольника не выражаются целыми числами.
  */
 
-
-//todo tvyal xndir@ uni terutyun, uxankyun erankyan mej ete unes ejeri arjeqner@ apa nerqnadziqin ches karox arjeq tas
-// hamadzayn pyutagorasi teoremi ejeri qarakusineri gumar@ havasar e nerqnadziqi qarakusun, armat hanelu dzev@ chgitem
-//dra hamar chem kara grem, bayc kareli e klaviaturayic vercner 2 ejer@, @st dranc hashvel makeres@ a*b/2; heto hashvel
-//nerqnadziqn u paragic@
-
 import java.util.Scanner;
 
 public class Exercies3_5 {
