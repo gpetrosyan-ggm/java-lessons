@@ -12,7 +12,7 @@ public class Exercies4_5 {
         System.out.println("eranish tiv...");
 
         int a = scanner.nextInt();
-        System.out.println((a / 100) + (a - (a / 100) * 100) / 10 + a % (a / 10));
+        System.out.println((a / 100) + a % 100 / 10 + a % 10);
 
         scanner.close();
     }

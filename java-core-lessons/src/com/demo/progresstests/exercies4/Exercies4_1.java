@@ -12,7 +12,7 @@ public class Exercies4_1 {
         System.out.println("grel eranish drakan tiv ...");
 
         int abc = scanner.nextInt();
-        System.out.println((abc / 100) + " " + (abc - abc / 100 * 100) / 10 + " " + abc % (abc / 10));
+        System.out.println((abc / 100) + " " + abc / 10 % 10 + " " + abc % 10);
 
         scanner.close();
     }

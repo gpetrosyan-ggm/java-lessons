@@ -16,7 +16,7 @@ public class Exercies4_10 {
         System.out.println("grel ereanish tiv..");
 
         int a = scanner.nextInt();
-        System.out.println((a - (a / 100) * 100) * 10 + a / 100);
+        System.out.println(a % 100 * 10 + a / 100);
 
         scanner.close();
     }

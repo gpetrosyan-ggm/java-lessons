@@ -15,7 +15,7 @@ public class Exercies4_4 {
         System.out.println("erknish drakan tiv - ");
 
         int a = scanner.nextInt();
-        System.out.println(a / 10 + a % ((a / 10) * 10) * 10 + 8);
+        System.out.println(a / 10 + a % 10 * 10 + 8);
 
         scanner.close();
     }

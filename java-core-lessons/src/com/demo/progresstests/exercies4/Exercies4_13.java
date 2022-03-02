@@ -18,7 +18,7 @@ public class Exercies4_13 {
         System.out.println(" tpel eli drakan eranish tiv...");
 
         int b = scanner.nextInt();
-        System.out.println((a - (a / 100) * 100 + (b / 100) * 100) + "  " + ((b - (b / 100) * 100) + (a / 100) * 100));
+        System.out.println((a % 100 + b / 100 * 100) + " - " + (b % 100 + a / 100 * 100));
 
         scanner.close();
     }

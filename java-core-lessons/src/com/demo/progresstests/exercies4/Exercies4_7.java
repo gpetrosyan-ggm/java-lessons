@@ -13,19 +13,18 @@ public class Exercies4_7 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("qaranish tiv ...");
 
-        int abcd = scanner.nextInt();
-        if ((abcd / 1000) % 2 == 0) {
-            System.out.println("arajin tiv@ zuyg e " + abcd / 1000);
+        int a = scanner.nextInt();
+        if ((a / 1000) % 2 == 0) {
+            System.out.println("arajin tiv@ zuyg e " + a / 1000);
         } else ;
-        if (((abcd - ((abcd / 1000) * 1000)) / 100) % 2 == 0) {
-            System.out.println("erkrord tiv@ zuyg e " + ((abcd - ((abcd / 1000) * 1000)) / 100));
+        if ((a/100 % 10) % 2 == 0) {
+            System.out.println("erkrord tiv@ zuyg e " + a/100%10);
         } else ;
-        if (((abcd - (abcd / 1000) * 1000) - (((abcd - (abcd / 1000) * 1000) / 100) * 100)) / 10 % 2 == 0) {
-            System.out.println("errord tiv@ zuyg e " +
-                               ((abcd - (abcd / 1000) * 1000) - (((abcd - (abcd / 1000) * 1000) / 100) * 100)) / 10);
+        if ((a/10%10) % 2 == 0) {
+            System.out.println("errord tiv@ zuyg e " + a/10%10);
         } else ;
-        if ((abcd % abcd / 10) == 0) {
-            System.out.println("chorord tiv@ zuyg e " + (abcd % (abcd / 10)));
+        if ((a%10)%2 == 0) {
+            System.out.println("chorord tiv@ zuyg e " + a%10);
         }
         scanner.close();
     }
