@@ -15,8 +15,8 @@ public class Exercies3_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("jermastichan@ @st farehayti..");
 
-        int F = scanner.nextInt();
-        System.out.println("jermastichan@ @st celsusi C = " + (F - 32) / 1.8);
+        int f = scanner.nextInt();
+        System.out.println("jermastichan@ @st celsusi C = " + (f - 32) / 1.8);
 
       scanner.close();
     }

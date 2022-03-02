@@ -17,14 +17,14 @@ public class Exercies3_9 {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Vasyayi ashxatac gumar@ rublov ...");
 
-        double Vasya = scanner.nextDouble();
+        double nameVasya = scanner.nextDouble();
         System.out.println("Vasyain cnoxneri tvac gumar@ ...");
 
-        double Fader = scanner.nextDouble();
+        double nameFader = scanner.nextDouble();
         System.out.println("1 euro valyutan rublov ..");
 
-        double Euro = scanner.nextDouble();
-        System.out.println("Vasyan ardyunqum unu " + (Vasya + Fader) / Euro + "EURO");
+        double nameEuro = scanner.nextDouble();
+        System.out.println("Vasyan ardyunqum unu " + (nameVasya + nameFader) / nameEuro + "EURO");
 
         scanner.close();
     }
