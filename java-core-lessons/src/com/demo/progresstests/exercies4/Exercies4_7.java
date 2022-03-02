@@ -14,17 +14,21 @@ public class Exercies4_7 {
         System.out.println("qaranish tiv ...");
 
         int a = scanner.nextInt();
-        if ((a / 1000) % 2 == 0) {
-            System.out.println("arajin tiv@ zuyg e " + a / 1000);
+        int a1000 = a / 1000;
+        int a100 = a / 100 * 10;
+        int a10 = a / 10 % 10;
+        int a1 = a % 10;
+        if (a1000 % 2 == 0) {
+            System.out.println("arajin tiv@ zuyg e " + a1000);
         } else ;
-        if ((a/100 % 10) % 2 == 0) {
-            System.out.println("erkrord tiv@ zuyg e " + a/100%10);
+        if (a100 % 2 == 0) {
+            System.out.println("erkrord tiv@ zuyg e " + a100);
         } else ;
-        if ((a/10%10) % 2 == 0) {
-            System.out.println("errord tiv@ zuyg e " + a/10%10);
+        if (a10 % 2 == 0) {
+            System.out.println("errord tiv@ zuyg e " + a10);
         } else ;
-        if ((a%10)%2 == 0) {
-            System.out.println("chorord tiv@ zuyg e " + a%10);
+        if (a1 % 2 == 0) {
+            System.out.println("chorord tiv@ zuyg e " + a1);
         }
         scanner.close();
     }

@@ -17,7 +17,8 @@ public class Exercies4_9 {
         System.out.println("grel eranish drakan tiv ");
 
         int a = scanner.nextInt();
-        System.out.println(a % 1000 * 10);
+        int a1000 = a % 1000;
+        System.out.println(a1000 * 10);
 
         scanner.close();
     }

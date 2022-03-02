@@ -14,7 +14,10 @@ public class Exercies4_6 {
         System.out.println("eranish drakan tiv ");
 
         int a = scanner.nextInt();
-        System.out.println((a / 100 - a % 10) * a / 10 % 10);
+        int a100 = a / 100;
+        int a10 = a / 10 % 10;
+        int a1 = a % 10;
+        System.out.println((a100 - a10) * a1);
 
         scanner.close();
 

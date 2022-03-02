@@ -15,7 +15,10 @@ public class Exercies4_8 {
         System.out.println("grel qaranish drakan tiv  ");
 
         int a = scanner.nextInt();
-        System.out.println(a % 1000 - a % 10 + a % 10 * 1000 + a / 1000);
+        int a234 = a % 1000;
+        int a4 = a % 10;
+        int a1 = a / 1000;
+        System.out.println(a234 - a4 + a4 * 1000 + a1);
 
         scanner.close();
     }

@@ -11,8 +11,11 @@ public class Exercies4_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("grel eranish drakan tiv ...");
 
-        int abc = scanner.nextInt();
-        System.out.println((abc / 100) + " " + abc / 10 % 10 + " " + abc % 10);
+        int a = scanner.nextInt();
+        int a100 = a / 100;
+        int a10 = a / 10 % 10;
+        int a1 = a % 10;
+        System.out.println(a100 + " " + a10 + " " + a1);
 
         scanner.close();
     }
