@@ -17,7 +17,7 @@ public class Exercies4_6 {
         int a100 = a / 100;
         int a10 = a / 10 % 10;
         int a1 = a % 10;
-        System.out.println((a100 - a10) * a1);
+        System.out.println((a100 - a1) * a10);
 
         scanner.close();
 

@@ -22,7 +22,7 @@ public class Exercies4_13 {
         int a1 = a % 100;
         int b100 = b / 100;
         int b1 = b % 100;
-        System.out.println((a1 + b100 * 100) + " - " + (b + a100 * 100));
+        System.out.println((a1 + b100 * 100) + " - " + (b1 + a100 * 100));
 
         scanner.close();
     }
