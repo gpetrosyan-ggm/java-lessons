@@ -20,13 +20,13 @@ public class Exercies4_7 {
         int a1 = a % 10;
         if (a1000 % 2 == 0) {
             System.out.println("arajin tiv@ zuyg e " + a1000);
-        } else ;
+        }
         if (a100 % 2 == 0) {
             System.out.println("erkrord tiv@ zuyg e " + a100);
-        } else ;
+        }
         if (a10 % 2 == 0) {
             System.out.println("errord tiv@ zuyg e " + a10);
-        } else ;
+        }
         if (a1 % 2 == 0) {
             System.out.println("chorord tiv@ zuyg e " + a1);
         }

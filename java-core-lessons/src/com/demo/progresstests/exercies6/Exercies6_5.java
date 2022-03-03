@@ -6,9 +6,6 @@ package com.demo.progresstests.exercies6;
 сообщение Числа равны.
  */
 
-//выводит на экран их произведение
-// a - b te b - a te esim inch
-
 import java.util.Scanner;
 
 public class Exercies6_5 {
@@ -26,7 +23,7 @@ public class Exercies6_5 {
             System.out.println("tver@ havasar en");
         }
         if (a < b){
-            System.out.println(a - b);
+            System.out.println(a * b);
         }
         scanner.close();
 
