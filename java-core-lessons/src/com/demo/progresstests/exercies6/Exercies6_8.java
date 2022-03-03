@@ -18,15 +18,16 @@ public class Exercies6_8 {
         System.out.println("eli kamayakan amboxjakan tiv ");
 
         int b = scanner.nextInt();
-        if (a * b > 0){
+        if (a * b > 0) {
             System.out.println("mievnuyn nshani en");
         }
-        if(a * b < 0){
+        if (a * b < 0) {
             System.out.println("tarber nshani en");
         }
-        if (a==0 || b == 0){
+        if (a == 0 || b == 0) {
             System.out.println("Некорректно");
 
         }
+        scanner.close();
     }
 }

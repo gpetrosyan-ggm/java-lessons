@@ -24,5 +24,6 @@ public class Exercies6_11 {
         if (a < b) {
             System.out.println("дробь «положительной»");
         }
+        scanner.close();
     }
 }

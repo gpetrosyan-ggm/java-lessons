@@ -20,5 +20,6 @@ public class Exercies6_7 {
         if (a < a10 * a1) {
             System.out.println("artadryal@ mec e qo tiv@ ");
         }
+        scanner.close();
     }
 }

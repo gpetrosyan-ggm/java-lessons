@@ -20,5 +20,6 @@ public class Exercies6_10 {
         if (a < b) {
             System.out.println("дробь «законной»");
         }
+        scanner.close();
     }
 }

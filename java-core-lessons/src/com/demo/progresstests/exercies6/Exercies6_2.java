@@ -12,7 +12,7 @@ public class Exercies6_2 {
         System.out.println("grel amboxjakan tiv ..");
 
         int a = scanner.nextInt();
-        if (a == 0){
+        if (a == 0) {
             System.out.println("ZRO");
         }
         scanner.close();

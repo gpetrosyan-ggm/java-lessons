@@ -12,7 +12,7 @@ public class Exercies6_4 {
         System.out.println("drakan amboxjakan tiv ..");
 
         int a = scanner.nextInt();
-        if (a >= 100){
+        if (a >= 100) {
             System.out.println(a - 1);
         }
         scanner.close();

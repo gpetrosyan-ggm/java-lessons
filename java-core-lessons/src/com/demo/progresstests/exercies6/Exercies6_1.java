@@ -12,8 +12,8 @@ public class Exercies6_1 {
         System.out.println("kamayakan amboxjakan tiv ");
 
         int a = scanner.nextInt();
-        if (a>0){
-            System.out.println(a*2);
+        if (a > 0) {
+            System.out.println(a * 2);
         }
         scanner.close();
     }

@@ -22,5 +22,6 @@ public class Exercies6_6 {
         if (a100 % 2 == 0 && a10 % 2 == 0 && a1 % 2 == 0) {
             System.out.println("es inch gold tiva");
         }
+        scanner.close();
     }
 }

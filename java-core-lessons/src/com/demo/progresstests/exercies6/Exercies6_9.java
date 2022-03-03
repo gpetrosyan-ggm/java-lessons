@@ -27,6 +27,7 @@ public class Exercies6_9 {
         if ((b * b - 4 * a * c) >= 0) {
             System.out.println("qarakusi havasarum@ uni gone mek lucum");
         }
+        scanner.close();
     }
 }
 
