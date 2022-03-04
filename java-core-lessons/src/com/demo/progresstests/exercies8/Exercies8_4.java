@@ -5,8 +5,6 @@ package com.demo.progresstests.exercies8;
     • разницу между первым и вторым, - в случае если первое больше второго;
     • разницу между вторым и первым, - в случае если второе больше первого;
     • произведение введенных значений, - в случае если они равны.
-
-    // произведение - artadryalna te gumar@, stexi gracov artadryal@, xndir ka targmanum es gumarna talis
  */
 
 import java.util.Scanner;
