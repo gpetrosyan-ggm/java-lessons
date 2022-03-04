@@ -17,7 +17,7 @@ public class Exercies7_6 {
         System.out.println("atorneri qanak ");
 
         int b = scanner.nextInt();
-        if (a >= b) {
+        if (a <= b) {
             System.out.println("dzec ashakertner@ khajaxen dproc");
         } else {
             System.out.println("ancanq heravar das@ntaci");

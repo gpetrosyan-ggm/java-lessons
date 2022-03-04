@@ -18,7 +18,7 @@ public class Exercies7_7 {
         System.out.println("sexanneri qanak ");
 
         int b = scanner.nextInt();
-        if (a * 2 >= b) {
+        if (a * 2 <= b) {
             System.out.println("ashakertner@ khajaxen dproc");
         } else {
             System.out.println("ancanq heravar das@ntaci");
