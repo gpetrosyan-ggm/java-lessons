@@ -34,7 +34,7 @@ package com.demo.progresstests.exercies8;
    иначе - переменная х получает удвоенное значение переменной а.
 
    if (a != x){
-   a == x;
+   a = x;
    }else {
    x = 2 * a;
    }
