@@ -23,8 +23,6 @@ public class Exercies8_25 {
         a10 = a / 10 % 10;
         a1 = a % 10;
         if (a % 2 == 0) {
-
-
             if (a100 % 2 == 0) {
                 a100 = a100 + 1;
             } else {
@@ -42,8 +40,6 @@ public class Exercies8_25 {
             }
             System.out.println((a100 * 100 + a10 * 10 + a1));
         } else {
-
-
             if (a100 % 2 == 1) {
                 a100 = a100 + 1;
             } else {
