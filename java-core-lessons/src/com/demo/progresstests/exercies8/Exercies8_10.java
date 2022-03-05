@@ -14,10 +14,12 @@ public class Exercies8_10 {
         System.out.println("erknish drakan");
 
         int a = scanner.nextInt();
-        if (a / 10 > a % 10) {
+        int a10 = a / 10;
+        int a1 = a % 10;
+        if (a10 > a1) {
             System.out.println("tasnavor@ mec e miavoric");
         }
-        if (a / 10 < a % 10) {
+        if (a10 < a1) {
             System.out.println("miavor@ mec e tasnavoric");
         }
         scanner.close();

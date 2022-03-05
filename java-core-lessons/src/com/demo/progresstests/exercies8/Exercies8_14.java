@@ -15,7 +15,9 @@ public class Exercies8_14 {
         System.out.println("qaranish drakan");
 
         int a = scanner.nextInt();
-        if (a / 100 == a % 100) {
+        int a10 = a / 100;
+        int a1 = a % 100;
+        if (a10 == a1) {
             System.out.println("krknaki simetrik ");
         } else {
             System.out.println("chi hamapatasxanum");

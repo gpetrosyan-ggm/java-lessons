@@ -13,7 +13,9 @@ public class Exercies8_9 {
         System.out.println("erknish drakan tiv");
 
         int a = scanner.nextInt();
-        if (a / 10 > a % 10) {
+        int a10 = a / 10;
+        int a1 = a % 10;
+        if (a10 > a1) {
             System.out.println("tasnavor@ mec e mianishic");
         } else {
             System.out.println("tasnavor@ poqr e mianishic");

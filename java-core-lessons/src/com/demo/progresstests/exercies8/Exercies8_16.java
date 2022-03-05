@@ -14,10 +14,11 @@ public class Exercies8_16 {
         System.out.println("grel drakan tiv");
 
         int a = scanner.nextInt();
-        if (a % 10 >= 5) {
-            System.out.println(a / 10 * 10 + 10);
+        int a1 = a % 10;
+        if (a1 >= 5) {
+            System.out.println(a1 * 10 + 10);
         } else {
-            System.out.println(a / 10 * 10);
+            System.out.println(a1 * 10);
         }
         scanner.close();
     }

@@ -14,7 +14,9 @@ public class Exercies8_11 {
         System.out.println("eranish drakan tiv ");
 
         int a = scanner.nextInt();
-        if (a / 100 == a % 10) {
+        int a100 = a / 100;
+        int a1 = a % 10;
+        if (a100 == a1) {
             System.out.println("simetrik e");
         } else {
             System.out.println("voch simetrik");

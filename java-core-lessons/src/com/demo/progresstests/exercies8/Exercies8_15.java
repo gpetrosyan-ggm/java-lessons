@@ -13,7 +13,9 @@ public class Exercies8_15 {
         System.out.println("eranish");
 
         int a = scanner.nextInt();
-        if (a / 10 % 10 == 0 || a % 10 == 0) {
+        int a10 = a / 10 % 10;
+        int a1 = a % 10;
+        if (a10 == 0 || a1 == 0) {
             System.out.println("zro ka");
         } else {
             System.out.println("chka zro");

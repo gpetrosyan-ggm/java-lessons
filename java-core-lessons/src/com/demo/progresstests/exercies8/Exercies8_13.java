@@ -15,12 +15,9 @@ public class Exercies8_13 {
         System.out.println("eranish drakan");
 
         int a = scanner.nextInt();
-        int a100;
-        int a10;
-        int a1;
-        a100 = a / 100 % 2;
-        a10 = (a / 10 % 10) % 2;
-        a1 = (a % 10) % 2;
+        int a100 = a / 100 % 2;
+        int a10 = (a / 10 % 10) % 2;
+        int a1 = (a % 10) % 2;
         if (a100 == 0 || a10 == 0 || a1 == 0) {
             System.out.println("drakan tveri qanak@ " + (3 - a100 - a10 - a1));
         } else {

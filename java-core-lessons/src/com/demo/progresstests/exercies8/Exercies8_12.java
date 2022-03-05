@@ -16,9 +16,11 @@ public class Exercies8_12 {
         System.out.println("eranish tiv");
 
         int a = scanner.nextInt();
-        int a1;
-        a1 = a / 100 + a / 10 % 10 + a % 10;
-        if (a % 2 == 0 && a1 % 2 == 0) {
+        int a100 = a / 100;
+        int a10 = a / 10 % 10;
+        int a1 = a % 10;
+        int a2 = a100 + a10 + a1;
+        if (a % 2 == 0 && a2 % 2 == 0) {
             System.out.println("krknaki zuyg");
         } else {
             System.out.println("tiv@ krknaki zuyg che");

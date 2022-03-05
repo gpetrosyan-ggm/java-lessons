@@ -15,10 +15,8 @@ public class Exercies8_21 {
         System.out.println("grel drakan minjev vecanish tiv");
 
         int a = scanner.nextInt();
-        int a1;
-        int a2;
-        a1 = (a / 100 % 10) * 10; //qaranish tiv
-        a2 = (a / 1000 % 10) * 10;//hnganish tiv
+        int a1 = (a / 100 % 10) * 10; //qaranish tiv
+        int a2 = (a / 1000 % 10) * 10;//hnganish tiv
         if (a > 0 && a < 10) {
             System.out.println("simetrik e");
         } else if (a >= 10 && a <= 99 && (a / 10 == a % 10)) {

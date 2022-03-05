@@ -16,10 +16,20 @@ public class Exercies8_8 {
         System.out.println("erknish drakan tiv ");
 
         int b = scanner.nextInt();
-        if (a == b || (a % 10 == b / 10 && a / 10 == b % 10)) {
-            System.out.println("nranq kazmvac en mievnuyn tveric ");
+        int a10 = a / 10;
+        int a1 = a % 10;
+        int b10 = b / 10;
+        int b1 = b % 10;
+        if (a10 == a1) {
+            System.out.println("1-in tiv@ kazmvac e mievnuyn tveric ");
         } else {
             System.out.println("kazmvac chen mievnuyn tveric");
+        }
+        if (b10 == b1) {
+            System.out.println("2-rd tiv@ kazmvac e mievnuyn tveric ");
+        } else {
+            System.out.println(" kazmvac chen mievnuyn tveric");
+
         }
         scanner.close();
     }

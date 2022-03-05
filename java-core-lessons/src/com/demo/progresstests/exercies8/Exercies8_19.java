@@ -14,12 +14,9 @@ public class Exercies8_19 {
         System.out.println("eranish drakan");
 
         int a = scanner.nextInt();
-        int a100;
-        int a10;
-        int a1;
-        a100 = a / 100;
-        a10 = a / 10 % 10;
-        a1 = a % 10;
+        int a100 = a / 100;
+        int a10 = a / 10 % 10;
+        int a1 = a % 10;
         if (a > 500) {
             System.out.println((a10 * 10 + a1 * 100 + a100));
         } else {
