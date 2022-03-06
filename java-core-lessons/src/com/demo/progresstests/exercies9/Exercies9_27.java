@@ -30,7 +30,7 @@ public class Exercies9_27 {
             } else if (a > 1800 && a <= 1900) {
                 System.out.println(a + " - 19 dar");
 
-            } else if (a > 1900 && a <= 2000) {
+            } else {
                 System.out.println(a + " - 20 dar");
             }
         } else {

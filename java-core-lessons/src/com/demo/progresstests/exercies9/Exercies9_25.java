@@ -24,13 +24,13 @@ public class Exercies9_25 {
         int x = 0;
 
         if (a == b1) {
-            x = x + 1;
+            x++;
         }
         if (a == b2) {
-            x = x + 1;
+            x++;
         }
         if (a == b3) {
-            x = x + 1;
+            x++;
         }
         System.out.println("X = " + x);
 

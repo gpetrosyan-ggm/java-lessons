@@ -34,8 +34,8 @@ public class Exercies9_26 {
             System.out.println("miavori vra bajanvum e anmnacord");
 
         }
-        if (a % a100 != 0 && a % a10 != 0 && a % a1 != 0) {
-            System.out.println( "nisheric voch meki vra chi bajanvum anmnacord");
+        if (a10 != 0 && a1 != 0 && a % a100 != 0 && a % a10 != 0 && a % a1 != 0) {
+            System.out.println("nisheric voch meki vra chi bajanvum anmnacord");
         }
         scanner.close();
     }

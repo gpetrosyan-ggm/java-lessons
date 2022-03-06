@@ -31,7 +31,7 @@ public class Exercies9_15 {
             } else if (a > 18 && a <= 22) {
                 System.out.println("ereko");
 
-            } else if ((a > 22 && a <= 24) || (a >= 0 && a < 6)) {
+            } else {
                 System.out.println("gisher");
             }
 

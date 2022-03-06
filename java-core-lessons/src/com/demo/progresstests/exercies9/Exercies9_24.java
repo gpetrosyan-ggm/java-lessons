@@ -22,13 +22,7 @@ public class Exercies9_24 {
         int b2 = (b / 10) % 100;
         int b3 = b / 100;
 
-        if (a == b1) {
-            System.out.println("nerqin e");
-
-        } else if (a == b2) {
-            System.out.println("nerqin e");
-
-        } else if (a == b3) {
+        if (a == b1 || a == b2 || a == b3) {
             System.out.println("nerqin e");
 
         } else {

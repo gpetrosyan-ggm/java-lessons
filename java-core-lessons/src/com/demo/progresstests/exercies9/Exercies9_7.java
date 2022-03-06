@@ -26,20 +26,16 @@ public class Exercies9_7 {
 
             if (a > 90 || b > 90 || c > 90) {
                 System.out.println("butankyun erankyuni");
-
-            } else if (a == 90 || b == 90 || c == 90) {
+            }
+            if (a == 90 || b == 90 || c == 90) {
                 System.out.println("uxxankyun erankyun");
-
-            } else if ((a == b || a == c || b == c) && a != 60) {
-                System.out.println("havasarasrun erankyun");
-
-            } else if (a < 90 && b < 90 && c < 90 && a != b && b != c) {
+            }
+            if (a < 90 && b < 90 && c < 90) {
                 System.out.println("surankyun erankyun");
-
-            } else if (a == b && a == c && b == c) {
+            }
+            if (a == b && a == c && b == c) {
                 System.out.println("havasarakoxm erankyun");
             }
-
         } else {
             System.out.println("@ntrvac tver@ chen karox handisanal erankyan ankyunner");
         }

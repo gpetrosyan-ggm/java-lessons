@@ -26,15 +26,15 @@ public class Exercies9_13 {
 
             } else if (a == 3) {
                 System.out.println("bavarar");
+
             } else if (a == 4) {
                 System.out.println("lav");
 
-            } else if (a == 5) {
+            } else {
                 System.out.println("gerazanc");
-
             }
         } else {
-            System.out.println("ver vaxtov tenc gnahatakan chkar");
+            System.out.println("mer vaxtov tenc gnahatakan chkar");
         }
         scanner.close();
     }

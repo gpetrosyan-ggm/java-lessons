@@ -17,17 +17,20 @@ public class Exercies9_9 {
         System.out.println("eli tiv");
         int b = scanner.nextInt();
 
-        if (a == 0 && b !=0){
-            System.out.println("havasarum@ armat chuni");
+        if (a == 0) {
+            if (b != 0) {
+                System.out.println("havasarum@ armat chuni");
 
-        }else if (a==0 && b==0){
-            System.out.println(" x - patkanum e anverj bazmutyan@ ");
+            } else {
+                System.out.println(" x - patkanum e anverj bazmutyan@ ");
 
-        }else {
-            System.out.println("X = " + (-b/a));
+            }
+        } else {
+            System.out.println("X = " + (-b / a));
         }
         scanner.close();
+
     }
 }
-     // x-@ verevum chem veragrel u haytararel, qani vor ete a = 0 tanq error ktar
-     // bayc che vor a=0 u b =0, x-@ patkanum e ansahmanutyunic plyus ansahmanutyun
+// x-@ verevum chem veragrel u haytararel, qani vor ete a = 0 tanq error ktar
+// bayc che vor a=0 u b =0, x-@ patkanum e minus ansahmanutyunic plyus ansahmanutyun

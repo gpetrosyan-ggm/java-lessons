@@ -27,7 +27,7 @@ public class Exercies9_14 {
             } else if (a == 6 || a == 7 || a == 8) {
                 System.out.println("amar");
 
-            } else if (a == 9 || a == 10 || a == 11) {
+            } else {
                 System.out.println("ashun");
             }
         } else {
