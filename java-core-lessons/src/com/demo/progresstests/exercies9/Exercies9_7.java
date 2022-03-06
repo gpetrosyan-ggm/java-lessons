@@ -29,8 +29,7 @@ public class Exercies9_7 {
             }
             if (a == 90 || b == 90 || c == 90) {
                 System.out.println("uxxankyun erankyun");
-            }
-            if (a < 90 && b < 90 && c < 90) {
+            }else {
                 System.out.println("surankyun erankyun");
             }
             if (a == b && a == c && b == c) {
