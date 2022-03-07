@@ -15,23 +15,20 @@ public class Exercies10_6 {
         int a1 = 0;
         int a2 = 0;
         int a3 = 0;
-        int a = a1 + a2 + a3;   // haytararel u veragrel em, bac ete nergevum a em dnum 0 e stanum
-        for (int i = 0; i < 3; i++) {
-            if (i == 0) {
-                a1 = (int) (Math.random() * (min - max + 1) + max);
-            } else if (i == 1) {
-                a2 = (int) (Math.random() * (min - max + 1) + max);
-            } else {
-                a3 = (int) (Math.random() * (min - max + 1) + max);
-            }
-        }
+        int a;
+        // a = a1 + a2 + a3;   // haytararel u veragrel em, bac ete nergevum a em dnum 0 e stanum
+        a1 = (int) (Math.random() * (min - max + 1) + max);
+        a2 = (int) (Math.random() * (min - max + 1) + max);
+        a3 = (int) (Math.random() * (min - max + 1) + max);
+
         System.out.println(a1 + " " + a2 + " " + a3);
+        a = a1 + a2 + a3;
         if (a < 21) {
-            System.out.println((a1 + a2 + a3) + " недобор ");
+            System.out.println(a + " недобор ");
         } else if (a == 21) {
-            System.out.println((a1 + a2 + a3) + " «очко»");
+            System.out.println(a + " «очко»");
         } else {
-            System.out.println((a1 + a2 + a3) + " перебор");
+            System.out.println(a + " перебор");
         }
     }
 

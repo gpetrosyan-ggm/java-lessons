@@ -7,45 +7,32 @@ package com.demo.progresstests.exercies10;
 
 public class Exercies10_4 {
     public static void main(String[] args) {
-        int min = 0;
-        int max = 100;
+        int min = 10;
+        int max = 99;
         int a1 = 0;
         int a2 = 0;
         int b1 = 0;
         int b2 = 0;
         int b3 = 0;
 
-        for (int i = 0; i < 2; i++) {
-            if (i == 0) {
-                a1 = (int) (Math.random() * (max - min + 1) + min);
+        a1 = (int) (Math.random() * (max - min + 1) + min);
+        a2 = (int) (Math.random() * (max - min + 1) + min);
 
-            } else {
-                a2 = (int) (Math.random() * (max - min + 1) + min);
-                if (a1 != a2) {
-                    for (int j = 0; j < 3; j++) {
-                        if (j == 0 && a1 > a2) {
-                            b1 = (int) (Math.random() * (a1 - a2 + 1) + a2);
-                        } else if (j == 0 && a1 < a2) {
-                            b1 = (int) (Math.random() * (a2 - a1 + 1) + a1);
-                        }
-                        if (j == 1 && a1 > a2) {
-                            b2 = (int) (Math.random() * (a1 - a2 + 1) + a2);
-                        } else if (j == 1 && a1 < a2) {
-                            b2 = (int) (Math.random() * (a2 - a1 + 1) + a1);
-                        } else {
-                            if (j == 2 && a1 > a2) {
-                                b3 = (int) (Math.random() * (a1 - a2 + 1) + a2);
-                            } else if (j == 2 && a1 < a2) {
-                                b3 = (int) (Math.random() * (a2 - a1 + 1) + a1);
-                            }
-                        }
-                    }
+        if (a1 > a2) {
 
+            b1 = (int) (Math.random() * (a1 - a2 + 1) + a2);
+            b2 = (int) (Math.random() * (a1 - a2 + 1) + a2);
+            b3 = (int) (Math.random() * (a1 - a2 + 1) + a2);
 
-                } else {
-                    System.out.println("chkpav krkin porci");
-                }
-            }
+        } else if (a1 < a2) {
+
+            b1 = (int) (Math.random() * (a2 - a1 + 1) + a1);
+            b2 = (int) (Math.random() * (a2 - a1 + 1) + a1);
+            b3 = (int) (Math.random() * (a2 - a1 + 1) + a1);
+        } else {
+
+            System.out.println("chkpav");
+
         }
         System.out.println(a1 + " " + a2);
         System.out.println(b1 + " " + b2 + " " + b3);

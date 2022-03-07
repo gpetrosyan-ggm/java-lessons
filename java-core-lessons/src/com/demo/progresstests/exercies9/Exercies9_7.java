@@ -32,7 +32,7 @@ public class Exercies9_7 {
             }else {
                 System.out.println("surankyun erankyun");
             }
-            if (a == b && a == c && b == c) {
+            if (a == b && a == c) {
                 System.out.println("havasarakoxm erankyun");
             }
         } else {

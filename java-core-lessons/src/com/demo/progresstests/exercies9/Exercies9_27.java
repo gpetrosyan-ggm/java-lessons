@@ -18,16 +18,16 @@ public class Exercies9_27 {
         int a = scanner.nextInt();
 
         if (a > 1500 && a <= 2000) {
-            if (a > 1500 && a <= 1600) {
+            if (a <= 1600) {
                 System.out.println(a + " - 16 dar");
 
-            } else if (a > 1600 && a <= 1700) {
+            } else if (a <= 1700) {
                 System.out.println(a + " - 17 dar");
 
-            } else if (a > 1700 && a <= 1800) {
+            } else if (a <= 1800) {
                 System.out.println(a + " - 18 dar");
 
-            } else if (a > 1800 && a <= 1900) {
+            } else if (a <= 1900) {
                 System.out.println(a + " - 19 dar");
 
             } else {
