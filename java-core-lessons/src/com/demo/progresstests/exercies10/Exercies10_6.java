@@ -7,7 +7,6 @@ package com.demo.progresstests.exercies10;
 числа - в каких пределах?) и определяет,
 какой из вариантов (недобор, перебор, «очко») реализовался.
  */
-// es ochko xaxacac chkam, im imanalov 21 petqa havaqes, dra hamar em 21 grel
 public class Exercies10_6 {
     public static void main(String[] args) {
         int min = 2;
