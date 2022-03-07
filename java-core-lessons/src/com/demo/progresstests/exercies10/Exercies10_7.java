@@ -12,16 +12,11 @@ public class Exercies10_7 {
     public static void main(String[] args) {
         int min = 2;
         int max = 11;
-        int a1 = 0;
-        int a2 = 0;
-        int a3 = 0;
-        int a4 = 0;
         int a;
-        //int a= a1 +a2+a3+a4;
 
-        a1 = (int) (Math.random() * (min - max + 1) + max);
-        a2 = (int) (Math.random() * (min - max + 1) + max);
-        a3 = (int) (Math.random() * (min - max + 1) + max);
+        int a1 = (int) (Math.random() * (min - max + 1) + max);
+        int a2 = (int) (Math.random() * (min - max + 1) + max);
+        int a3 = (int) (Math.random() * (min - max + 1) + max);
 
         System.out.println(a1 + " " + a2 + " " + a3);
         a = a1 + a2 + a3;
@@ -38,7 +33,7 @@ public class Exercies10_7 {
         int b = scanner.nextInt();
         if (b == 1) {
             System.out.println("dzer 4-rd qart@");
-            a4 = (int) (Math.random() * (min - max + 1) + max);
+            int a4 = (int) (Math.random() * (min - max + 1) + max);
             System.out.println(a4);
             a = a1 + a2 + a3 + a4;
             if (a < 21) {

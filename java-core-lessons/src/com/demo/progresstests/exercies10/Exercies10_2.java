@@ -10,11 +10,9 @@ public class Exercies10_2 {
     public static void main(String[] args) {
         int min = -9;
         int max = 9;
-        int a1 = 0;
-        int a2 = 0;
 
-        a1 = (int) (Math.random() * (max - min + 1) + min);
-        a2 = (int) (Math.random() * (max - min + 1) + min);
+        int a1 = (int) (Math.random() * (max - min + 1) + min);
+        int a2 = (int) (Math.random() * (max - min + 1) + min);
         System.out.println(a1 + " " + a2);
 
         if (a1 > a2) {

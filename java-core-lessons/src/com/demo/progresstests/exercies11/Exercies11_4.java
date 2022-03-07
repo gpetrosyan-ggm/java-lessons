@@ -14,9 +14,9 @@ public class Exercies11_4 {
         for (int i = 0; i < 15; i++) {
             a = (int) (Math.random() * (min - max + 1) + max);
             if (a < 0) {
-                System.out.println(a + "?");
+                System.out.print(" " + a + "?");
             } else {
-                System.out.println(a);
+                System.out.print(" " + a);
             }
         }
 

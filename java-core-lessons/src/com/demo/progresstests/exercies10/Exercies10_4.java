@@ -9,32 +9,26 @@ public class Exercies10_4 {
     public static void main(String[] args) {
         int min = 10;
         int max = 99;
-        int a1 = 0;
-        int a2 = 0;
-        int b1 = 0;
-        int b2 = 0;
-        int b3 = 0;
 
-        a1 = (int) (Math.random() * (max - min + 1) + min);
-        a2 = (int) (Math.random() * (max - min + 1) + min);
+        int a1 = (int) (Math.random() * (max - min + 1) + min);
+        int a2 = (int) (Math.random() * (max - min + 1) + min);
+        System.out.println(a1 + " " + a2);
 
         if (a1 > a2) {
-
-            b1 = (int) (Math.random() * (a1 - a2 + 1) + a2);
-            b2 = (int) (Math.random() * (a1 - a2 + 1) + a2);
-            b3 = (int) (Math.random() * (a1 - a2 + 1) + a2);
+            for(int i = 0;i<3; i++){
+               int b1 = (int) (Math.random() * (a1 - a2 + 1) + a2);
+                System.out.println(b1 );
+            }
 
         } else if (a1 < a2) {
-
-            b1 = (int) (Math.random() * (a2 - a1 + 1) + a1);
-            b2 = (int) (Math.random() * (a2 - a1 + 1) + a1);
-            b3 = (int) (Math.random() * (a2 - a1 + 1) + a1);
+            for(int j = 0;j<3;j++){
+               int b2 = (int) (Math.random() * (a1 - a2 + 1) + a2);
+                System.out.println( b2 );
+            }
         } else {
 
             System.out.println("chkpav");
 
         }
-        System.out.println(a1 + " " + a2);
-        System.out.println(b1 + " " + b2 + " " + b3);
     }
 }

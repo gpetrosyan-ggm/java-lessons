@@ -19,7 +19,7 @@ public class Exercies11_6 {
                 System.out.print("#" + a + "#");
 
             } else {
-                System.out.print(a);
+                System.out.print(" " + a);
             }
 
         }
