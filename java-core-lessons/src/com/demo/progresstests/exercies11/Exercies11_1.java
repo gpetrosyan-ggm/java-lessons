@@ -4,7 +4,7 @@ package com.demo.progresstests.exercies11;
 
 1. Цикл выполняется 17 раз, начальное значение переменной-счетчика равно 12.
 
-if (int i = 12; i < 29; i++);   // chisht@ vorna miangamic gres 28 te i<12+17; ete haves chunes hashves
+if (int i = 12; i < 29; i++);   // chisht@ vorna miangamic gres 28 te i<12+17; ete haves chunes hashves: miangamic gres
 
 2. Цикл выполняется 7 раз, конечное значение переменной-счетчика равно 45.
 

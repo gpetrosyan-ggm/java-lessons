@@ -18,7 +18,7 @@ public class Exercies11_19 {
 
         int a1 = a % 10;
         for (int i = 100; i <= 999; i++) {
-            int i1 = i % 10;      // stex arjer i1 haytararel u veragrel, te miangamic if(a1==i%10)
+            int i1 = i % 10;      // stex arjer i1 haytararel u veragrel, te miangamic if(a1==i%10) : karas miangamic
             if (a1 == i1) {
                 System.out.println(i);
             }

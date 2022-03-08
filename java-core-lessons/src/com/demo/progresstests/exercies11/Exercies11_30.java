@@ -20,7 +20,7 @@ public class Exercies11_30 {
             int i11 = i % 100;
             if (i11 == a) {
                 System.out.print(i + " ");
-            }   // kareli er aveli karj lucum tal te fori hamar orinak
-        }       // for (int i = 1; i <10; i++)
-    }           //System.out.print((i*100 +a) + " " )
-}               // vorna aveli chisht
+            }
+        }
+    }
+}

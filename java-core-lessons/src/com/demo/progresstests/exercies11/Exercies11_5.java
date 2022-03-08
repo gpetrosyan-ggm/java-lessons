@@ -13,7 +13,7 @@ public class Exercies11_5 {
         for (int i = 0; i < 20; i++) {
             int a = (int) (Math.random() * (min - max + 1) + max);
             if (a % 3 == 0) {
-                System.out.print("# " + a+ " ");
+                System.out.print("#" + a+ " ");
             } else {
                 System.out.print(a + "  ");
             }
