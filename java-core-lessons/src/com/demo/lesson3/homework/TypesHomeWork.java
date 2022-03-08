@@ -16,6 +16,7 @@ public class TypesHomeWork {
         fibonacciSequence(20);
         typeExample();
         scopeAndLifetimeExample();
+        factorial(6);
     }
 
     /**
