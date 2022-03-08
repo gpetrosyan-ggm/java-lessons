@@ -1,5 +1,7 @@
-10.4 Կարաս ավելի կարճ էլ գրել։ Են չեր ինչ նկատի ունեի, բայց թող մնա սենց։
+10.4 Կարաս ավելի կարճ էլ գրել։ Են չեր ինչ նկատի ունեի, բայց թող մնա սենց։ // Sensey aveli em krjatel, kommentnerov em sarqel,
+// kap chuni arajin@ meca 2-rdic te hakarak, meka nuyn tiruytuma eli arjeqner@ talis, 20 angamic avel run em arel
 
 10.7 Մի գործողությունը երկու անգամ ես անում։ Կարիք չկա արդյունքները տպել քանի դեռ քաղացողը 4֊րդ քաղաքարտ չի ուզել։
+// dzim sensey
 
-10.9 Սխալ կա, ավելորդ կոդ կա։ (միամիտ բացթողում երևի)։ Դզել։
+10.9 Սխալ կա, ավելորդ կոդ կա։ (միամիտ բացթողում երևի)։ Դզել։ // krjatel em amena maximumov, bactoxums el em uxxel
