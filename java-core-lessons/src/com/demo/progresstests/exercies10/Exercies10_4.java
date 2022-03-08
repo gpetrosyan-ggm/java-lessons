@@ -15,21 +15,9 @@ public class Exercies10_4 {
         int a2 = (int) (Math.random() * (max - min + 1) + min);
         System.out.println(a1 + " " + a2);
 
-       // if (a1 > a2) {
-            for (int i = 0; i < 3; i++) {
-                b = (int) (Math.random() * (a1 - a2 + 1) + a2);
-                System.out.println(b);
-         //   }
-
-       // } else if (a1 < a2) {
-         //   for (int i = 0; i < 3; i++) {
-         //       b = (int) (Math.random() * (a2 - a1 + 1) + a1);
-         //       System.out.println(b);
-            }
-       // } else {
-
-        //    System.out.println("chkpav");
-
-       // }
+        for (int i = 0; i < 3; i++) {
+            b = (int) (Math.random() * (a1 - a2 + 1) + a2);
+            System.out.println(b);
+        }
     }
 }
