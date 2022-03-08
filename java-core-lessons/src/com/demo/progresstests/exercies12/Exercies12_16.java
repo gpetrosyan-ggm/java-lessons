@@ -12,13 +12,18 @@ public class Exercies12_16 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("grel tiv");
         int a = scanner.nextInt();
-        for (int i = 2; i<a;i++){
-            if (a%i==0){
-                System.out.println(" a " +i);
-            }else {
+        boolean parze = true;
 
+        for (int i = 2; i < a; i++) {
+            if (a % i == 0) {
+                System.out.println(a + " - parz tiv chi, bajanvuma - " + i);
+                parze = false;
+                break;
             }
+        }
 
+        if (parze) {
+            System.out.println(a + " - parz tiv e");
         }
 
     }
