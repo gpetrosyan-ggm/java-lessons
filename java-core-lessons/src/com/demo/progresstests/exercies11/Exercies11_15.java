@@ -18,7 +18,8 @@ public class Exercies11_15 {
         int x = scanner.nextInt();
 
         System.out.print("START ");
-        for (int i = 7; i <= 4 * (x + 1); i += 4) {
+        int x1 = 4 * (x + 1);
+        for (int i = 7; i <= x1; i += 4) {
             System.out.print(" " + i);
         }
         System.out.print(" Finish");

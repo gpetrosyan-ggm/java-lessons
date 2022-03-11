@@ -8,12 +8,13 @@ package com.demo.progresstests.exercies11;
 
 public class Exercies11_7 {
     public static void main(String[] args) {
-        System.out.print("START ");
+        System.out.println("START ");
 
         for (int i = 10; i < 100; i += 2) {
             System.out.print(i + " ");
         }
-        System.out.print(" FINISH");
+        System.out.println();
+        System.out.println(" FINISH");
     }
 
 }

@@ -5,6 +5,7 @@ package com.demo.progresstests.exercies11;
 Если да, - класс должен вывести на экран А последовательных чисел,начиная с числа В,
 если нет, - класс должен вывести на экран В последовательных чисел, начиная с числа А.
  */
+//stex ete asuma stugi ardyoq a<b; partadir petqa if-ov stugum anem te tenarniov karam grem?
 
 import java.util.Scanner;
 
@@ -17,15 +18,20 @@ public class Exercies11_36 {
 
         System.out.println("tiv");
         int b = scanner.nextInt();
-        if (a < b) {
-            for (int i = b; i >= a; b--) {
-                System.out.println(i + " ");
-            }
-        } else {
-            for (int i = a; i >= b; a--) {
-                System.out.println(i + " ");
-            }
-        }
+
+       if (a<b){
+           for (int i = b; i>a; i--){
+               b--;
+               System.out.println(b);
+
+           }
+       }else if (a>b){
+           for (int i = a; i>b; i--){
+               a--;
+               System.out.println(a);
+
+           }
+       }
 
     }
 }

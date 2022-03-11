@@ -17,21 +17,13 @@ public class Exercies12_18 {
 
         System.out.println("tiv");
         int b = scanner.nextInt();
-        if (a > b) {
-            for (int i = 2; i <= a; i++) {
-                if (a % i == 0 && b % i == 0) {
-                    c++;
-                }
+        int k = a > b ? b : a;
 
+        for (int i = 2; i <= k; i++) {
+            if (a % i == 0 && b % i == 0) {
+                c++;
             }
-            System.out.println("" + c);
-        } else {
-            for (int i = 2; i <= b; i++) {
-                if (a % i == 0 && b % i == 0) {
-                    c++;
-                }
-            }
-            System.out.println("" + c);
         }
+        System.out.println("" + c);
     }
 }

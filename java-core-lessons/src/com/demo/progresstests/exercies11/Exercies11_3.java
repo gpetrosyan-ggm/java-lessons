@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Exercies11_3 {
     public static void main(String[] args) {
-        int c;
+        int c = 0;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("tiv");
@@ -17,17 +17,14 @@ public class Exercies11_3 {
         System.out.println("tiv ");
         int b = scanner.nextInt();
 
-        if (a > b) {
-            for (int i = a; i < (20 + a); i++) {
+        int k = a > b ? b : a;
+        int l = a+20;
+            for (int i = a; i < l; i++) {
                 c = (int) (Math.random() * (a - b + 1) + b);
                 System.out.println(c);
-            }
-        } else {
-            for (int i = b; i < (20 + b); i++) {
-                c = (int) (Math.random() * (b - a + 1) + a);
-                System.out.println(c);
-            }
+
         }
+
         scanner.close();
 
     }

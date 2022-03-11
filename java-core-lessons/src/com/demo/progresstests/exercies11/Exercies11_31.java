@@ -18,7 +18,8 @@ public class Exercies11_31 {
         int a = scanner.nextInt();
 
         for (int i = 10; i <= 99; i++) {
-            System.out.print((i * 100 + a) + " ");
+            int b = i * 100 + a;
+            System.out.print(b + " ");
         }
     }
 }

@@ -21,10 +21,10 @@ public class Exercies12_4 {
             System.out.println("tiv");
             a = scanner.nextInt();
 
-            if (a < c) {
+            if (a > c) {
                 b++;
             }
         }
-        System.out.println("ajord@ naxordic aveli mec e " + b + "-ov");
+        System.out.println("hajord@ naxordic aveli mec e " + b + "-ov");
     }
 }

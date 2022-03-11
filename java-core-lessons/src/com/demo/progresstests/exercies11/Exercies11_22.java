@@ -13,7 +13,9 @@ public class Exercies11_22 {
         System.out.println("amboxj tiv");
         int a = scanner.nextInt();
 
-        for (int i = a + 1; i < (a + 19); i++) {
+        int b = a + 19;
+        int c = a+1;
+        for (int i = c; i < b; i++) {
             System.out.println(i);
         }
     }

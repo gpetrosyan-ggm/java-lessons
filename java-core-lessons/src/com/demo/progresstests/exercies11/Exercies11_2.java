@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class Exercies11_2 {
     public static void main(String[] args) {
         int c;
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("kamayakan tiv");
@@ -24,7 +25,8 @@ public class Exercies11_2 {
         System.out.println("grel tiv naxordic mec");
         int b = scanner.nextInt();
 
-        for (int i = a; i < (20 + a); i++) {
+        int d = a + 20;
+        for (int i = a; i < d; i++) {
             c = (int) (Math.random() * (a - b + 1) + b);
             System.out.println(c);
 

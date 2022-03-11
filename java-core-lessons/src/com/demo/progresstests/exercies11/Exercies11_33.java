@@ -18,11 +18,13 @@ public class Exercies11_33 {
 
         System.out.println("naxordic aveli poqr tiv");
         int m = scanner.nextInt();
+        int a = m + 1;
+        for (int i = a; i <= n; i++) {
 
+            m = m + i;
+        }
 
-       int a = (m + n) * (n - m + 1) / 2;
-       System.out.println(a + " ");
-            // es xndir@ menak senc kareca lucem, banadzev@ grim u fsyo
+        System.out.println(m + " ");
     }
 }
 

@@ -10,7 +10,7 @@ public class Exercies11_27 {
         for (int i = 10; i <= 99; i++) {
             int i10 = i / 10;
             int i1 = i % 10;
-            if (i10 % 3 == 0 && i1 % 3 == 0 && i1 != 0) {
+            if (i1 != 0 && i10 % 3 == 0 && i1 % 3 == 0) {
                 System.out.print(" " + i);
             }
         }

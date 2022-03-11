@@ -16,10 +16,11 @@ public class Exercies11_35 {
         int a = scanner.nextInt();
 
         for (int i = 0; i < a; i++) {
-            System.out.println("drakan u bacasakan tiv tiv");
+            System.out.println("drakan u bacasakan tiv");
             int b = scanner.nextInt();
             if (b > 0) {
-                System.out.println(b + " ");
+              int  b1 = b*b;
+                System.out.println(b1 + " ");
             } else {
                 System.out.println("bac toxum");
 

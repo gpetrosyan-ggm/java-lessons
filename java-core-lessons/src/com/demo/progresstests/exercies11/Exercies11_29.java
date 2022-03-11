@@ -12,8 +12,9 @@ public class Exercies11_29 {
 
             int i100 = i / 100;
             int i11 = i % 100;
+            int i10 = i / 10 % 10;
 
-            if (i11 % i100 == 0 && i11 / i100 >= 10) {
+            if (i10 != 0 && i11 % i100 == 0 && i11 / i100 >= 10) {
                 System.out.print(i + " ");
             }
         }

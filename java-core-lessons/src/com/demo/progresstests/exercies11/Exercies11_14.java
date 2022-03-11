@@ -20,7 +20,9 @@ public class Exercies11_14 {
         int x = scanner.nextInt();
 
         System.out.print("START ");
-        for (int i = (x - 10); i > (x - 10 - 17 * 6); i -= 6) {
+        int i = x - 10;
+        int x1 = x - 10 - 17 * 6;
+        for (; i > x1; i -= 6) {
             System.out.print(" " + i);
 
         }

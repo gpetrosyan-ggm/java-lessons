@@ -14,11 +14,13 @@ public class Exercies12_6 {
 
         System.out.println("tiv");
         int a = scanner.nextInt();
-        for (int i = 1; i <= a; i *= 2) {
-            c++;
+        for (int i = 10; i <= a; i++) {
+            if (a % i == 0 && i < 100) {
+                c++;
+            }
 
         }
         System.out.println(c);
-    }
 
+    }
 }

@@ -16,11 +16,10 @@ public class Exercies11_30 {
         System.out.println("drakan erknish tiv");
         int a = scanner.nextInt();
 
-        for (int i = 100; i <= 999; i++) {
-            int i11 = i % 100;
-            if (i11 == a) {
-                System.out.print(i + " ");
-            }
+        for (int i = 1; i < 10; i++) {
+            int c = i * 100 + a;
+            System.out.print(c + " ");
         }
     }
 }
+

@@ -9,7 +9,7 @@ package com.demo.progresstests.exercies12;
 public class Exercies12_12 {
     public static void main(String[] args) {
         int min = 1;
-        int max = 13;  // amis@ 13 em grum, sax motavor tver em stanum, ete poxem 12, dzmer@ shat qicha stacvum
+        int max = 12;  // amis@ 13 em grum, sax motavor tver em stanum, ete poxem 12, dzmer@ shat qicha stacvum
         int dzmer = 0;
         int garun = 0;
         int amar = 0;
@@ -18,7 +18,7 @@ public class Exercies12_12 {
         for (int i = 1; i <= 1234; i++) {
 
             int a = (int) (Math.random() * (max - min + 1) + min);
-            if (a < 2 || a == 12 || a == 13) {
+            if (a < 2 || a == 12) {
                 dzmer++;
 
             } else if (a <= 5) {

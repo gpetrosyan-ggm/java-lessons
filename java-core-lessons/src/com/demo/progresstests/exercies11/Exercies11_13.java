@@ -20,8 +20,9 @@ public class Exercies11_13 {
         System.out.println("drakan tiv");
         int x = scanner.nextInt();
         System.out.print("START ");
-
-        for (int i = (x + 1); i < (x + 18); i++) {
+        int i = x + 1;
+        int x1 = x + 18;
+        for (; i < x1; i++) {
             System.out.print(" " + i);
         }
         System.out.print(" Finish");
