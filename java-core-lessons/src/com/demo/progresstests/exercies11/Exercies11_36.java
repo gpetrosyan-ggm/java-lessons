@@ -6,6 +6,7 @@ package com.demo.progresstests.exercies11;
 если нет, - класс должен вывести на экран В последовательных чисел, начиная с числа А.
  */
 //stex ete asuma stugi ardyoq a<b; partadir petqa if-ov stugum anem te tenarniov karam grem?
+// if te tenari, misht xndrica kaxvac.
 
 import java.util.Scanner;
 

@@ -1,58 +1,27 @@
-11.2 Դզել։ dzeci
+11.2 Դզել։
 
-11.3 Դզել։dzeci
+11.3 Դզել։
 
-11.7 в отдельной строке։ Դզել dzeci
+11.13 int i = x + 1; կարա for֊ի ներսում լինի։
 
-11.13 Դզել։ dzeci
+11.14 int i = x - 10; կարա for֊ի ներսում լինի։
 
-11.14 Դզել։ dzeci
+11.18 Դզել։
 
-11.15 Դզել։ dzeci
+11.22 int c = a+1; կարա for֊ի ներսում լինի։
 
-11.17 Դզել։ dzim erekva bacatracovt
+11.23 int c = a - 6; կարա for֊ի ներսում լինի։
 
-11.18 Դզել։ dzeci
+11.31 например, 23 для 1523, или 6237. 6237 - չկա։ Դզել։
 
-11.22 Դզել։dzeci
+11.32 Դզել։
 
-11.23 Դզել։dzeci
+11.33 Դզել։
 
-11.26 Չեմ հասկանում ինչ ես գրել, կամ խի ես մինուս դրել
-// xndri paymann ena vor ham drakan ham el bacasakan eranish tveri ... ev ayln, vor 2 hat kod chgreyi, miangamic
-//menak drakani hamar em grel u tvel tpi ham drakan ham el pacasakan
-// bayc senc irar koxq koxiya tpum, ete petqa drakanner@ bacasakanneri tak p]tper, tpelu ktayi senc
-//System.out.print(i);
-//System.out.print(-i);
+11.34 Դզել։ Մնացածը դզի, տես որը չես հասկանում խնդիրը որնա, կասես սրա հետ կբացատրեմ։
 
-11.27 0-ի ստուգումը միշտ սկզբից գրի dzeci
+11.36 Դզել։
 
-11.29 Դզել։ Կոդը ճիշտա, ուղակի մանրուք կա ստուգման մեջ որ լավ կլիներ իմանաիր։
-// petqa payman dneyi vor tasnordakan tiv@ 0 chi kara lini, dzeci
+11.37 Դզել։ Ռան տվել ես գոնե՞։
 
-11.30 System.out.println նախատեսվածա մենակ տպելու համար, այսինքն խդիրը լուծելու հետ պիտի կապ չունենա։
-//dzevapoxi, for@ sarqi amena minimum dzevov hashvarki, dzeci
-
-11.31 Դզել։dzeci
-
-11.32 Դզել։ dzeci
-
-11.33 Դզել։ for֊ով գրել։ dzeci
-
-11.34 Դզել։dzeci bayc harc unem
-
-11.35 Դզել։ dzeci
-
-11.36 Դզել։dzeci
-
-11.37 Դզել։ xndirn eyi sxal haskacel, dzeci
-
-12.4 Դզել։dzeci
-
-12.6 Դզել։dzeci
-
-12.12 13 հանել։ haneci
-
-12.18 Դզել։dzeci
-
-for(int i = 0, i < exp; i++) -> exp ֊ միշտ աշխատի հաստատուն բան լինի, ոչ թե հավասարում։
+12.6 Դզել։ Ռան տվել ես գոնե՞։

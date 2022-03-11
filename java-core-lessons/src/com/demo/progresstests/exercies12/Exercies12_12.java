@@ -9,7 +9,7 @@ package com.demo.progresstests.exercies12;
 public class Exercies12_12 {
     public static void main(String[] args) {
         int min = 1;
-        int max = 12;  // amis@ 13 em grum, sax motavor tver em stanum, ete poxem 12, dzmer@ shat qicha stacvum
+        int max = 12;
         int dzmer = 0;
         int garun = 0;
         int amar = 0;
