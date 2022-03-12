@@ -14,8 +14,8 @@ public class Exercies12_6 {
 
         System.out.println("tiv");
         int a = scanner.nextInt();
-        for (int i = 10; i <= a; i++) {
-            if (a % i == 0 && i < 100) {
+        for (int i = 10; i <= 99; i++) {
+            if (i % a == 0) {
                 c++;
             }
 

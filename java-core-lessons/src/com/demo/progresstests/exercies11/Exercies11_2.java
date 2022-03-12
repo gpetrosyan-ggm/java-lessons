@@ -25,8 +25,7 @@ public class Exercies11_2 {
         System.out.println("grel tiv naxordic mec");
         int b = scanner.nextInt();
 
-        int d = a + 20;
-        for (int i = a; i < d; i++) {
+        for (int i = 1; i <= 20; i++) {
             c = (int) (Math.random() * (a - b + 1) + b);
             System.out.println(c);
 

@@ -17,11 +17,9 @@ public class Exercies11_3 {
         System.out.println("tiv ");
         int b = scanner.nextInt();
 
-        int k = a > b ? b : a;
-        int l = a+20;
-            for (int i = a; i < l; i++) {
-                c = (int) (Math.random() * (a - b + 1) + b);
-                System.out.println(c);
+        for (int i = 1; i <= 20; i++) {
+            c = (int) (Math.random() * (a - b + 1) + b);
+            System.out.println(c);
 
         }
 

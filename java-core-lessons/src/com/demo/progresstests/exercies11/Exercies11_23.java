@@ -12,9 +12,9 @@ public class Exercies11_23 {
 
         System.out.println("tiv");
         int a = scanner.nextInt();
+
         int b = a - 66;
-        int c = a - 6;
-        for (int i = c; i > b; i -= 6) {
+        for (int i = a - 6; i > b; i -= 6) {
             System.out.println(i);
         }
     }

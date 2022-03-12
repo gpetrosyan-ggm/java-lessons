@@ -17,9 +17,14 @@ public class Exercies11_31 {
         System.out.println("erknish tiv");
         int a = scanner.nextInt();
 
-        for (int i = 10; i <= 99; i++) {
-            int b = i * 100 + a;
-            System.out.print(b + " ");
+        for (int i = 1000; i <= 9999; i++) {
+
+            int i1 = i / 10 % 100;
+            int i2 = i % 100;
+
+            if (i2 == a || i1 == a) {
+                System.out.print(i + " ");
+            }
         }
     }
 }

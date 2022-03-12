@@ -18,8 +18,8 @@ public class Exercies11_33 {
 
         System.out.println("naxordic aveli poqr tiv");
         int m = scanner.nextInt();
-        int a = m + 1;
-        for (int i = a; i <= n; i++) {
+
+        for (int i = m+1; i <= n; i++) {
 
             m = m + i;
         }

@@ -14,8 +14,12 @@ public class Exercies11_37 {
         System.out.println("tiv");
         int a = scanner.nextInt();
 
-        for (int i = 1; i <= a; i++) {
+        for (int i = 1; i <= a ; i++) {
             c = c * 2;
+
+           if(c>a){
+               break;
+           }
 
             System.out.println("2-i " + i + " astichan@ = " + c);
         }

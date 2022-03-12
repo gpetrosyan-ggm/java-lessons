@@ -14,8 +14,7 @@ public class Exercies11_22 {
         int a = scanner.nextInt();
 
         int b = a + 19;
-        int c = a+1;
-        for (int i = c; i < b; i++) {
+        for (int i = a + 1; i < b; i++) {
             System.out.println(i);
         }
     }

@@ -17,11 +17,19 @@ public class Exercies11_34 {
 
         System.out.println("eli drakan");
         int b = scanner.nextInt();
-        int k = a < b ? a : b;
-        int c = k + 1;
-// kbacatres tenarniyi vaxt vonc grem, i<b || i<a - poxaren mi hat payman, i< ?, vor chisht lini
-        for (int i = c; i < b || i < a; i++) {
-            k++;
+        int min;
+        int max;
+
+        if (a > b) {
+            min = b;
+            max = a;
+        } else {
+            min = a;
+            max = b;
+        }
+
+        for (int i = min - 1; i < max; i++) {
+
             System.out.println(i + " ");
 
 

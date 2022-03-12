@@ -16,16 +16,20 @@ public class Exercies11_32 {
 
         System.out.println("erknish tiv");
         int a = scanner.nextInt();
+        int a1 = a / 10;
+        int a10 = a % 10;
+        int a2 = a1 + a10;
+
         for (int i = 1000; i <= 9999; i++) {
+
             int i1000 = i / 1000;
             int i100 = i / 100 % 10;
+            int i2 = i1000 + i100;
+
             int i10 = i / 10 % 10;
             int i1 = i % 10;
-            int a1 = a/10;
-            int a10=a%10;
-            int i2 = i1000 + i100;
-            int a2 = a1+a10;
-            int i3= i10+ i1;
+            int i3 = i10 + i1;
+
             if (i2 == a2 && i3 == a2) {
                 System.out.println(i + " ");
             }
