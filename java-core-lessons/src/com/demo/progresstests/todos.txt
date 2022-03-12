@@ -6,9 +6,9 @@
 
 11.14 int i = x - 10; կարա for֊ի ներսում լինի։
 
-11.18 Դզել։
+11.18 Դզել։ dzeci
 
-11.22 int c = a+1; կարա for֊ի ներսում լինի։
+11.22 int c = a+1; կարա for֊ի ներսում լինի։ //Sensey vor fori nersum em grum, klavishic vercrac tivn ela tpum
 
 11.23 int c = a - 6; կարա for֊ի ներսում լինի։
 

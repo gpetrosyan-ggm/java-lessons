@@ -21,7 +21,8 @@ public class Exercies11_18 {
             int i1 = i % 10;
 
             if (a == i100 + i10 + i1) {
-                System.out.println(i100 * 100 + i10 * 10 + i1);
+                int c = i100 * 100 + i10 * 10 + i1;
+                System.out.println(c);
             }
         }
     }
