@@ -28,11 +28,9 @@ public class Exercies11_34 {
             max = b;
         }
 
-        for (int i = min - 1; i < max; i++) {
-
+        for (int i = min; i < max; i++) {
             System.out.println(i + " ");
-
-
         }
     }
+
 }
