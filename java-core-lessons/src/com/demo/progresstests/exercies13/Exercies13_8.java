@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Exercies13_8 {
     public static void main(String[] args) {
         int c = 0;
-        int d = 0;
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("tiv");
@@ -20,18 +20,15 @@ public class Exercies13_8 {
         System.out.println("tiv");
         int b = scanner.nextInt();
 
-        for (int i = 1; i < a; i++) {
-            if (a % i == 0) {
+        int k = a > b ? b : a;
+        for (int i = 1; i <= k; i++) {
+            if (a % i == b % i) {
                 c = c + i;
             }
 
         }
-        for (int i = 1; i < b; i++) {
-            if (b % i == 0) {
-                d = d + i;
-            }
-        }
-        if (c % 2 == 0 && d % 2 == 0) {
+
+        if (c % 2 == 0) {
             System.out.println("«четно-близкими по сумме»");
         } else {
             System.out.println("noric porci");

@@ -16,8 +16,6 @@ public class Exercies13_26 {
     public static void main(String[] args) {
         int x;
         int y;
-        int k1;
-        int k2;
         int d;
         Scanner scanner = new Scanner(System.in);
 
@@ -31,7 +29,6 @@ public class Exercies13_26 {
         System.out.println(" progresiayi andami hamar@ ");
         int n2 = scanner.nextInt();
 
-        // b = a + d*(n2 - n1)
         d = (b - a) / (n2 - n1);
         if (a < b) {
             x = a;

@@ -18,21 +18,21 @@ import java.util.Scanner;
 
 public class Exercies13_29 {
     public static void main(String[] args) {
+        int mijin;
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 1; i < 41; i++) {
             System.out.println();
 
-            System.out.println("mijin gnahatakan@");
-            int mijin = scanner.nextInt();
+            System.out.println("matemi gnahatakan@");
+            int matematika = scanner.nextInt();
+
+            System.out.println("informatika gnahatakan@");
+            int informatika = scanner.nextInt();
+
+            mijin = (matematika + informatika) / 2;
 
             if (mijin >= 7) {
-
-                System.out.println("matemi gnahatakan@");
-                int matematika = scanner.nextInt();
-
-                System.out.println("informatika gnahatakan@");
-                int informatika = scanner.nextInt();
 
                 if (matematika >= informatika) {
 

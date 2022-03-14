@@ -9,6 +9,7 @@ package com.demo.progresstests.exercies13;
 public class Exercies13_17 {
     public static void main(String[] args) {
         int c = 0;
+        int k =0;
         for (int i = 10; i < 100; i+=2) {  // stex kent tver@ bacarel em, vor animast ham hashvar chani, hamel if-um avel kod chgrem i%2==0
 
             int i10 = i / 10;
@@ -21,10 +22,12 @@ public class Exercies13_17 {
             int aa = a10 + a1;
 
             if (ii == aa) {
+                k = k +i;
                 c++;
                 System.out.println("erknish tiv@ " + i + " gumar@ " + ii);
             }
         }
         System.out.println("qanak@ " + c);
+        System.out.println("ayd tveri gumar@ " + k);
     }
 }

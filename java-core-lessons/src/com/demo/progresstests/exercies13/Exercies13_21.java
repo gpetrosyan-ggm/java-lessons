@@ -16,7 +16,7 @@ public class Exercies13_21 {
             int i10 = i / 10;
             int i1 = i % 10;
             int ii = (i10 + i1) * 2;
-            if (i == ii) {
+            if (i10 * i1 == ii) {
                 j = j + i;
                 c++;
                 System.out.println("i = " + i);

@@ -17,7 +17,7 @@ public class Exercies13_7 {
         System.out.println("tiv");
         int a = scanner.nextInt();
 
-        for (int i = 1; i < a; i++) {
+        for (int i = 1; i <= a; i++) {
             if (a % i == 0) {
                 c = c + i;
                 b++;
