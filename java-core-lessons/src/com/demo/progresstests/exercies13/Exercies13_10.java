@@ -10,8 +10,6 @@ package com.demo.progresstests.exercies13;
   составлял менее 5 единиц.
  */
 
-// chgiotem inchqanov em chisht haskacel xndir@, ete sxal em haskacel todosum kbacatres
-
 import java.util.Scanner;
 
 public class Exercies13_10 {
