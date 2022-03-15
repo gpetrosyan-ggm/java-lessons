@@ -24,23 +24,15 @@ public class Exercies13_10 {
             System.out.println("shabatva or");
             int b = scanner.nextInt();
 
-            if (b == 1||b==3||b==4||b==5||b==6||b==7) {
-                if (a >= 7) {
-                    System.out.println("erkushabtin vtangavor e" + a);
-                }
+            if (a >= 7) {
+                System.out.println(" vtangavor or" + a);
             }
-            if (b == 2) {
-                if (a < 5) {
+            if (a < 5) {
+                if (b == 2) {
                     System.out.println("ereqshabtin hangist e" + a);
-                } else if (a >= 7) {
-                    System.out.println("ereqshabtin vtangavor e" + a);
                 }
-
-
             }
-
         }
         scanner.close();
-
     }
 }
