@@ -29,7 +29,6 @@ public class Exercies13_26 {
         System.out.println(" progresiayi andami hamar@ ");
         int n2 = scanner.nextInt();
 
-        d = (b - a) / (n2 - n1);
         if (a < b) {
             x = a;
             y = b;

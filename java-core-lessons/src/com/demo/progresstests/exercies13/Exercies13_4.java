@@ -14,12 +14,16 @@ public class Exercies13_4 {
 
         System.out.println("tiv");
         int a = scanner.nextInt();
+        if (a > 0) {
 
-        for (int i = 1; i < a; i++) {
-            if (i % 2 == 0) {
-                b = b + i;
-                System.out.println(i);
+            for (int i = 1; i < a; i++) {
+                if (i % 2 == 0) {
+                    b = b + i;
+                    System.out.println(i);
+                }
             }
+        } else {
+            System.out.println("dzer @ntrac tiv@ drakan che");
         }
         System.out.println(b);
 

@@ -16,17 +16,21 @@ public class Exercies13_7 {
 
         System.out.println("tiv");
         int a = scanner.nextInt();
+        if (a > 0) {
 
-        for (int i = 1; i <= a; i++) {
-            if (a % i == 0) {
-                c = c + i;
-                b++;
+            for (int i = 1; i <= a; i++) {
+                if (a % i == 0) {
+                    c = c + i;
+                    b++;
+                }
             }
-        }
-        if (a % b == 0 && c % b == 0) {
-            System.out.println("«дважды делимым»");
+            if (a % b == 0 && c % b == 0) {
+                System.out.println("«дважды делимым»");
+            } else {
+                System.out.println("che chkpav");
+            }
         } else {
-            System.out.println("che chkpav");
+            System.out.println("dzer @ntrac tiv@ drakan che, @ntreq tiv vor@ mec e 0-ic");
         }
         scanner.close();
     }

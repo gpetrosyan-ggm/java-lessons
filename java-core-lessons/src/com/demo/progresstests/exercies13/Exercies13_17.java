@@ -10,13 +10,13 @@ public class Exercies13_17 {
     public static void main(String[] args) {
         int c = 0;
         int k =0;
-        for (int i = 10; i < 100; i+=2) {  // stex kent tver@ bacarel em, vor animast ham hashvar chani, hamel if-um avel kod chgrem i%2==0
+        for (int i = 10; i < 100; i++) {  // stex kent tver@ bacarel em, vor animast ham hashvar chani, hamel if-um avel kod chgrem i%2==0
 
             int i10 = i / 10;
             int i1 = i % 10;
             int ii = i10 + i1;
 
-            int a = i / 2;
+            int a = i * 2;
             int a10 = a / 10;
             int a1 = a % 10;
             int aa = a10 + a1;

@@ -26,10 +26,7 @@ public class Exercies13_10 {
             System.out.println("shabatva or");
             int b = scanner.nextInt();
 
-            if (b == 1) {
-                //   if (a < 5) {
-                //   System.out.println("erkushabtin hangist e");
-                //    } else
+            if (b == 1||b==3||b==4||b==5||b==6||b==7) {
                 if (a >= 7) {
                     System.out.println("erkushabtin vtangavor e");
                 }
@@ -40,46 +37,8 @@ public class Exercies13_10 {
                 } else if (a >= 7) {
                     System.out.println("ereqshabtin vtangavor e");
                 }
-            }
-            if (b == 3) {
-                //   if (a < 5) {
-                //     System.out.println("choreqshabtin hangist e");
-                //} else
-                if (a >= 7) {
-                    System.out.println("choreqshabtin vtangavor e");
-                }
-            }
-            if (b == 4) {
-                //   if (a < 5) {
-                //     System.out.println("hingshabtin hangist e");
-                // }else
-                if (a >= 7) {
-                    System.out.println("hingshabtin vtangavor e");
-                }
-            }
-            if (b == 5) {
-                //   if (a < 5) {
-                //  System.out.println("urbat hangist e");
-                // } else
-                if (a >= 7) {
-                    System.out.println("urbat vtangavor e");
-                }
-            }
-            if (b == 6) {
-                //   if (a < 5) {
-                //       System.out.println("shabat hangist e");
-                //   } else
-                if (a >= 7) {
-                    System.out.println("shabat vtangavor e");
-                }
-            }
-            if (b == 7) {
-                //if (a < 5) {
-                //      System.out.println("kiraki hangist e");
-                //  } else
-                if (a >= 7) {
-                    System.out.println("kiraki vtangavor e");
-                }
+
+
             }
 
         }
