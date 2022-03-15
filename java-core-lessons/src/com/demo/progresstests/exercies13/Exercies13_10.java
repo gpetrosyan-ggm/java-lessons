@@ -26,11 +26,8 @@ public class Exercies13_10 {
 
             if (a >= 7) {
                 System.out.println(" vtangavor or" + a);
-            }
-            if (a < 5) {
-                if (b == 2) {
-                    System.out.println("ereqshabtin hangist e" + a);
-                }
+            } else if (a < 5 && b == 2) {
+                System.out.println("ereqshabtin hangist e" + a);
             }
         }
         scanner.close();
