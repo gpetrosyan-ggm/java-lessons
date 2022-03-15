@@ -17,10 +17,9 @@ public class Exercies13_4 {
         if (a > 0) {
 
             for (int i = 1; i < a; i++) {
-                if (i % 2 == 0) {
+
                     b = b + i;
                     System.out.println(i);
-                }
             }
         } else {
             System.out.println("dzer @ntrac tiv@ drakan che");

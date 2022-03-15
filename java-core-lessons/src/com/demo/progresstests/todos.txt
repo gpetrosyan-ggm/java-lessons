@@ -1,7 +1,8 @@
-13.4 Դզել։
+13.4 Դզել։ dzeci
 
-13.7 Դզել։  Ուրիշ բան նկատի ունեի, a > 0 ստուգելը կարիք չկա։
+13.7 Դզել։  Ուրիշ բան նկատի ունեի, a > 0 ստուգելը կարիք չկա։ haskaca inch nkati unes u dzeci, daj@ poxeci xndir@,
+                                                             vorpes bajanarar bacareci 1-n u henc @ntrvox tiv@
 
-13.10 Դզել։
+13.10 Դզել։ Sensey es xndir@ bacatri, chem karum haskanam xndir@ incha uzum indzanic
 
-13.17 Դզել։
+13.17 Դզել։ hashvi cheyi arel vor i>=50-i depqum a>=100, dzeci bayc ardyunqi vra chazdec

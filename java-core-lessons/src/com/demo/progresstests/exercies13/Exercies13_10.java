@@ -28,14 +28,14 @@ public class Exercies13_10 {
 
             if (b == 1||b==3||b==4||b==5||b==6||b==7) {
                 if (a >= 7) {
-                    System.out.println("erkushabtin vtangavor e");
+                    System.out.println("erkushabtin vtangavor e" + a);
                 }
             }
             if (b == 2) {
                 if (a < 5) {
-                    System.out.println("ereqshabtin hangist e");
+                    System.out.println("ereqshabtin hangist e" + a);
                 } else if (a >= 7) {
-                    System.out.println("ereqshabtin vtangavor e");
+                    System.out.println("ereqshabtin vtangavor e" + a);
                 }
 
 

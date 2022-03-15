@@ -17,9 +17,10 @@ public class Exercies13_17 {
             int ii = i10 + i1;
 
             int a = i * 2;
+            int a100 = a/100;
             int a10 = a / 10;
             int a1 = a % 10;
-            int aa = a10 + a1;
+            int aa = a100 + a10 + a1;
 
             if (ii == aa) {
                 k = k +i;
