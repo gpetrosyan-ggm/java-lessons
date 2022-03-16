@@ -10,7 +10,7 @@ public class Exercies14_5 {
     public static void main(String[] args) {
         int c;
         int k; // Sensey stex nax@ntreli cher haytararel double, qani vor gumar@ kara kent tiv ta isk mijin@ kotoraain
-               // te es paragayum da etqan el eyakan chi
+               // te es paragayum da etqan el eyakan chi։ es testeri paragayum eakan chi, bayc irakanum ete bajanum ka uremn double arji, ete konkret int chen uzum.
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(" tiv ");
