@@ -23,7 +23,7 @@ public class Exercies14_10 {
 
             if (bb > max) {
                 max = bb;
-                c++;
+                c = i;
             }
         }
         System.out.println();
