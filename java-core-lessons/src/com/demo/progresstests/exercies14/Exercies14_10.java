@@ -9,16 +9,9 @@ public class Exercies14_10 {
         int start = 100;
         int end = 999;
         int c = 1;
+        int max = Integer.MIN_VALUE;
 
-        int a = (int) (Math.random() * (end - start + 1) + start);
-        System.out.print(a);
-
-        int a100 = a / 100;
-        int a10 = a / 10 % 10;
-        int a1 = a % 10;
-        int aa = a100 + a10 + a1;
-
-        for (int i = 1; i < 25; i++) {
+        for (int i = 1; i <= 25; i++) {
 
             int b = (int) (Math.random() * (end - start + 1) + start);
             System.out.print(" " + b);
@@ -28,8 +21,8 @@ public class Exercies14_10 {
             int b1 = b % 10;
             int bb = b100 + b10 + b1;
 
-            if (bb > aa) {
-                aa = bb;
+            if (bb > max) {
+                max = bb;
                 c++;
             }
         }

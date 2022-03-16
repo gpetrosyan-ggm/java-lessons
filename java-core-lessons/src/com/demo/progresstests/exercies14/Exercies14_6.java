@@ -8,38 +8,33 @@ import java.util.Scanner;
 
 public class Exercies14_6 {
     public static void main(String[] args) {
-        double k;
-        double mijin;
+        int sum=0;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println(" tiv ");
-        int a = scanner.nextInt();
-
-       double c = a;
-        double gumar = a;  // Sensey double em haytararel vor aveli stuyg stanam patasxan@, bayc mi hat harc unem
-        //ete verevum haytararem double gumar isk stex veragrem a; xiya ardyunq@ stacvum
-        // orinak 11.0, kotorakain mas@ xiya shprtum durs, xndrum em zangov bacatres
-
-        for (int i = 1; i < 27; i++) {
+        for (int i = 1; i < 4; i++) {
             System.out.println(" tiv ");
             int b = scanner.nextInt();
-            gumar = gumar + b;
+            sum+=  b;
 
-            if (b > c) {
-                c = b;
-            } else if (b < a) {
-                a = b;
+            if (b > max) {
+                max = b;
+            }
+            if (b < min) {
+                min = b;
             }
         }
-        k = (c + a) / 2;
-        mijin = gumar / 27;
+        double k = (max + min) / 2;
+        double avg = sum / 3;
 
-        if (mijin > k) {
-            System.out.println("bolor tveri mijin@ aveli mec e " + mijin + " > " + k);
-        } else if (mijin < k) {
-            System.out.println("amena meci u amena poqri mijnn aveli mec e " + mijin + " < " + k);
+        if (avg > k) {
+            System.out.println("bolor tveri mijin@ aveli mec e " + avg + " > " + k);
+        } else if (avg < k) {
+            System.out.println("amena meci u amena poqri mijnn aveli mec e " + avg + " < " + k);
         } else {
-            System.out.println("havasar en " + mijin + " = " + k);
+            System.out.println("havasar en " + avg + " = " + k);
         }
+        System.out.println( max + " " + min);
     }
 }

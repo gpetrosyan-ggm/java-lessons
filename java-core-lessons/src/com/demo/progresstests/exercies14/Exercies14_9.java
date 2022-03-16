@@ -20,7 +20,7 @@ public class Exercies14_9 {
 
             if (b > a) {
                 a = b;
-                c++;
+                c = i;
             }
         }
         System.out.println();

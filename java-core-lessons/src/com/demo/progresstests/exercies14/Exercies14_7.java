@@ -8,14 +8,8 @@ public class Exercies14_7 {
     public static void main(String[] args) {
         int start = 10;
         int and = 99;
-
-        int a = (int) (Math.random() * (and - start + 1) + start);
-        System.out.print(a);
-        int c = a;
-
-        int a10 = a / 10;
-        int a1 = a % 10;
-        int aa = a10 + a1;
+        int c=0;
+        int max = Integer.MIN_VALUE;
 
         for (int i = 1; i < 20; i++) {
             int b = (int) (Math.random() * (and - start + 1) + start);
@@ -25,12 +19,12 @@ public class Exercies14_7 {
             int b1 = b % 10;
             int bb = b10 + b1;
 
-            if (bb > aa) {
-                aa = bb;
+            if (bb > max) {
+                max = bb;
                 c = b;
             }
         }
         System.out.println();
-        System.out.println(c + " ; " + aa);
+        System.out.println(c + " ; " + max);
     }
 }
