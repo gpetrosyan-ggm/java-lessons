@@ -1,4 +1,4 @@
-package upwork.quiz;
+package upwork.nare.quiz1;
 
 public abstract class Employee {
     private String name;

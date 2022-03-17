@@ -1,4 +1,4 @@
-package upwork.quiz;
+package upwork.nare.quiz1;
 
 public interface QueueADT<T> extends CollectionADT<T> {
     public void enqueue(T e); // pushBack()

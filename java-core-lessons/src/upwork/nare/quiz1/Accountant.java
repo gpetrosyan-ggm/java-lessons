@@ -1,4 +1,4 @@
-package upwork.quiz;
+package upwork.nare.quiz1;
 
 public class Accountant extends Employee {
     public Accountant(String name, String surname, int id) {

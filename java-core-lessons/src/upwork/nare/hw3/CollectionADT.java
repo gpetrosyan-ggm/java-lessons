@@ -1,4 +1,4 @@
-package upwork.quiz;
+package upwork.nare.hw3;
 
 public interface CollectionADT<T> extends Iterable<T> {
     public boolean add(T e);

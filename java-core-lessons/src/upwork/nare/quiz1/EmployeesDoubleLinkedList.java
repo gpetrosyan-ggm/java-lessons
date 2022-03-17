@@ -1,15 +1,17 @@
-package upwork.quiz;
+package upwork.nare.quiz1;
 
 import java.util.Iterator;
 
-public class EmployeesLinkedList implements ListADT<Employee> {
+public class EmployeesDoubleLinkedList implements ListADT<Employee> {
     private class Node {
         Employee data;
         Node next;
+        Node prev;
 
         public Node(Employee e) {
             data = e;
             next = null;
+            prev = null;
         }
     }
 
@@ -17,10 +19,11 @@ public class EmployeesLinkedList implements ListADT<Employee> {
     private Node last;
     private int size;
 
-    public EmployeesLinkedList() {
+    public EmployeesDoubleLinkedList() {
         first = last = null;
         size = 0;
     }
+
 
     // Task 1: The function should remove the employee occurring before the given employee in the list and return true if done.
     public boolean removeBefore(Employee e) {
@@ -30,11 +33,6 @@ public class EmployeesLinkedList implements ListADT<Employee> {
     // Task 2: The function should add the given employee under the given index, if the index is within the list boundaries and return true if added.
     public boolean addAt(Employee e, int index) {
         return false;
-    }
-
-    // Task 3: Implement reverse iterator which starts the iteration from last element and goes up to the first element in the list
-    public Iterator<Employee> reverseIterator() {
-        return null;
     }
 
     @Override
@@ -78,6 +76,7 @@ public class EmployeesLinkedList implements ListADT<Employee> {
             first = last = new Node(e);
         } else {
             last.next = new Node(e);
+            last.next.prev = last;
             last = last.next;
         }
         size++;
@@ -104,10 +103,7 @@ public class EmployeesLinkedList implements ListADT<Employee> {
 
     @Override
     public Employee last() {
-        if (isEmpty()) {
-            return null;
-        }
-        return last.data;
+        return null;
     }
 
     @Override

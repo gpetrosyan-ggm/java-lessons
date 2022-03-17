@@ -1,4 +1,4 @@
-package upwork.quiz;
+package upwork.nare.quiz1;
 
 public interface ListADT<T> extends CollectionADT<T> {
     public boolean addFirst(T e);
