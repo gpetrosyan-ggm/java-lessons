@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Exercies14_6 {
     public static void main(String[] args) {
-        int sum=0;
+        int sum = 0;
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
 
@@ -16,7 +16,7 @@ public class Exercies14_6 {
         for (int i = 1; i < 4; i++) {
             System.out.println(" tiv ");
             int b = scanner.nextInt();
-            sum+=  b;
+            sum += b;
 
             if (b > max) {
                 max = b;
@@ -35,6 +35,6 @@ public class Exercies14_6 {
         } else {
             System.out.println("havasar en " + avg + " = " + k);
         }
-        System.out.println( max + " " + min);
+        System.out.println(max + " " + min);
     }
 }

@@ -23,7 +23,11 @@ public class Exercies14_10 {
 
             if (bb > max) {
                 max = bb;
+<<<<<<< HEAD
                 c=i;
+=======
+                c = i;
+>>>>>>> 118b989686c3bce5627f357bcf1e310b07865c63
             }
         }
         System.out.println();
