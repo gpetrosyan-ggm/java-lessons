@@ -1,0 +1,38 @@
+package com.demo.progresstests.exercies15;
+/*
+Напишите класс, который вводит с клавиатуры целые положительные числа до тех пор,
+пока не будет введено число, сумма цифр которого равна 5.
+ */
+
+import java.util.Scanner;
+
+public class Exercies15_20 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("number");
+            int num = scanner.nextInt();
+            int sum = 0;
+
+            while (true) {
+                if (num != 0) {
+
+                    int num1 = num % 10;
+                    sum += num1;
+                    num /= 10;
+
+                } else {
+                    System.out.println(sum);
+                    break;
+                }
+            }
+            if (sum == 5) {
+                System.out.println("bingo sum = " + sum);
+                break;
+            }
+
+        }
+        scanner.close();
+    }
+}
