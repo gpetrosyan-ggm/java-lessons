@@ -36,10 +36,7 @@ public class Exercies15_2 {
 
 //    3. veri orinakner@
 
-//    4.while (а != Ь) {
-//        if (a>=0||a<0){
-//         brake
-//        }
+//    4.while (а < Ь) {
 //        а++;
 //        Ь--;
 //    }

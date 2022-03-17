@@ -13,14 +13,16 @@ public class Exercies15_10 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("tiv");
-        int a = scanner.nextInt();
+        int x = scanner.nextInt();
 
-        while (a>0){
-            if (a<=1){
+        while (x > 0) {
+            int a = scanner.nextInt();
+            int tmpX = x - a;
+            if (tmpX < 0) {
                 break;
             }
-            a-=2;
-            System.out.println(a);
+            System.out.printf("%s - %s = %s \n Hajod tiv@ ... ", x, a, tmpX);
+            x = tmpX;
         }
         scanner.close();
     }

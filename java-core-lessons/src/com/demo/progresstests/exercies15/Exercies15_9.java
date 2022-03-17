@@ -8,26 +8,22 @@ import java.util.Scanner;
 
 public class Exercies15_9 {
     public static void main(String[] args) {
-        int b = 0;
-        int k = 0;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("tiv");
-        int a = scanner.nextInt();
-        int c = a * a;
+        int num = scanner.nextInt();
+        int num3 = num * num;
+        int sum = 0;
 
-        while (true) {
-
-            if (k < c) {
-                System.out.print(" " + a);
-                b = b + a++;
-                k = b + a;
-            } else {
+        while (sum < num3) {
+            int tmpSum = sum + ++num;
+            if (tmpSum > num3) {
                 break;
             }
+            sum = tmpSum;
+            System.out.println(sum);
         }
-        System.out.println();
-        System.out.println(b);
+        System.out.println(sum);
         scanner.close();
     }
 }

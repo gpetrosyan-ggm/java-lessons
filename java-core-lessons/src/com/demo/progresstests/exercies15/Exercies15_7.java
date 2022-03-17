@@ -11,23 +11,17 @@ import java.util.Scanner;
 
 public class Exercies15_7 {
     public static void main(String[] args) {
+        int code = 123;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("tpel 123 tiv@");
-        int a = scanner.nextInt();
-        System.out.println("kodn @ndunvac e");
-
-        while (a == 123) {
-            System.out.println("code");
-            int b = scanner.nextInt();
-
-            if (b == a) {
+        while (true) {
+            System.out.println("Enter code ...");
+            int codeTmp = scanner.nextInt();
+            if (codeTmp == code) {
                 System.out.println("FINISH");
                 break;
-            } else {
-                System.out.println("gaxnabar@ chshmarit che, krknrl");
             }
-
+            System.out.println("gaxnabar@ chshmarit che, krknrl");
         }
         scanner.close();
     }

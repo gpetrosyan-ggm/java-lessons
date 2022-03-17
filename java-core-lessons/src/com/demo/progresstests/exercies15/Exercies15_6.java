@@ -10,20 +10,19 @@ import java.util.Scanner;
 public class Exercies15_6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int c=0;
-        int b=0;
+        int count = 0;
+        int sum = 0;
 
-        while (1>0){
+        while (true) {
             System.out.println("tiv");
             int a = scanner.nextInt();
-            if (a==999){
+            if (a == 999) {
                 break;
-            }else {
-                c++;
-                b+=a;
             }
+            count++;
+            sum += a;
         }
-        System.out.println(c  +" " + b);
+        System.out.println(count + " " + sum);
         scanner.close();
     }
 }

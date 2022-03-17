@@ -10,18 +10,17 @@ import java.util.Scanner;
 public class Exercies15_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-      int c=0;
+        int count = 0;
 
-        while (true){
+        while (true) {
             System.out.println("tiv");
             int a = scanner.nextInt();
-            if (a==999){
+            if (a == 999) {
                 break;
-            }else {
-                c++;
             }
+            count++;
         }
-        System.out.println(c);
+        System.out.println(count);
         scanner.close();
     }
 }

@@ -28,7 +28,7 @@ while (а > О || Ь > О) {
 public class Exercies15_3 {
 
     // 1.
-    // a=99;     total = 9+8=17    total= 0+9 = 9     total= 0+0=0   cikli avart
+    // a=99;     total = 9+8=17    total= 9+9 = 9     total= 0+6=0   cikli avart
     // b=698     a=9; b = 69;     a=0; b = 6;        a=0; b=0;
 
 

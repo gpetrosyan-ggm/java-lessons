@@ -9,19 +9,18 @@ import java.util.Scanner;
 public class Exercies15_8 {
     public static void main(String[] args) {
         int sum = 0;
-        int sum1 = 0;
         int quantity = 0;
         Scanner scanner = new Scanner(System.in);
 
-        while (sum < 150) {
+        while (true) {
             System.out.println("tiv");
             int a = scanner.nextInt();
-            if (sum1 < 150) {
-                sum += a;
-                quantity++;
-                sum1 = sum + a;
+            int sumTmp = sum + a;
+            if (sumTmp > 150) {
+                break;
             }
-            break;
+            sum = sumTmp;
+            quantity++;
         }
         System.out.println("sum = " + sum + " quantity = " + quantity);
         scanner.close();
