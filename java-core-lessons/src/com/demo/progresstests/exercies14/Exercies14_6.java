@@ -25,8 +25,8 @@ public class Exercies14_6 {
                 min = b;
             }
         }
-        double k = (max + min) / 2;
-        double avg = sum / 3;
+        double k = (double) (max + min) / 2;      // double k = (max + min) / 2.0;
+        double avg = (double) sum / 3;            //  double avg = sum / 3.0;
 
         if (avg > k) {
             System.out.println("bolor tveri mijin@ aveli mec e " + avg + " > " + k);
