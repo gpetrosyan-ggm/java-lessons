@@ -16,17 +16,14 @@ public class Exercies15_16 {
         int num = scanner.nextInt();
 
         while (true) {
-
-            if (num == 0) {
-                break;
-            } else if (num % 2 == 0) {
-
+            if (num % 2 == 0) {
                 count++;
-                num = num / 10;
-
             } else {
                 sum += num % 10;
-                num = num / 10;
+            }
+            num /= 10;
+            if (num == 0) {
+                break;
             }
         }
         System.out.println(sum + "   " + count);

@@ -17,17 +17,15 @@ public class Exercies15_15 {
 
         while (true) {
 
-            if (num == 0) {
-                break;
-            } else if (num % 2 == 0) {
-
+                if (num % 2 == 0) {
                 count++;
                 sum += num % 10;
-                num = num / 10;
-
-            } else {
-                num = num / 10;
             }
+            num = num / 10;
+
+                if (num==0){
+                    break;
+                }
         }
         System.out.println(sum + "   " + count);
         scanner.close();

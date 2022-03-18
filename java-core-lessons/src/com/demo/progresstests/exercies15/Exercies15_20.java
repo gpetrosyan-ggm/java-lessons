@@ -16,13 +16,10 @@ public class Exercies15_20 {
             int sum = 0;
 
             while (true) {
-                if (num != 0) {
+                sum += num % 10;
+                num /= 10;
 
-                    int num1 = num % 10;
-                    sum += num1;
-                    num /= 10;
-
-                } else {
+                if (num == 0) {
                     System.out.println(sum);
                     break;
                 }

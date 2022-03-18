@@ -9,22 +9,17 @@ import java.util.Scanner;
 public class Exercies15_19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int count = 15;
 
-        while (count > 0) {
+        for (int i = 0; i < 15; i++) {
 
-            System.out.println("number " + count);
+            System.out.println("number ");
             int num = scanner.nextInt();
 
             int sum = 0;
-            count--;
-
             while (true) {
-
-                if (num != 0) {
-                    sum += num % 10;
-                    num = num / 10;
-                } else {
+                sum += num % 10;
+                num = num / 10;
+                if (num == 0) {
                     break;
                 }
             }

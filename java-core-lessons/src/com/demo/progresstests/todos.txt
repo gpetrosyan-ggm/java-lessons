@@ -13,5 +13,6 @@
 15.18 Ավելի սիրուն կարաս գրես
 
 15.19 Ավելորդ կոդ կա, որը կարար չլիներ ու ավելի սիրուն կարաս գրես։ Մի հատ փորձի առաջի while֊ը փոխես for֊ով։
+      // Sensey henc demic forov eyi grel, bayc vor while bajnica, poxeci while
 
 15.20 Ավելի սիրուն կարաս գրես
