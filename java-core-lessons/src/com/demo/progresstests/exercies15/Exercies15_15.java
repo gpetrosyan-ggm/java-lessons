@@ -15,7 +15,7 @@ public class Exercies15_15 {
         System.out.println("number");
         int num = scanner.nextInt();
 
-        while (true) {
+        while (num!=0) {
 
                 if (num % 2 == 0) {
                 count++;
@@ -23,9 +23,6 @@ public class Exercies15_15 {
             }
             num = num / 10;
 
-                if (num==0){
-                    break;
-                }
         }
         System.out.println(sum + "   " + count);
         scanner.close();
