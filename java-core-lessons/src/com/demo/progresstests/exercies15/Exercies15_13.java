@@ -17,12 +17,12 @@ public class Exercies15_13 {
             System.out.println("number");
             int num = scanner.nextInt();
 
-            if ( num2 < num) {
-                count ++;
-                num2 = num;
-            } else {
+            if (num2 > num) {
                 break;
             }
+
+            count++;
+            num2 = num;
         }
         System.out.println(count + " FINISH");
         scanner.close();
