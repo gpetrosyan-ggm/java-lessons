@@ -10,22 +10,21 @@ import java.util.Scanner;
 public class Exercies15_13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num1 = 0;
+        int count = 0;
         int num2 = Integer.MIN_VALUE;
         while (true) {
 
             System.out.println("number");
             int num = scanner.nextInt();
 
-            if (num2 < num) {
-                num1 += num;
+            if ( num2 < num) {
+                count ++;
                 num2 = num;
             } else {
                 break;
             }
-            System.out.println(num1);
         }
-        System.out.println(num1 + " FINISH");
+        System.out.println(count + " FINISH");
         scanner.close();
     }
 }

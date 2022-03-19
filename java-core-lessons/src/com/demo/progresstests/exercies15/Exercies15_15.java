@@ -16,7 +16,7 @@ public class Exercies15_15 {
         int num = scanner.nextInt();
 
         while (num != 0) {
-            if (num % 2 == 0) {
+            if (num % 2 == 0 && num % 10 != 0) {
                 count++;
                 sum += num % 10;
             }
