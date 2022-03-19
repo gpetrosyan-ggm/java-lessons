@@ -12,7 +12,7 @@ public class Exercies15_21 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("number");
-        long num = scanner.nextLong();
+        int  num = scanner.nextInt();
 
         while (true) {
             int sum = 0;
