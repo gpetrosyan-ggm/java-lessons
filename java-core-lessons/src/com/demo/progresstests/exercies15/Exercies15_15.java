@@ -15,14 +15,12 @@ public class Exercies15_15 {
         System.out.println("number");
         int num = scanner.nextInt();
 
-        while (num!=0) {
-
-                if (num % 2 == 0) {
+        while (num != 0) {
+            if (num % 2 == 0) {
                 count++;
                 sum += num % 10;
             }
             num = num / 10;
-
         }
         System.out.println(sum + "   " + count);
         scanner.close();
