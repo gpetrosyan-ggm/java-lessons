@@ -4,7 +4,6 @@ package com.demo.progresstests.exercies15;
 Класс должен определить наибольшее значение в серии 1*1 + 2*2 + 3*3 + ..,
 сумма которой не превышает х.
  */
-//esi du es grel
 
 import java.util.Scanner;
 

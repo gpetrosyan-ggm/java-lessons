@@ -4,7 +4,6 @@ package com.demo.progresstests.exercies15;
 и выводит на экран серию значений: х, х*x, х*x*x, •••  до тех пор,
 пока очередное значение остается меньше 1000
  */
-//Sensey esi vonc vor Araya
 
 import java.util.Scanner;
 
