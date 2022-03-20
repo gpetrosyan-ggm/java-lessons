@@ -14,14 +14,12 @@ public class Exercies15_25 {
         System.out.println("number");
         int num = scanner.nextInt();
 
-        while (true) {
-            if (num < 10) {
-                System.out.println(num);
-                break;
-            }
+        while (num > 10) {
             num/=10;
 
             }
+        System.out.println(num);
+
         scanner.close();
     }
 }

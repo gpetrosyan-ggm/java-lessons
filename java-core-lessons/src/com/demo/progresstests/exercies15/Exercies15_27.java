@@ -23,20 +23,18 @@ public class Exercies15_27 {
         int count = 0;
         int num1 = num;
         int quantity = 0;
-        while (true) {
-            if (num1 == 0) {
-                break;
-            }
+        while (num1!=0) {
             num1 /= 10;
             count++;
         }
-        for (int i = count; i > 0; i--) {
+        for (int i = 1; i <=count; i++) {
             if (num % 10 == a) {
                 quantity++;
-                System.out.println(a + "tiv@ gtnvum e " + i + "_rd texum " + quantity + " angam");
+                System.out.println(a + "tiv@ gtnvum e " + i + "_rd texum ");
             }
             num /= 10;
         }
+        System.out.println(quantity);
         scanner.close();
     }
 }

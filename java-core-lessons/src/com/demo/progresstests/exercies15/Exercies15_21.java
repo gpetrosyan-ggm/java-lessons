@@ -29,7 +29,7 @@ public class Exercies15_21 {
             if (num < 10) {
                 break;
             }
-            scanner.close();
         }
+        scanner.close();
     }
 }

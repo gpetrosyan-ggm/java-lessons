@@ -12,11 +12,12 @@ public class Exercies15_22 {
         Scanner scanner = new Scanner(System.in);
         int sum1 = 0;
         int number = 0;
-        int sum = 0;
-        for (int i = 1; i < 5; i++) {
+
+        for (int i = 1; i < 15; i++) {
 
             System.out.println("number");
             int num = scanner.nextInt();
+            int sum = 0;
 
             while (true) {
 

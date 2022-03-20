@@ -17,6 +17,7 @@ public class Exercies15_23 {
         System.out.println("number");
         int num = scanner.nextInt();
         int num1 = num;
+
         while (true) {
 
             if (num1 % 2 == 0 && num1 % 10 != 0) {
