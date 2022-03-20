@@ -15,15 +15,11 @@ public class Exercies15_28 {
         int num = scanner.nextInt();
         int count = 0;
 
-        while (num!=0) {
-
-            if (num % 10 == 0) {
-                num /= 10;
-                continue;
-            }
+        while (num != 0) {
             num /= 10;
             count++;
         }
+
         System.out.println(count);
         scanner.close();
     }

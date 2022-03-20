@@ -5,7 +5,6 @@ package com.demo.progresstests.exercies15;
 Класс должен определить, встречается ли во введенном с клавиатуры числе сгенерированная цифра
 (сколько раз и на каких позициях), и вывести на экран соответствующую информацию.
  */
-//Sensey mianish tiv em random@ tpum, vor pozician el gtnem, aysinqn vor errordn e
 
 import java.util.Scanner;
 
@@ -17,24 +16,34 @@ public class Exercies15_27 {
         int num = scanner.nextInt();
 
         int min = 0;
-        int max = 10;
+        int max = 100;
         int a = (int) ((Math.random() * (max - min + 1) + min));
         System.out.println(a);
-        int count = 0;
-        int num1 = num;
-        int quantity = 0;
-        while (num1!=0) {
-            num1 /= 10;
-            count++;
+
+        int coefficient = 1;
+        int aTmp = a;
+        while (aTmp != 0) {
+            coefficient *= 10;
+            aTmp /= 10;
         }
-        for (int i = 1; i <=count; i++) {
-            if (num % 10 == a) {
+
+        int index = 0;
+        int quantity = 0;
+        while (num > 0) {
+            if (num % coefficient == a) {
                 quantity++;
-                System.out.println(a + "tiv@ gtnvum e " + i + "_rd texum ");
+                System.out.println(a + "tiv@ gtnvum e " + index + "_rd texum ");
             }
+            index++;
             num /= 10;
         }
-        System.out.println(quantity);
+
+        if (quantity == 0) {
+            System.out.println("Chi gtel");
+        } else {
+            System.out.println("Gtnvel e " + quantity + " angam.");
+        }
+
         scanner.close();
     }
 }

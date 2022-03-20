@@ -23,13 +23,11 @@ public class Exercies15_26 {
         int b = a;
         int coefficient = 1;
 
-        while (b!=0) {
-          //  if (b == 0) {
-            //    break;
-          //  }
+        while (b != 0) {
             coefficient *= 10;
             b /= 10;
         }
+
         while (true) {
 
             if (num % coefficient == a) {

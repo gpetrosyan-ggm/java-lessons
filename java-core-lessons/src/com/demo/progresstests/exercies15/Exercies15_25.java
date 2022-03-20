@@ -15,9 +15,8 @@ public class Exercies15_25 {
         int num = scanner.nextInt();
 
         while (num > 10) {
-            num/=10;
-
-            }
+            num /= 10;
+        }
         System.out.println(num);
 
         scanner.close();

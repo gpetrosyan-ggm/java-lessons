@@ -13,16 +13,16 @@ public class Exercies15_30 {
 
         System.out.println("number");
         int num = scanner.nextInt();
-        int continu = 0;
+        int count = 0;
 
-        while (num!=0) {
-
+        while (num != 0) {
             if (num % 10 == 0) {
-                continu++;
+                count++;
             }
             num /= 10;
         }
-        System.out.println(continu);
+
+        System.out.println(count);
         scanner.close();
     }
 }

@@ -10,32 +10,27 @@ import java.util.Scanner;
 public class Exercies15_22 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sum1 = 0;
-        int number = 0;
+        int maxSum = Integer.MIN_VALUE;
+        int maxSumIndex = Integer.MIN_VALUE;
 
-        for (int i = 1; i < 15; i++) {
+        for (int i = 1; i < 5; i++) {
 
             System.out.println("number");
-            int num = scanner.nextInt();
+            int num = Math.abs(scanner.nextInt());
             int sum = 0;
 
-            while (true) {
-
+            while (num > 0) {
                 sum += num % 10;
                 num /= 10;
-
-                if (sum > sum1) {
-                    sum1 = sum;
-                    number = i;
-                }
-                if (num == 0) {
-                    System.out.println(sum);
-                    break;
-                }
             }
 
+            if (sum > maxSum) {
+                maxSum = sum;
+                maxSumIndex = i;
+            }
         }
-        System.out.println(sum1 + " " + number);
+
+        System.out.println(maxSumIndex + " " + maxSum);
         scanner.close();
     }
 }

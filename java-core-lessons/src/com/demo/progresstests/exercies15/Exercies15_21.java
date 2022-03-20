@@ -12,24 +12,23 @@ public class Exercies15_21 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("number");
-        int  num = scanner.nextInt();
+        int num = scanner.nextInt();
 
-        while (true) {
+        while (num >= 10) {
             int sum = 0;
-            while (true) {
 
+            while (true) {
                 sum += num % 10;
                 num /= 10;
                 if (num == 0) {
-                    System.out.println(sum);
                     num = sum;
                     break;
                 }
             }
-            if (num < 10) {
-                break;
-            }
+
+            System.out.println(sum);
         }
+        System.out.println(num);
         scanner.close();
     }
 }

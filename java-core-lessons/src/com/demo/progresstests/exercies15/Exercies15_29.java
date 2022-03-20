@@ -13,13 +13,14 @@ public class Exercies15_29 {
 
         System.out.println("number");
         int num = scanner.nextInt();
-        int num1 = 0;
+        int sum = 0;
 
-        while (num!=0) {
-            num1 += num % 10;
+        while (num != 0) {
+            sum += num % 10;
             num /= 10;
         }
-        System.out.println(num1);
+
+        System.out.println(sum);
         scanner.close();
     }
 }
