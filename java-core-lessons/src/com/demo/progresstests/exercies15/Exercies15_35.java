@@ -13,21 +13,27 @@ public class Exercies15_35 {
 
         System.out.println("number");
         int num = scanner.nextInt();
-
+        int a = 1;
+        int x = 1;
+        int numTemp = 0;
         int count = 0;
-        if (num % 10 == 0) {
-            num /= 10;
-        }
-        int num1 = num;
-        while (num > 0) {
-            count++;
-            num /= 10;
 
+        int num1 = num;
+        while (num1 > 0) {
+            count++;
+            num1 /= 10;
+            a *= 10;
         }
         for (int i = count; i > 0; i--) {
-            System.out.print(num1 % 10);
-            num1 /= 10;
+
+            a /= 10;
+            int number = (num / a * x);
+            x *= 10;
+            num %= a;
+            numTemp += number;
+
         }
+        System.out.println(numTemp);
         scanner.close();
     }
 }

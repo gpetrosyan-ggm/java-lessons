@@ -15,8 +15,8 @@ public class Exercies15_31 {
             int num = scanner.nextInt();
             int continium = 0;
 
-            while (num>0) {
-                if (num % 2 == 0) {
+            while (num > 0) {
+                if (num % 10 != 0 && num % 2 == 0) {
                     continium++;
                 }
                 num /= 10;
