@@ -5,6 +5,7 @@ package com.demo.progresstests.exercies15;
 пока очередное значение остается меньше 1000
  */
 //Sensey esi vonc vor Araya
+
 import java.util.Scanner;
 
 public class Exercies15_33 {
@@ -12,26 +13,19 @@ public class Exercies15_33 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("number");
-        int num = scanner.nextInt();
-        int num1=num;
-        int count=0;
-        while (true){
-            if (num1==0){
+        int x = scanner.nextInt();
+        int num = x;
+
+        while (true) {
+
+            System.out.println(num);
+            if (num > 1000) {
+                num /= x;
                 break;
             }
-            num1/=10;
-            count++;
+            num *= x;
         }
-        for (int i = 1; i<num; i++){
-            if (i==1){
-                System.out.println(num);
-            }else {
-
-
-                // x*=x;
-                num *= num;
-                System.out.println(num);
-            }
-        }
+        System.out.println(num);
+        scanner.close();
     }
 }
