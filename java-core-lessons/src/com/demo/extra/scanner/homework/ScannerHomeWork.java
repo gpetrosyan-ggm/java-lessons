@@ -26,19 +26,18 @@ public class ScannerHomeWork {
         int j = scanner.nextInt();
 
         System.out.println("ayd tveri gumar@ (i + j)  = ..." + (i + j));
-        int gumar = scanner.nextInt( );
+        int gumar = scanner.nextInt();
 
-        System.out.println("Tarberutyun@ (i - j) = ..." + ( i - j));
+        System.out.println("Tarberutyun@ (i - j) = ..." + (i - j));
         int hanum = scanner.nextInt();
 
         System.out.println("Haraberutyun ( i / j) =  ... " + (i / j));
         double bajanum = scanner.nextDouble();
 
-        System.out.println("Artadryal@  (i * j) =..."+ (i * j));
+        System.out.println("Artadryal@  (i * j) =..." + (i * j));
         int artadryal = scanner.nextInt();
 
         scanner.close();
-
 
 
     }
@@ -59,9 +58,9 @@ public class ScannerHomeWork {
 
         System.out.println("How Old Are You...");
         int old = scanner.nextInt();
-        if (old < 18){
+        if (old < 18) {
             System.out.println("Դեռ փոքր ես նման բաների համար");
-        }else if(old >= 18){
+        } else if (old >= 18) {
             System.out.println("Ապրիս, լավ էլ մեծ ես, կարաս շարունակես");
         }
         scanner.close();
