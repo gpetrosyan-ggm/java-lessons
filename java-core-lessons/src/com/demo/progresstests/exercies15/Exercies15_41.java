@@ -31,9 +31,9 @@ public class Exercies15_41 {
         }
 
         if (max % 2 != 0) {
-            while (max > min) {
-                System.out.print(max-- + " ");
+            while (max >= min) {
                 max--;
+                System.out.print(max + " ");
                 count++;
             }
 

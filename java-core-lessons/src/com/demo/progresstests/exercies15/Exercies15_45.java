@@ -27,17 +27,15 @@ public class Exercies15_45 {
             count++;
             weightAll += weight;
 
-            //  if (count < 6 || weightAll < 450) {        // es kod@ indz tvuma avelnord e, dra hamar komment em arel
-            //      System.out.println(count + " hoqi eq dzer qash@ kazmum e " + weightAll);
-            //  }
-            if (count > 6) {
-                System.out.println(count + " mardkanc perebor, verjin mtac iji");
+            if (weightAll > 450 || count > 7) {
+
+                System.out.println(" dzer mutqn argelvum e ");
+                weightAll -= weight;
+                count--;
+                System.out.println(count + " drner@ pakvecin, sharjvecinq" + weightAll);
                 break;
             }
-            if (weightAll > 450) {
-                System.out.println(weightAll + " qashi perebor, verjin mtac iji");
-                break;
-            }
+
         }
         scanner.close();
     }

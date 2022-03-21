@@ -45,9 +45,9 @@ public class Exercies15_50 {
                 break;
             }
             if (enteranceExit > 0) {
-                enterace++;
+                enterace--;
             } else {
-                exit--;
+                exit++;
             }
         }
         System.out.println(enterace + " -mutq : " + exit + " - elq");

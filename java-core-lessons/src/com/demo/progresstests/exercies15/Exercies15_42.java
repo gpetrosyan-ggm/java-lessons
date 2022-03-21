@@ -14,23 +14,20 @@ public class Exercies15_42 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("number");
-        int num=scanner.nextInt();
-        int fib0=0;
-        int fib1=1;
+        int num = scanner.nextInt();
+        int fib1 = 0;
+        int fib2 = 1;
+int fib3 = 1;
+        while (fib3 <= num) {
 
-        while (true){
-            int fib2=fib0+fib1;
-            if (fib2>num){
-                System.out.println(num+ " chi handisanum fibi andam");
+            if (fib3 == num) {
+                System.out.println(num + " tiv@ FIBONACHII andam e");
                 break;
             }
-            if (fib2==num){
-                System.out.println(num + " tiv@ FIBONACII andam e");
-                break;
-            }else {
-                fib0=fib1;
-                fib1=fib2;
-            }
+            fib3 = fib1+fib2;
+            fib1 = fib2;
+            fib2 = fib3;
+
         }
         scanner.close();
     }

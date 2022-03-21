@@ -8,6 +8,7 @@ package com.demo.progresstests.exercies15;
  */
 //Sensey Ekvilidi banadzevov em sax shshel
 //https://scienceland.info/algebra8/euclid-algorithm
+
 import java.util.Scanner;
 
 public class Exercies15_44 {
@@ -28,10 +29,10 @@ public class Exercies15_44 {
             max = b;
             min = a;
         }
-
         while (min != 0) {
-            if (max % min != 0) {
-                int c = max % min;
+
+            int c = max % min;
+            if (c != 0) {
                 max = min;
                 min = c;
                 System.out.println(max + "  " + min);
