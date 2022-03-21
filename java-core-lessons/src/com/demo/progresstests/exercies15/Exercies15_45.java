@@ -27,7 +27,7 @@ public class Exercies15_45 {
             count++;
             weightAll += weight;
 
-            if (weightAll > 450 || count > 7) {
+            if (weightAll > 450 || count > 6) {
 
                 System.out.println(" dzer mutqn argelvum e ");
                 weightAll -= weight;

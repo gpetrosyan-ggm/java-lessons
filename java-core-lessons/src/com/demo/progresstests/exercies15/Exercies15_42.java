@@ -17,14 +17,14 @@ public class Exercies15_42 {
         int num = scanner.nextInt();
         int fib1 = 0;
         int fib2 = 1;
-int fib3 = 1;
+        int fib3 = 1;
         while (fib3 <= num) {
 
             if (fib3 == num) {
                 System.out.println(num + " tiv@ FIBONACHII andam e");
                 break;
             }
-            fib3 = fib1+fib2;
+            fib3 = fib1 + fib2;
             fib1 = fib2;
             fib2 = fib3;
 

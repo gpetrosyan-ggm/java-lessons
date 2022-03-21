@@ -14,42 +14,47 @@ package com.demo.progresstests.exercies15;
 Класс должен после каждой операции указывать сумму на счете клиента,
 а также количество операций вложения и количество операций снятия, произведенных клиентом.
  */
-// es xndir@ @ndhanrapes chem haskanum, fantaziais zor em tvel u lucel, kbacatres incha uzum
 
 import java.util.Scanner;
 
 public class Exercies15_50 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("overdraft");
+
+        System.out.println("overdraft (-)");
         int overdraft = scanner.nextInt();
+        if (overdraft > 0) {
+            overdraft *= -1;
+        }
+
         System.out.println("sum money");
         int sumMoney = scanner.nextInt();
 
-        int sum = overdraft + sumMoney;
-        int deal = 0;
-        int gnum = 0;
-        int enterace = 0;
+        int entrance = 0;
         int exit = 0;
 
         while (true) {
-            System.out.println("enterance exit");
-            int enteranceExit = scanner.nextInt();
-            if (enteranceExit == 0) {
+            System.out.println("deal money (+ for add, - for exists)");
+            int deal = scanner.nextInt();
+            if (deal == 0) {
                 break;
             }
-            System.out.println("qaarti vra mnac " + (sumMoney - enteranceExit));
-            deal += enteranceExit;
-            if (deal > overdraft) {
+
+            int tmpSumMoney = sumMoney + deal;
+            if (tmpSumMoney < overdraft) {
                 System.out.println("gerazanceciq overdraft@");
                 break;
             }
-            if (enteranceExit > 0) {
-                enterace--;
+
+            sumMoney = tmpSumMoney;
+            System.out.println("qaarti vra mnac " + sumMoney + ": Unes ( " + overdraft + " ) overdraft");
+
+            if (deal > 0) {
+                entrance++;
             } else {
                 exit++;
             }
         }
-        System.out.println(enterace + " -mutq : " + exit + " - elq");
+        System.out.println(entrance + " - mutq : " + exit + " - elq");
     }
 }

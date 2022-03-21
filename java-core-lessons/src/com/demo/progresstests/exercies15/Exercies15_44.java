@@ -30,16 +30,13 @@ public class Exercies15_44 {
             min = a;
         }
         while (min != 0) {
-
             int c = max % min;
-            if (c != 0) {
-                max = min;
-                min = c;
-                System.out.println(max + "  " + min);
-            } else {
+            if (c == 0) {
                 break;
             }
-
+            max = min;
+            min = c;
+            System.out.println(max + "  " + min);
         }
     }
 }
