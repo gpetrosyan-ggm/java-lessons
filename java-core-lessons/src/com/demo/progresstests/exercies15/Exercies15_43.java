@@ -6,7 +6,7 @@ package com.demo.progresstests.exercies15;
 Напишите класс, который принимает с клавиатуры два целых положительных числа
 и определяет их НОД описанным методом.
  */
-// es xndir chi, uxaki vret kayfavata linum
+
 import java.util.Scanner;
 
 public class Exercies15_43 {
