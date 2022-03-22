@@ -14,8 +14,8 @@ public class Exercies16_19 {
     public static void main(String[] args) {
         int min = 3;
         int max = 5;
-
-        double c = 0;
+int d=0;
+        double c;
         for (int i = 1; i < 36; i++) {
             double b = 0;
             System.out.println();
@@ -27,13 +27,15 @@ public class Exercies16_19 {
                 System.out.print(a + " ; ");
                 b += a;
             }
-            System.out.print(" = " + b / 8);
-            if (b / 8 >= 4) {
-                c = b;
-                System.out.print(" barcr gnahatak eni ");
+            c=b/8;
+            System.out.print(" = " + c);
+            if (c > 4) {
+                d++;
             }
 
         }
+        System.out.println();
+        System.out.println(" mijain barcr gnahatakan unen " + d);
 
 
     }

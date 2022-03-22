@@ -11,40 +11,44 @@ public class Exercies16_20 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
-        while (true) {
+        int num = 1;
+        while (num > 0) {
             int count = 0;
-            int countTem = 1;
+            int countTem = 0;
             int sum = 0;
+            int sum1 = 0;
             int countMax = 0;
 
             System.out.println("number");
-            int num = scanner.nextInt();
+            num = scanner.nextInt();
 
             for (int i = 2; i < num; i++) {
                 if (num % i == 0) {
-                    count++;
+                    count++; // mianisha
                 }
             }
-            int num1 = num;
+
             for (; ; ) {
 
-                if (num1 / 10 != 0) {
-                    countTem++;
-                    num1 /= 10;
+                if (num % 10 != 0) {
+                    countTem++; //sa mianisha
+                    sum += num % 10;
+
+                    num = num / 10;
                 } else {
                     break;
                 }
             }
-            for (int j = 0; j < countTem; j++) {
-                sum += num % 10;
-                num = num / 10;
-            }
-            countMax = count + countTem + sum;
-
             System.out.println("tvi tvanshanneri qanak " + countTem);
             System.out.println("tvi tvanshanneri gumar " + sum);
             System.out.println("tvi bajanararneri gumar " + count);
+            for (int i = 1; i<3; i++) {
+
+                    countMax += count % 10 + countTem % 10 + sum % 10;
+                    count /= 10;
+                    countTem /= 10;
+                    sum /= 10;
+            }
             System.out.println("es saxi gumar@ " + countMax);
         }
     }

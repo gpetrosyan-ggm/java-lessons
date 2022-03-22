@@ -17,25 +17,24 @@ public class Exercies16_12 {
         System.out.println("number a");
         int a = scanner.nextInt();
         int sum = 0;
-        int sum1 = 0;
-        int b;
-        int sum2 = 0;
+        int sum1;
+
         for (int i = 1; i < a; i++) {
             if (a % i == 0) {
                 sum += i;
             }
         }
-        for (b = (a + 1); b < 1000; b++) {
+        for (int b = (a + 1); b < 1000; b++) {
             sum1 = 0;
-
             for (int j = 1; j < b; j++) {
                 if (b % j == 0) {
                     sum1 += j;
                 }
-                if (sum1 == a && sum == b) {
-                    System.out.println(b);
-                    break;
+
                 }
+            if (sum1 == a && sum == b) {
+                System.out.println(b);
+                break;
 
             }
         }
