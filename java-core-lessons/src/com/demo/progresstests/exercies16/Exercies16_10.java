@@ -18,8 +18,8 @@ public class Exercies16_10 {
             for (int j = 1; j <= i; j++) {
 
                 int c = i * i + j * j;
-                if (c == num * num) {
-                    System.out.println(i + " * " + i + " + " + j + " * " + j + " = " + num + " * " + num);
+                if (c == num) {
+                    System.out.println(i + " * " + i + " + " + j + " * " + j + " = " + num);
                 }
             }
         }

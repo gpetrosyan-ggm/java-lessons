@@ -11,7 +11,9 @@ package com.demo.progresstests.exercies16;
 public class Exercies16_4 {
     public static void main(String[] args) {
         for (int i = 10; i < 100; i++) {
-            System.out.println(i + " zuyg e ");
+            if (i%2==0){
+                System.out.println(i + " zuyg e ");
+            }
 
             if (i % 3 == 0) {
                 System.out.println(i + " 3-i bajanara ");
