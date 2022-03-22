@@ -9,13 +9,14 @@ public class Exercies16_13 {
         int sum = 0;
         int count = 0;
         for (int i = 10; i < 100; i++) {
-            int x = 0;
+            boolean parze = true;
             for (int j = 2; j < i; j++) {
-                if (i % j != 0) {
-                    x++;
-                }else break;
+                if (i % j == 0) {
+                    parze = false;
+                    break;
+                }
             }
-            if (x == 0) {
+            if (parze) {
                 sum += i;
                 count++;
                 System.out.println(i);
