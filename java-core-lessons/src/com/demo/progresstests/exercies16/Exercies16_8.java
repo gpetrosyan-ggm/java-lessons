@@ -9,7 +9,6 @@ package com.demo.progresstests.exercies16;
 3++
 4+++
  */
-//Sensey, es xndir@ vor es inqnuruyn lucel em, indz petqa tas nobelyan mrcanak
 import java.util.Scanner;
 
 public class Exercies16_8 {
@@ -19,15 +18,14 @@ public class Exercies16_8 {
         System.out.println("number");
         int num = scanner.nextInt();
 
-
         for (int i = 1; i<=num; i++) {
 
             int count = 0;
-            String str = String.valueOf("");
+            String str = "";
 
             for (int j = 1; j <= i; j++) {
                 if (i % j == 0) {
-                    str += String.valueOf('+');
+                    str += "+";
                     count++;
                 }
             }
