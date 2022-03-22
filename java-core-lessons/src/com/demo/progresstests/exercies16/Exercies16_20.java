@@ -10,18 +10,15 @@ import java.util.Scanner;
 public class Exercies16_20 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        int sum1 = 0;
         int num = 1;
         while (num > 0) {
             int count = 0;
             int countTem = 0;
             int sum = 0;
-            int sum1 = 0;
-            int countMax = 0;
 
             System.out.println("number");
             num = scanner.nextInt();
-            countMax+=num;
 
             for (int i = 2; i < num; i++) {
                 if (num % i == 0) {
@@ -38,10 +35,11 @@ public class Exercies16_20 {
                     num = num / 10;
                 } else break;
             }
+            sum1 += sum;
             System.out.println("tvi tvanshanneri qanak " + countTem);
             System.out.println("tvi tvanshanneri gumar " + sum);
             System.out.println("tvi bajanararneri gumar " + count);
-            System.out.println("bolor gumar@ " + countMax);
+            System.out.println("bolor gumar@ " + sum1);
         }
     }
 }
