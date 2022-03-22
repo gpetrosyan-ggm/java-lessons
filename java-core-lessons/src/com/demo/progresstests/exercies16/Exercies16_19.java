@@ -9,7 +9,7 @@ package com.demo.progresstests.exercies16;
 После завершения вывода на экран оценок всех учеников класс должен
 выводить в отдельной строке количество учеников, у которых среднегодовая оценка выше
  */
-// chem karum takic arandzin sranc durs berem, koxqic em avelacrel
+
 public class Exercies16_19 {
     public static void main(String[] args) {
         int min = 3;
