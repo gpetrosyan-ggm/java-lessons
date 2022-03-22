@@ -21,35 +21,27 @@ public class Exercies16_20 {
 
             System.out.println("number");
             num = scanner.nextInt();
+            countMax+=num;
 
             for (int i = 2; i < num; i++) {
                 if (num % i == 0) {
-                    count++; // mianisha
+                    count++;
                 }
             }
 
             for (; ; ) {
 
                 if (num % 10 != 0) {
-                    countTem++; //sa mianisha
+                    countTem++;
                     sum += num % 10;
 
                     num = num / 10;
-                } else {
-                    break;
-                }
+                } else break;
             }
             System.out.println("tvi tvanshanneri qanak " + countTem);
             System.out.println("tvi tvanshanneri gumar " + sum);
             System.out.println("tvi bajanararneri gumar " + count);
-            for (int i = 1; i<3; i++) {
-
-                    countMax += count % 10 + countTem % 10 + sum % 10;
-                    count /= 10;
-                    countTem /= 10;
-                    sum /= 10;
-            }
-            System.out.println("es saxi gumar@ " + countMax);
+            System.out.println("bolor gumar@ " + countMax);
         }
     }
 }

@@ -13,9 +13,7 @@ public class Exercies16_13 {
             for (int j = 2; j < i; j++) {
                 if (i % j != 0) {
                     x++;
-                }else {
-                    break;
-                }
+                }else break;
             }
             if (x == 0) {
                 sum += i;
