@@ -23,5 +23,14 @@ public class Exercies18_5 {
     // x = 62;
     // a[4] = 62 % 10 = 2;
     // a[5] = 62 / 10 = 6;
+    public static void main(String[] args) {
+        int[] a = new int[5];
+        for (int i = 0; i<5; i+=2){
+            int x = (int)(90*Math.random()+10);
+            a[i] = x%10;
+            a[i+1] = x/10;
+            System.out.println(a[i] + " ");
 
+        }
+    }
 }

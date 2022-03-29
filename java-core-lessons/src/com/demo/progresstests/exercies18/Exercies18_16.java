@@ -26,15 +26,13 @@ public class Exercies18_16 {
         int min = 100;
         int max = 999;
         int k = b / 2;
-
+        int c = b;
         for (int i = 0; i < b; i++) {
             a[i] = (int) (int) (Math.random() * (max - min + 1) + min);
             System.out.print(a[i] + " ");
         }
         System.out.println();
-        for (int j = 0; j < k; j++) {
-            int c = b;
-            c--;
+        for (int j = 0; j < k; j++, c--) {
             System.out.println(a[j] + " ev " + a[c]);
         }
         if (b % 2 != 0) {
