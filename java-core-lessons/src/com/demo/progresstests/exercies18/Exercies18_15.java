@@ -22,11 +22,18 @@ public class Exercies18_15 {
 
         for (int i = 0; i < a.length; i++) {
             a[i] = (int) (Math.random() * (max - min + 1) + max);
-
-            if (a[i] % 2 == 0) {
-                System.out.println(a[i] + " verevi tox");
-            } else {
-                System.out.println(a[i] + " nergevi tox");
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+        for (int j = 0; j < a.length; j++) {
+            if (a[j] % 2 == 0) {
+                System.out.print(a[j] + " ");
+            }
+        }
+        System.out.println();
+        for (int j = 0; j < a.length; j++) {
+            if (a[j] % 2 != 0) {
+                System.out.print(a[j] + " ");
             }
         }
         scanner.close();
