@@ -33,7 +33,7 @@ public class Exercies18_16 {
         }
         System.out.println();
         for (int j = 0; j < k; j++) {
-            System.out.println(a[j] + " ev " + a[b-j]);
+            System.out.println(a[j] + " ev " + a[b - j - 1]);
         }
         if (b % 2 != 0) {
             System.out.println(a[k]);
