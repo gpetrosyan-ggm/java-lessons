@@ -23,7 +23,7 @@ public class Exercies18_13 {
         int c = a.length / 2;
 
         for (int i = 0; i < a.length; i++) {
-            a[i] = (int) (int) (Math.random() * (max - min + 1) + min);
+            a[i] = (int) (Math.random() * (max - min + 1) + min);
             System.out.print(a[i] + " ");
         }
         System.out.println();
