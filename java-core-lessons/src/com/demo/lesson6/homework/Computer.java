@@ -1,15 +1,27 @@
 package com.demo.lesson6.homework;
 
-public class Computer {
-    int ACM;
-    String name;
-    int CPU;
-    int Windows;
-    int SSD;
-    int max;
+import java.util.Random;
 
-    public int getMax(int SSD) {
-        return this.max > SSD ? this.max : SSD;
+public class Computer {
+
+    int hdd; // megabayt
+    String name;
+    int cpu; // proc herc
+    int windows;
+    int ssd;
+
+    public Computer(int ssd, int cpu, int hdd) {
+        this.ssd = ssd;
+        this.cpu = cpu;
+        this.hdd = hdd;
+    }
+
+    public void print() {
+        System.out.println(ssd + " " + cpu + " " + hdd + " " + name+ " " + windows);
+    }
+
+    public int getMax(int ssd) {
+        return this.ssd > ssd ? this.ssd : ssd;
     }
 
 }
