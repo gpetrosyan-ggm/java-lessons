@@ -44,10 +44,14 @@
             3. Ոնց ցանկացած element֊ին արժեք վերագրել
             4. length - բացատրել
 
--- Գրավոր
 1. OverloadingArray
         1. 2 մեթոդը տպել foreach֊ով
-        1. 2 մեթոդը տպել for֊ով օգտագործելով length֊ը
+        1. 2 մեթոդը տպել for֊ով օգտագործելով length֊ը  // vonc asel es Sensey tenc el arel em
+        // Sensey kbacatres vonc tpem vor sirun pakagcerov stacvi, Array-in vonc arjeqner tvel em tenc el tpi
+        // es xndri paragayum imast uni 2 hat class stexcel u kanchel, te es paragayum aveli lav kliner mi classi mej
+        // metod@ greyi u luceyi, xi em harcnum qani vor tayper chunem, konstruktor chunem, yeqa classum menak
+        // metoda u el urish ban chka
+
 2. Սարքել ցանկացած class ու մեջը օգտագործել բոլոր access control֊ները
     1. Համ փոփոխակաների համար
     2. Համ մեթոդների համար

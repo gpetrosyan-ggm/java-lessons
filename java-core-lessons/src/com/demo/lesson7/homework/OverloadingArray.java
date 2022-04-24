@@ -8,17 +8,14 @@ package com.demo.lesson7.homework;
  */
 
 public class OverloadingArray {
-
    void   array(double [] array) {
-       System.out.println(array);
     }
     void array(long[] array) {
-        System.out.println(array);
     }
     void array(double[][] array) {
-        System.out.println(array);
     }
     void array(long[][] array) {
-        System.out.println(array);
+    }
+    void array(int [][][] array){
     }
 }
