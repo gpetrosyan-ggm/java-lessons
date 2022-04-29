@@ -7,18 +7,39 @@ package com.demo.lesson7.homework;
     4. long տեսակի արկչափ (long[][])  և կտպի պարունակություն
  */
 
-public class OverloadingArray {
+import java.util.Arrays;
 
-   void   array(double [] array) {
-       System.out.println(array);
+public class OverloadingArray {
+    void array(double[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+        for (double x : array) {
+            System.out.print(x + "; ");
+        }
     }
     void array(long[] array) {
-        System.out.println(array);
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
     void array(double[][] array) {
-        System.out.println(array);
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(Arrays.toString(array[i]));
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.println(array[i][j]);
+            }
+        }
     }
     void array(long[][] array) {
-        System.out.println(array);
+        System.out.println();
+        for (long x[] : array) {
+            for (long y : x) {
+                System.out.print(y + " ");
+            }
+        }
     }
 }

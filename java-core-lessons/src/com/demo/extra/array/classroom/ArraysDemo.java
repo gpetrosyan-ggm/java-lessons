@@ -72,6 +72,7 @@ public class ArraysDemo {
                 System.out.println(Arrays.toString(asd3[i][j]));
                 for (int k = 0; k < asd3[i][j].length; k++) {
                     System.out.println(asd3[i][j][k]);
+
                 }
             }
         }

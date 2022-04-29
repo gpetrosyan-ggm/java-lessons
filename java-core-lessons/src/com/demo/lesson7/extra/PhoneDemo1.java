@@ -9,6 +9,7 @@ public class PhoneDemo1 {
         phone.mark = "Samsung";
         phone.info();
         System.out.println(phone);
+
     }
 
 }
