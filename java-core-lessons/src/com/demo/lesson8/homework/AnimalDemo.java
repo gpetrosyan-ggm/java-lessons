@@ -5,19 +5,30 @@ import com.demo.lesson7.homework.Home;
 public class AnimalDemo {
     public static void main(String[] args) {
 
-        Dog dog = new Dog("Home", 12, 4, "Sharik");
-        Cat cat = new Cat("Home", 8, 4, "maus");
-        Eagle eagle = new Eagle("wild", 25, "stylus", "super");
-        Chicken chicken = new Chicken("Home", 2, " stylus", "beak");
-        dog.printInfoDog();
+
+        Dog dog = new Dog();
+        dog.printInfo("home", 12);
+        dog.printInfo(4);
+        dog.printInfo("Sharik");
         System.out.println();
 
-        cat.printInfoCat();
+        Cat cat = new Cat();
+        cat.printInfo("Home", 8);
+        cat.printInfo(4);
+        cat.printInfo("ma's");
         System.out.println();
 
-        eagle.printInfoEagle();
+        Eagle eagle = new Eagle();
+        eagle.vision = "Super";
+        eagle.printInfo("wild", 25);
+        eagle.printInfo("bol");
+        eagle.printInfo();
         System.out.println();
 
-        chicken.printInfoChicken();
+        Chicken chicken = new Chicken();
+        chicken.muzzle = "beak";
+        chicken.printInfo("hom", 2);
+        chicken.printInfo("bol");
+        chicken.printInfo();
     }
 }
