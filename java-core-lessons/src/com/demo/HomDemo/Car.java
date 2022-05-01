@@ -1,12 +1,11 @@
 package com.demo.HomDemo;
 
-public class Car extends Man {
+public class Car {
     public String country;
     public String vinCode;
     public String type;
 
-    void printInfo() {
-        super.printInfo();
+    void printInfo(String country, String vinCode, String type) {
         System.out.println("CAR : Country - " + country + "; VinCode - " + vinCode + "; Type - " + type);
     }
 }

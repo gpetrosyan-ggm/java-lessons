@@ -5,7 +5,7 @@ public class Toyota extends Car {
     public double engine;
 
     void printInfo() {
-        super.printInfo();
+      printInfo("Japan", "BMJ0934723VB90", "jeep");
         System.out.println("TOYOTA : Age - " + age + "; Engine - " + engine);
     }
 }

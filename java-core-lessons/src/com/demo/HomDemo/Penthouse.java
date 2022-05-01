@@ -5,7 +5,7 @@ public class Penthouse extends Home {
     public double pool;
 
     void printInfo() {
-        super.printInfo();
+        //printInfo();
         System.out.println("PENTHOUSE : Floor - " + floor + "; Pool - " + pool);
     }
 }

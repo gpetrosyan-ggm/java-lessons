@@ -5,7 +5,7 @@ public class Bmw extends Car {
     public String mark;
 
     void printInfo() {
-        super.printInfo();
+     printInfo("Germany", "ABC9384565M789", "sedan");
         System.out.println("BMW : Name - " + name + "; Marka - " + mark);
     }
 }

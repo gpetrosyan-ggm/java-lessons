@@ -5,7 +5,7 @@ public class Apartment extends Home {
     public int room;
 
     void printInfo() {
-        super.printInfo();
+       // printInfo();
         System.out.println("APARTMENT : Square - " + square + "; Room - " + room);
     }
 }
