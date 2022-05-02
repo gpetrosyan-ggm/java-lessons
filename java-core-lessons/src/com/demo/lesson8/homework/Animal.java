@@ -5,11 +5,11 @@ public class Animal {
     public int age;
     private String name = "Enimal";
 
-//    public Animal(String type, int age) {
-//        this.type = type;
-//        this.age = age;
-//    }
-    public void printInfo(String type, int age) {
-        System.out.println("ANIMAL: Type - " + type + ", age - " + age);
+    public Animal(String type, int age) {
+        this.type = type;
+        this.age = age;
+    }
+    public void printInfo() {
+        System.out.println("ANIMAL: Type - " + type + ", age - " + age + " Name - " +name);
     }
 }

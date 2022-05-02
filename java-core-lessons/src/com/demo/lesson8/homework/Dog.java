@@ -1,13 +1,14 @@
 package com.demo.lesson8.homework;
 
-public class Dog extends Bird {
+public class Dog extends Pet {
     public String name;
+    private String family = " yes";
 
-    //    public Dog(String type, int age, int paws, String name) {
-//        super(type, age, paws);
-//        this.name = name;
-//    }
-    public void printInfo(String name) {
-        System.out.println("DOG : Name - " + name);
+        public Dog(String type, int age, String coverage, String name) {
+        super(type, age, coverage);
+        this.name = name;
+    }
+    public void printInfo() {
+        System.out.println("DOG : Name - " + name + " Family - " +family);
     }
 }
