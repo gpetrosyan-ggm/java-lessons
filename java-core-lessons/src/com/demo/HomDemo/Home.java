@@ -5,7 +5,12 @@ public class Home {
     public String address;
     public int postIndex;
 
-    void printInfo(String address, int postIndex) {
+    public Home(String address, int postIndex) {
+        this.address = address;
+        this.postIndex = postIndex;
+    }
+
+    void printInfo() {
 
         System.out.println("HOME : Address - " + address + "; PostIndex - " + postIndex);
 
