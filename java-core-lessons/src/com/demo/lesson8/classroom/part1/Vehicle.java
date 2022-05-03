@@ -1,4 +1,4 @@
-package com.demo.lesson8.classroom;
+package com.demo.lesson8.classroom.part1;
 
 public class Vehicle {
 
