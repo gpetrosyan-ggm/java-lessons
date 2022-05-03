@@ -1,6 +1,6 @@
 package com.demo.HomDemo;
 
-public class Car {
+public class Car  {
     public String country;
     public String vinCode;
     public String type;
@@ -11,7 +11,7 @@ public class Car {
         this.type = type;
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("CAR : Country - " + country + "; VinCode - " + vinCode + "; Type - " + type);
     }
 }

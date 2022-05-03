@@ -10,8 +10,7 @@ public class Bmw extends Car {
         this.mark = mark;
     }
 
-    void printInfo() {
-
+    public void printInfo() {
         System.out.println("BMW : Name - " + name + "; Marka - " + mark);
     }
 }

@@ -1,7 +1,6 @@
 package com.demo.HomDemo;
 
 public class Home {
-
     public String address;
     public int postIndex;
 
@@ -10,9 +9,7 @@ public class Home {
         this.postIndex = postIndex;
     }
 
-    void printInfo() {
-
+    public void printInfo() {
         System.out.println("HOME : Address - " + address + "; PostIndex - " + postIndex);
-
     }
 }

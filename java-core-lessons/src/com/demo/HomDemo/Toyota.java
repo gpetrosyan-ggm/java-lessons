@@ -10,7 +10,7 @@ public class Toyota extends Car {
         this.engine = engine;
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("TOYOTA : Age - " + age + "; Engine - " + engine);
     }
 }

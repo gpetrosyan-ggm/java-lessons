@@ -10,7 +10,7 @@ public class Apartment extends Home {
         this.room = room;
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("APARTMENT : Square - " + square + "; Room - " + room);
     }
 }
