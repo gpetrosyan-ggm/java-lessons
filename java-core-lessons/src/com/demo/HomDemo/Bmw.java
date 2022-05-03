@@ -4,14 +4,8 @@ public class Bmw extends Car {
     public String name;
     public String mark;
 
-    public Bmw(int thingsCar,
-               int thingsHome,
-               String car,
-               String home,
-               String country,
-               String vinCode,
-               String type, String name, String mark) {
-        super(thingsCar, thingsHome, car, home, country, vinCode, type);
+    public Bmw(String country, String vinCode, String type, String name, String mark) {
+        super(country, vinCode, type);
         this.name = name;
         this.mark = mark;
     }
