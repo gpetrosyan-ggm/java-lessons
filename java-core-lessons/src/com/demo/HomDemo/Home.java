@@ -1,18 +1,16 @@
 package com.demo.HomDemo;
 
-public class Home {
-
+public class Home extends Man {
     public String address;
     public int postIndex;
 
-    public Home(String address, int postIndex) {
+    public Home(int thingsCar, int thingsHome, String car, String home, String address, int postIndex) {
+        super(thingsCar, thingsHome, car, home);
         this.address = address;
         this.postIndex = postIndex;
     }
 
-    void printInfo() {
-
+    public void printInfo() {
         System.out.println("HOME : Address - " + address + "; PostIndex - " + postIndex);
-
     }
 }
