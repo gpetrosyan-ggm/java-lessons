@@ -14,3 +14,22 @@
     3. սարքել printInfo անունով method են մյուս 1-ական subclass֊ներին, որը ոչինչ չի ընդունում ու չի վերադարցնում, ուղատի տպումա superclass֊ի բորոլ փոփոխակաները
 5. Սաքել ինչ֊որ demo class, ու վերևի բորոլ class֊ներից object֊ներ սարքել ու կանչել printInfo method֊ը։
    Կարաս եքսպերեմինտներ անես, subclass փոփոխականով superclass object սարքել, կամ հակառակը։
+
+----------------------------------------------------------------------------------------------------
+
+1. lesson8.homework֊ում սարքել նոր package, անունը դու դիր (բայց նորմալ անուն)
+2. Սարեքել abstract NotificationProvider class
+    1. class֊ու պիտի ունենա type փոփոխական, որը պարդադիրա լինելու․
+    2. class֊ու պիտի ունենա մի հատ abstract method (sendNotification անունով),
+       որի ընդունումա 2 պարամետեր։ 1 - թե ում պիտի ուղարկի, 2 - ինչ message պիտի ուղարկի։
+       Իսկ վերադարցնող type թող լինի boolean, որը ցույց կտա ուղարկելա թե ոչ։
+3. Սարեքել 3 ժառանգ class֊ներ NotificationProvider֊ից՝ ViberProvider, WhatsAppProvider, TelegramProvider:
+    Բոլոր 3 class֊ներն էլ պիտի ունենան իրենց type֊ը, տարբերվող մյուսներից ու override անեն sendNotification method֊ը։
+    Method֊ի լոգիկան թողնում եմ քո վրա։
+4. Սարեքել NotificationProviderDemo class, որը կունենա մի հատ method, որի պատամետրերն էն՝
+    1- NotificationProvider, 2 - թե ում պիտի ուղարկի, 3 - ինչ message պիտի ուղարկի։
+    Կախված type֊ից, սարքի համապատասքան ժառանգ provider-ի object֊ը (օգտագործիր switch) ու sendNotification method֊ը կանչի։
+    Ու կախված ուղարկելա թե ոչ, ինչ որ բան տպի։
+    Նույն class֊ի ներում կարաս հենց main method֊ը սարքել ու կանչել վերևի նկարագրած method֊ը բոլոր 3 ժառանգ provider-ների համար
+
+----------------------------------------------------------------------------------------------------
