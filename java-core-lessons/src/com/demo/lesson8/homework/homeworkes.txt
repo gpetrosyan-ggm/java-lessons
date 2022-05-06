@@ -27,7 +27,7 @@
     Բոլոր 3 class֊ներն էլ պիտի ունենան իրենց type֊ը, տարբերվող մյուսներից ու override անեն sendNotification method֊ը։
     Method֊ի լոգիկան թողնում եմ քո վրա։
 4. Սարեքել NotificationProviderDemo class, որը կունենա մի հատ method, որի պատամետրերն էն՝
-    1- NotificationProvider, 2 - թե ում պիտի ուղարկի, 3 - ինչ message պիտի ուղարկի։
+    1- type, 2 - թե ում պիտի ուղարկի, 3 - ինչ message պիտի ուղարկի։
     Կախված type֊ից, սարքի համապատասքան ժառանգ provider-ի object֊ը (օգտագործիր switch) ու sendNotification method֊ը կանչի։
     Ու կախված ուղարկելա թե ոչ, ինչ որ բան տպի։
     Նույն class֊ի ներում կարաս հենց main method֊ը սարքել ու կանչել վերևի նկարագրած method֊ը բոլոր 3 ժառանգ provider-ների համար
