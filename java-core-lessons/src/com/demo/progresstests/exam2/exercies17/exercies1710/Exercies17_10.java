@@ -5,11 +5,11 @@ package com.demo.progresstests.exam2.exercies17.exercies1710;
  */
 
 public class Exercies17_10 {
-    public void  amount(int num){
-        int sum =0;
-        while (num>0){
-            sum += num%10;
-            num /=10;
+    public void amount(int num) {
+        int sum = 0;
+        while (num > 0) {
+            sum += num % 10;
+            num /= 10;
         }
         System.out.println(sum);
     }
