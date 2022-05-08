@@ -30,17 +30,4 @@ static int fun2(int b);
  */
 
 public class Exercies17_1 {
-    public static void main(String[] args) {
-        double r1;
-        int х1,х2,b1,b2;
-
-    }
-    static int fun1(int х, double у){
-
-        return х;
-    }
-    static int fun2(int b){
-      return b;
-    }
-    boolean f = false;
 }
