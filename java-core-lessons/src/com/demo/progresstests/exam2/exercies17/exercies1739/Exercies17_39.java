@@ -8,27 +8,17 @@ package com.demo.progresstests.exam2.exercies17.exercies1739;
  */
 
 public class Exercies17_39 {
-    void cordinatAB(int corAx, int corAy, int corBx, int corBy) {
+    boolean cordinateAB(int corAx, int corAy, int corBx, int corBy) {
         boolean cor = true;
-        boolean corAx1 = true;
-        boolean corAy1 = true;
-        boolean corBx1 = true;
-        boolean corBy1 = true;
-        if (corAx < 0) {
-            corAx1 = false;
-        }
-        if (corAy < 0) {
-            corAy1 = false;
-        }
-        if (corBx < 0) {
-            corBx1 = false;
-        }
-        if (corBy < 0) {
-            corBx1 = false;
-        }
+
+        boolean corAx1 = corAx < 0 ? false : true;
+        boolean corAy1 = corAy < 0 ? false : true;
+        boolean corBx1 = corBx < 0 ? false : true;
+        boolean corBy1 = corBy < 0 ? false : true;
+
         if (corAx1 == corBx1 && corAy1 == corBy1 && corAx1 == corAy1) {
             cor = false;
         }
-        System.out.println(cor);
+        return cor;
     }
 }

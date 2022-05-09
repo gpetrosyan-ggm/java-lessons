@@ -8,7 +8,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1738;
 
 public class Exercies17_38 {
 
-    void cordinat(int corX, int corY) {
+   int cordinat(int corX, int corY) {
         int dot;
 
         if (corX > 0 && corY > 0) {
@@ -22,6 +22,6 @@ public class Exercies17_38 {
         } else {
             dot = -1;
         }
-        System.out.println(dot);
+        return dot;
     }
 }

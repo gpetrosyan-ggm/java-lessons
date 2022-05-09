@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1732;
  */
 
 public class Exercies17_32 {
-    public void number(int num, int x) {
+    public boolean number(int num, int x) {
         boolean yes = false;
         while (num > 0) {
             if (num % 10 == x) {
@@ -15,6 +15,6 @@ public class Exercies17_32 {
             }
             num /= 10;
         }
-        System.out.println(yes);
+        return yes;
     }
 }

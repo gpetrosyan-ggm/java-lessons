@@ -10,7 +10,7 @@ public class Exercies17_28 {
         for (int j = 1; j <= n; n--) {
             int m = 1;
             for (int i = 1; i <= n; i++) {
-                m = m * i;
+                m *= i;
             }
             System.out.println(m);
         }

@@ -5,11 +5,9 @@ package com.demo.progresstests.exam2.exercies17.exercies1737;
  */
 public class Exercies17_37 {
 
-    void cordinatAB(int corAx, int corAy, int corBx, int corBy){
-        double distance;
+   double cordinatAB(int corAx, int corAy, int corBx, int corBy){
 
-        distance = Math.sqrt((corAx - corBx)*(corAx - corBx)+ (corAy - corBy)*(corAy - corBy));
-        System.out.println(distance);
+        return  Math.sqrt((corAx - corBx)*(corAx - corBx)+ (corAy - corBy)*(corAy - corBy));
     }
 
 }

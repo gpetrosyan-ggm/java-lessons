@@ -7,13 +7,11 @@ package com.demo.progresstests.exam2.exercies17.exercies1724;
  */
 
 public class Exercies17_24 {
-    boolean dot;
-    public void linearFunctionCoordinates(int a, int b, int x, int y){
+    boolean dot = false;
+    public boolean linearFunctionCoordinates(int a, int b, int x, int y){
        if (y == a*x + b){
            dot = true;
-       }else {
-           dot = false;
        }
-        System.out.println(dot);
+        return dot;
     }
 }

@@ -8,7 +8,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1736;
  */
 
 public class Exercies17_36 {
-    void anymore(int num) {
+    int anymore(int num) {
         int count1 = 0;
         int count2 = 0;
         int count;
@@ -28,7 +28,7 @@ public class Exercies17_36 {
         } else {
             count = 0;
         }
-        System.out.println(count);
+        return count;
     }
 
 }

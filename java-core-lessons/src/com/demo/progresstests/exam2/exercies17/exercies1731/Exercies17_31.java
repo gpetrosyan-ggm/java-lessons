@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1731;
  */
 
 public class Exercies17_31 {
-    void sumDivisors(int n, int m) {
+    int sumDivisors(int n, int m) {
         int count = 0;
         int k = 0;
         for (int i = n; i <= m; i++) {
@@ -21,6 +21,7 @@ public class Exercies17_31 {
                 k = i;
             }
         }
-        System.out.println(k + " - " + count);
+        System.out.println(k);
+        return count;
     }
 }

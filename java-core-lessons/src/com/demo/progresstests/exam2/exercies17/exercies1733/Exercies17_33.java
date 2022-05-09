@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1733;
  */
 
 public class Exercies17_33 {
-    void countNum(int x, int d) {
+    int countNum(int x, int d) {
         int count = 0;
         while (x > 0) {
             if (x % 10 == d) {
@@ -14,6 +14,6 @@ public class Exercies17_33 {
             }
             x /= 10;
         }
-        System.out.println(count);
+        return count;
     }
 }

@@ -5,7 +5,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1725;
  */
 
 public class Exercies17_25 {
-    void qualityПositiveНumbers(int n) {
+    int qualityПositiveНumbers(int n) {
         int coount = 0;
         for (int i = 2; i <= n; i++) {
             int coount1 = 0;
@@ -20,6 +20,6 @@ public class Exercies17_25 {
             }
         }
         System.out.println();
-        System.out.println(coount);
+        return coount;
     }
 }

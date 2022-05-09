@@ -6,14 +6,11 @@ package com.demo.progresstests.exam2.exercies17.exercies1722;
  */
 
 public class Exercies17_22 {
-    public void equations(int a, int b, int c) {
-        boolean root;
+    public boolean equations(int a, int b, int c) {
+        boolean root = false;
         if (a == 0 || (b * b - 4 * a * c) >= 0) {
             root = true;
-
-        } else {
-            root = false;
         }
-        System.out.println(root);
+        return root;
     }
 }

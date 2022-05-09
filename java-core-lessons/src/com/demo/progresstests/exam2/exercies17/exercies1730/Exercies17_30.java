@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1730;
  */
 
 public class Exercies17_30 {
-    protected void bigDivisors(int n, int m) {
+    protected int bigDivisors(int n, int m) {
         int count = 0;
         int k = 1;
         for (int i = n; i <= m; i++) {
@@ -21,6 +21,8 @@ public class Exercies17_30 {
                 k = i;
             }
         }
-        System.out.println(k + " - " + count);
+        System.out.println(k);
+        return  count;
+
     }
 }

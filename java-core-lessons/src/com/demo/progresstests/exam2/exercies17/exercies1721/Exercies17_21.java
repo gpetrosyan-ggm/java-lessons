@@ -6,9 +6,8 @@ package com.demo.progresstests.exam2.exercies17.exercies1721;
 
 public class Exercies17_21 {
 
-    void coordinates(int x, int y) {
-        double distance;
-        distance = Math.sqrt(x * x + y * y);
-        System.out.println(distance);
+    double coordinates(int x, int y) {
+     return   Math.sqrt(x * x + y * y);
+
     }
 }

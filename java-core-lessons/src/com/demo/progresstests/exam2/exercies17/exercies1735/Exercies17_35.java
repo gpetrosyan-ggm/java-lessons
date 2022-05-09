@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1735;
  */
 
 public class Exercies17_35 {
-    public void symmetric(int num) {
+    public boolean symmetric(int num) {
         boolean sym = false;
         int coun = 1;
         int x = 0;
@@ -24,7 +24,7 @@ public class Exercies17_35 {
         if (x == num) {
             sym = true;
         }
-        System.out.println(sym);
+        return sym;
     }
 
 }

@@ -3,7 +3,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1726;
 Напишите класс, который принимает в качестве параметра целое положительное число К.
 Метод выводит на экран все простые двузначные числа, разница между которыми равна К.
  */
-
+// es el vonc vor veradarcnox tayp chi uzum
 public class Exercies17_26 {
     void simpleNumber(int k) {
         int count1 = 0;
@@ -23,7 +23,6 @@ public class Exercies17_26 {
                 }
                 if (count1 == 0) {
                     System.out.println(i + " " + m);
-
                 }
             }
         }

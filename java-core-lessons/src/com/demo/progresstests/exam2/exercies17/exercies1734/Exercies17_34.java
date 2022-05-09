@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1734;
  */
 
 public class Exercies17_34 {
-    void opposite(int num) {
+    int opposite(int num) {
         int coun = 1;
         int x = 0;
         int num1 = num;
@@ -19,6 +19,6 @@ public class Exercies17_34 {
             num1 /= 10;
             coun /= 10;
         }
-        System.out.println(x);
+        return x;
     }
 }
