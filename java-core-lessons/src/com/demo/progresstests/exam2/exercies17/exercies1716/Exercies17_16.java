@@ -6,10 +6,10 @@ package com.demo.progresstests.exam2.exercies17.exercies1716;
  */
 
 public class Exercies17_16 {
-    void leftNumber(int num) {
+    int leftNumber(int num) {
         while (num > 9) {
             num /= 10;
         }
-        System.out.println(num);
+        return num;
     }
 }

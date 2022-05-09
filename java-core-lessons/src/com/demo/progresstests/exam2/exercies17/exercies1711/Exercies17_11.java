@@ -5,13 +5,13 @@ package com.demo.progresstests.exam2.exercies17.exercies1711;
  */
 
 public class Exercies17_11 {
-    void number(int num) {
+    int number(int num) {
 
         int count = 0;
         while (num > 0) {
             num /= 10;
             count++;
         }
-        System.out.println(count);
+        return count;
     }
 }

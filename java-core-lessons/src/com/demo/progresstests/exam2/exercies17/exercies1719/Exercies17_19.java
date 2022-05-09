@@ -6,16 +6,15 @@ package com.demo.progresstests.exam2.exercies17.exercies1719;
  */
 
 public class Exercies17_19 {
-    void number(int num1, int num2) {
-        boolean ret;
+    boolean number(int num1, int num2) {
+
+        boolean ret = false;
         while (num1 > 9) {
             num1 /= 10;
         }
         if (num1 == num2 % 10) {
             ret = true;
-        } else {
-            ret = false;
         }
-        System.out.println(ret);
+        return ret;
     }
 }

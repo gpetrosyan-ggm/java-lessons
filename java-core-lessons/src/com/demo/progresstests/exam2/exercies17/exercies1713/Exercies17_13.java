@@ -6,10 +6,10 @@ package com.demo.progresstests.exam2.exercies17.exercies1713;
  */
 
 public class Exercies17_13 {
-    public void bolean(int a, int b) {
+    public boolean bolean(int a, int b) {
         int countA = 0;
         int countB = 0;
-        boolean d;
+        boolean d = false;
 
         while (a > 0) {
             a /= 10;
@@ -21,9 +21,7 @@ public class Exercies17_13 {
         }
         if (countA == countB) {
             d = true;
-        } else {
-            d = false;
         }
-        System.out.println(d);
+        return d;
     }
 }

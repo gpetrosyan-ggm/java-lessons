@@ -5,8 +5,8 @@ package com.demo.progresstests.exam2.exercies17.exercies1714;
  */
 
 public class Exercies17_14 {
-    void average(int num1, int num2) {
-        System.out.println((num1 + num2) / 2);
+    double average(int num1, int num2) {
+       return (double) (num1 + num2) / 2;
     }
 
 

@@ -10,7 +10,8 @@ package com.demo.progresstests.exam2.exercies17.exercies178;
 // int gres te double
 
 public class Exercies17_8 {
-    public void number(double num){
+
+    public int number(double num){
         if (num < 0){
             num = -1;
         }else if (num == 0){
@@ -18,6 +19,7 @@ public class Exercies17_8 {
         }else {
             num = 1;
         }
-        System.out.println((int) num);
+        return (int) num;
+
     }
 }

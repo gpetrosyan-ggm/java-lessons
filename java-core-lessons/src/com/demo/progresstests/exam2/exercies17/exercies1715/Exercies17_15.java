@@ -5,7 +5,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1715;
  */
 
 public class Exercies17_15 {
-   protected void primeNumber(int num) {
+   protected boolean primeNumber(int num) {
 
         boolean prime = true;
         int num1 = num-1;
@@ -15,6 +15,6 @@ public class Exercies17_15 {
                 break;
             }
         }
-        System.out.println(prime);
+        return prime;
     }
 }
