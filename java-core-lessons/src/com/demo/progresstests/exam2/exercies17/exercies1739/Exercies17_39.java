@@ -11,8 +11,8 @@ public class Exercies17_39 {
     boolean cordinateAB(int corAx, int corAy, int corBx, int corBy) {
         boolean cor = true;
 
-        boolean corAx1 = corAx < 0 ? false : true;
-        boolean corAy1 = corAy < 0 ? false : true;
+        boolean corAx1 = corAx >= 0;
+        boolean corAy1 = corAy >= 0;
         boolean corBx1 = corBx < 0 ? false : true;
         boolean corBy1 = corBy < 0 ? false : true;
 
