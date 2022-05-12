@@ -12,14 +12,15 @@ package com.demo.progresstests.exam2.exercies17.exercies178;
 public class Exercies17_8 {
 
     public int number(double num){
+        int num1;
         if (num < 0){
-            num = -1;
+            num1 = -1;
         }else if (num == 0){
-            num = 0;
+            num1 = 0;
         }else {
-            num = 1;
+            num1 = 1;
         }
-        return (int) num;
+        return  num1;
 
     }
 }

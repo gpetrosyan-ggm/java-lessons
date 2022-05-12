@@ -6,7 +6,7 @@ package com.demo.progresstests.exam2.exercies17.exercies1714;
 
 public class Exercies17_14 {
     double average(int num1, int num2) {
-       return (double) (num1 + num2) / 2;
+       return  (num1 + num2) / 2.0;
     }
 
 

@@ -8,9 +8,10 @@ package com.demo.progresstests.exam2.exercies17.exercies1723;
 // x1,x2 = (-b+-armat D)/2a
 
 public class Exercies17_23 {
-    int count = 0;
-    void equations(int a, int b, int c) {
+
+    int equations(int a, int b, int c) {
         int d = b * b - 4 * a * c;
+        int count = 0;
         if (d < 0) {
             count = 0;
         } else if (a != 0) {
@@ -18,6 +19,6 @@ public class Exercies17_23 {
         } else {
             count = 1;
         }
-        System.out.println(count);
+        return count;
     }
 }
