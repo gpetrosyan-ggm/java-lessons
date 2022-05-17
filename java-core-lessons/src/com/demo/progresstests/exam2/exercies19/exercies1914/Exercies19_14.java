@@ -5,25 +5,25 @@ package com.demo.progresstests.exam2.exercies19.exercies1914;
 массива была равна цифре единиц следующего элемента.
  */
 
+import java.util.Arrays;
+
 public class Exercies19_14 {
-    void massive(int arr[]){
+    void massive(int arr[]) {
         int min = 10;
         int max = 99;
-        int count = 1;
-        int a = (int) (Math.random() * (max - min + 1) + min);
-        System.out.print(a + " ");
-        int a1 = a/10;
-        for (int i = 0;;){
-            arr[i] = (int) (Math.random() * (max - min + 1) + min);
-            int arr1 = arr[i]%10;
-            if (a1==arr1){
-                System.out.print(arr[i] + " ");
-                a1 = arr[i]/10;
-                count++;
-            }
-            if (count==arr.length){
-                break;
+        arr[0] = (int) (Math.random() * (max - min + 1) + min);
+        for (int i = 1; i < arr.length; i++) {
+            arr[i] = randomVal(max, min);
+
+            while (arr[i - 1] / 10 != arr[i] % 10) {
+                arr[i] = randomVal(max, min);
             }
         }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    int randomVal(int max, int min) {
+        return (int) (Math.random() * (max - min + 1) + min);
+
     }
 }

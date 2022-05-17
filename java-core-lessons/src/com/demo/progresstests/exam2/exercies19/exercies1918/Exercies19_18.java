@@ -11,23 +11,15 @@ public class Exercies19_18 {
    void massive(int [] arr){
        int min = 10;
        int max = 99;
-       int count = 1;
-       int a = (int) (Math.random() * (max - min + 1) + min);
-       System.out.println(a);
-       while (true){
-           int b = (int) (Math.random() * (max - min + 1) + min);
-           if (b>=a){
-              a=b;
-               System.out.print(a + " ");
-               count++;
-           }
 
-           if (count==arr.length){
-               break;
-           }
-
-
+       for (int i =0;i<arr.length;i++){
+           arr[i] = randomVal(max,min);
        }
+       Arrays.sort(arr);
+       System.out.println(Arrays.toString(arr));
+   }
+   int randomVal(int max, int min){
+       return (int)(Math.random() * (max - min + 1) + min);
    }
 
 }

@@ -8,20 +8,23 @@ package com.demo.progresstests.exam2.exercies19.exercies1916;
 import java.util.Arrays;
 
 public class Exercies19_16 {
-    public static void masive(int[] arr) {
+     void masive(int[] arr) {
         int min = 10;
         int max = 99;
-        int a = arr.length / 2;
-        for (int i = 0; i < a; i++) {
+        int arrLengt = arr.length / 2;
+        for (int i = 0; i < arrLengt; i++) {
 
-            arr[i] = (int) (Math.random() * (max - min + 1) + min);
+            arr[i] = randomVal(max, min);
             arr[arr.length - 1 - i] = arr[i];
 
         }
         if (arr.length % 2 != 0) {
-            arr[a] = (int) (Math.random() * (max - min + 1) + min);
+            arr[arrLengt] = randomVal(max, min);
         }
         System.out.println(Arrays.toString(arr));
+    }
+    int randomVal(int max, int min){
+        return (int) (Math.random() * (max - min + 1) + min);
     }
 
 }
