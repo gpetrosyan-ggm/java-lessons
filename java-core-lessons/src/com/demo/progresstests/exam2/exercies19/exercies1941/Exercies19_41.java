@@ -20,4 +20,24 @@ public class Exercies19_41 {
         }
         return reversArr;
     }
+
+    int[] masive2(int[] arr) {
+        int[] reversArr = new int[arr.length];
+        int midl = arr.length / 2;
+
+        for (int i = 0; i < midl; i++) {
+            reversArr[i] = arr[i + midl];
+        }
+
+        if (arr.length % 2 != 0) {
+            reversArr[midl] = arr[arr.length - 1];
+            midl++;
+        }
+
+        for (int i = midl; i < arr.length; i++) {
+            reversArr[i] = arr[i - midl];
+        }
+        return reversArr;
+    }
+
 }
