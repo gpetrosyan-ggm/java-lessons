@@ -10,12 +10,17 @@ import java.util.Arrays;
 public class Exercies19_42 {
     int[] masive(int[] arr1, int[] arr2) {
         int[] revers = new int[arr1.length + arr2.length];
-        for (int i = 0; i < arr1.length; i++) {
-            revers[i] = arr1[i];
+        int a = 0;
+        for (int i = 0; i <revers.length; i++) {
+            if (i<arr1.length){
+                revers[i] = arr1[i];
+            }else {
+                revers[i] = arr2[a];
+                a++;
+            }
+
         }
-        for (int i = 0; i < arr2.length; i++) {
-            revers[arr1.length + i] = arr2[i];
-        }
+
         Arrays.sort(revers);
         return revers;
     }
