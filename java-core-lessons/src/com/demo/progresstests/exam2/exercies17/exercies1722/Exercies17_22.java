@@ -12,9 +12,10 @@ public class Exercies17_22 {
             root = true;
         }
         return root;
-    } public boolean equations(int a, int b, int c) {
+    }
 
-
+    public boolean equations(int a, int b, int c) {
         return a == 0 || (b * b - 4 * a * c) >= 0;
     }
+
 }

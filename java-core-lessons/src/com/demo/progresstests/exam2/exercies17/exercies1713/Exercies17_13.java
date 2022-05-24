@@ -9,7 +9,6 @@ public class Exercies17_13 {
     public boolean bolean(int a, int b) {
         int countA = 0;
         int countB = 0;
-       // boolean d = false;
 
         while (a > 0) {
             a /= 10;
@@ -20,6 +19,5 @@ public class Exercies17_13 {
             countB++;
         }
         return  countB == countA;
-
     }
 }
