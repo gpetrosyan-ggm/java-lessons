@@ -10,12 +10,13 @@ package com.demo.progresstests.exam2.exercies19.exercies1965;
 
 public class Exercies19_65 {
     boolean massive(int[] arr) {
-        int sum1 = 0;
-        int sum2 = 0;
+
         boolean x = false;
 
         int a = arr.length;
         for (int i = 0; i < a; i++) {
+            int sum1 = 0;
+            int sum2 = 0;
             for (int j = 0; j < i; j++) {
                 sum1 += arr[j];
             }
@@ -27,10 +28,7 @@ public class Exercies19_65 {
             if (sum1 == sum2) {
                 x = true;
                 break;
-            } else {
-                sum1 = 0;
-                sum2 = 0;
-            }
+           }
 
         }
         return x;

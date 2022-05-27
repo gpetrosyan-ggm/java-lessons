@@ -6,8 +6,9 @@ package com.demo.progresstests.exam2.exercies19.exercies1936;
 
 public class Exercies19_36 {
     int masive(int[] arr){
-        int max = 0;
-        for (int i = 0; i < arr.length; i++) {
+        int max = arr[0];
+
+        for (int i = 1; i < arr.length-1; i++) {
         if (arr[i]>max){
             max = arr[i];
         }

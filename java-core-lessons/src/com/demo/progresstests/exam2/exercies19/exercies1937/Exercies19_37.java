@@ -11,8 +11,8 @@ public class Exercies19_37 {
     int massive(int[] arr) {
         int num = 0;
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > arr[i - 1]) {
-                num = i;
+            if (arr[i] > arr[i - 1]) {  // henc stexov el payman@ apahovum em, ete hajord@ mec chi naxordic, uremn
+                num = i;                // demi yacheyki hamarna linelu num@,
             }
         }
         return num;

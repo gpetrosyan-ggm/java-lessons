@@ -16,11 +16,8 @@ public class Exercies19_52 {
         int lenght = arr2.length + 1;
         int[] mass = new int[arr1.length * lenght];
 
-        for (int i = 0; i < mass.length; i += lenght) {
-            mass[i] = arr1[a1];
-            a1++;
-        }
-        for (int i = 1; i < mass.length; i++) {
+
+        for (int i = 0; i < mass.length; i++) {
             if (i % lenght != 0) {
                 mass[i] = arr2[a2];
                 a2++;
@@ -28,6 +25,9 @@ public class Exercies19_52 {
                     a2 = 0;
 
                 }
+            }else {
+                mass[i] = arr1[a1];
+                a1++;
             }
         }
         return mass;
