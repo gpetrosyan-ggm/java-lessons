@@ -25,5 +25,6 @@ public class Exercies19_14 {
     int randomVal(int max, int min) {
         return (int) (Math.random() * (max - min + 1) + min);
 
+
     }
 }

@@ -14,8 +14,7 @@ public class Exercies19_29 {
         } else {
             if (k > t) {
                 int a = k;
-                int b = t;
-                k = b;
+                k = t;
                 t = a;
 
             }

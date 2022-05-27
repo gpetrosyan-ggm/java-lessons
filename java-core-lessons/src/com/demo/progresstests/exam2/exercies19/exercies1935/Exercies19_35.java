@@ -12,7 +12,7 @@ public class Exercies19_35 {
     boolean massive(int[] arr) {
         int sum = 0;
         int count1 = 0;
-        int count2 = 0;
+        int count = 0;
 
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
@@ -20,15 +20,13 @@ public class Exercies19_35 {
         double middle = sum / arr.length;
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > middle) {
-                count1++;
-            } else {
-                if (arr[i] < middle) {
-                    count2++;
-                }
+
+            if (arr[i] != middle) {
+                count = arr[i] > middle ? count1++ : count1--;
             }
         }
-        if (count1 == count2) {
+
+        if (count == 0) {
             return true;
         }
         return false;

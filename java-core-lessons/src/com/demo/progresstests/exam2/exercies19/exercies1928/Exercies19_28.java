@@ -17,6 +17,7 @@ public class Exercies19_28 {
                 sum += arr[i];
             }
         }
+
         return sum;
     }
 }

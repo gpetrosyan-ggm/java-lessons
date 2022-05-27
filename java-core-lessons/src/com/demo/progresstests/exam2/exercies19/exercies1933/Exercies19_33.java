@@ -8,8 +8,11 @@ package com.demo.progresstests.exam2.exercies19.exercies1933;
 public class Exercies19_33 {
     int massive(int[] arr) {
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+//        for (int i = 0; i < arr.length; i++) {
+//            sum += arr[i];
+//        }
+        for (int a : arr) {
+            sum += a; // ay stex a-i poxaren grum eyi arr; dra hamar er error talis; bayc hima haskaca sxals
         }
         return sum;
     }

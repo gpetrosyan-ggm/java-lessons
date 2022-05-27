@@ -12,23 +12,23 @@ public class Exercies19_17 {
         int min = 10;
         int max = 99;
         int arrLengt = arr.length / 2;
+
+        int a = arr.length % 2 == 0 ? arrLengt : arrLengt + 1;
+
         if (arr.length % 2 != 0) {
-            for (int i = 0; i < arrLengt; i++) {
-                arr[i] = randomVal(max, min);
-                arr[arrLengt + 1 + i] = arr[i];
-            }
             arr[arrLengt] = randomVal(max, min);
-        } else {
-            for (int i = 0; i < arrLengt; i++) {
-                arr[i] = randomVal(max, min);
-                arr[arrLengt + i] = arr[i];
-            }
+        }
+
+        for (int i = 0; i < arrLengt; i++) {
+            arr[i] = randomVal(max, min);
+            arr[a + i] = arr[i];
 
         }
 
         System.out.println(Arrays.toString(arr));
     }
-    int randomVal(int max, int min){
+
+    int randomVal(int max, int min) {
         return (int) (Math.random() * (max - min + 1) + min);
     }
 }

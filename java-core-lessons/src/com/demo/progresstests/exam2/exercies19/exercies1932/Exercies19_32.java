@@ -8,21 +8,21 @@ package com.demo.progresstests.exam2.exercies19.exercies1932;
  */
 
 public class Exercies19_32 {
-    boolean masive(int[] arr, int k, int t){
-        if (k>t){
+    boolean masive(int[] arr, int k, int t) {
+        if (k > t) {
             int a = k;
-            int b = t;
-            k = b;
+            k = t;
             t = a;
+
         }
-        if (k>=arr.length||t>=arr.length){
+        if (k >= arr.length || t >= arr.length) {
             return false; // chgiteyi vonc aneyi vor error qcer, dra hamar false tveci
-        }else {
-        for (int i = (k+1); i <=t; i++) {
-            if (arr[i] >= arr[i - 1]) {
-                return false;
+        } else {
+            for (int i = (k + 1); i <= t; i++) {
+                if (arr[i] >= arr[i - 1]) {
+                    return false;
+                }
             }
-        }
         }
         return true;
     }
