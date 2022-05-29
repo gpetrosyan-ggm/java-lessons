@@ -5,21 +5,16 @@ package com.demo.progresstests.exam2.exercies19.exercies1970;
 и проверяет, является ли он полным.
  */
 
+import java.util.Arrays;
+
 public class Exercies19_70 {
     boolean massive(int[] arr) {
-        boolean b = false;
-        int n = arr.length / 2;
-        if (arr.length % 2 == 0) {
-            for (int i = 0; i < n; i++) {
-                for (int j = n; j < arr.length; j++) {
-                    if (arr[i] == arr[j]) {
-                        b = true;
-                        break;
-                    }
-                }
-                if (b == false) {
-                    break;
-                }
+        boolean b = true;
+        Arrays.sort(arr);
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != i + 1) {
+                b = false;
+                break;
             }
         }
         return b;

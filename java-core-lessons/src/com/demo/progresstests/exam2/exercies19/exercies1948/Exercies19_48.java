@@ -19,7 +19,7 @@ public class Exercies19_48 {
                 }
 
             }
-            System.out.println( count == arr1.length ? true : false);
+            System.out.println(count == arr1.length);
 
         } else {
             System.out.println("massivneri erkarutyunner@ chen hamapatasxanum paymanin");

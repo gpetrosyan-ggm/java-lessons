@@ -9,12 +9,25 @@ package com.demo.progresstests.exam2.exercies19.exercies1937;
 
 public class Exercies19_37 {
     int massive(int[] arr) {
-        int num = 0;
+        int max = getMax(arr);
+
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > arr[i - 1]) {  // henc stexov el payman@ apahovum em, ete hajord@ mec chi naxordic, uremn
-                num = i;                // demi yacheyki hamarna linelu num@,
+            if (arr[i] == max) {
+                return i;
             }
         }
-        return num;
+
+        return -1;
     }
+
+    private int getMax(int[] arr) {
+        int max = arr[0];
+        for (int a : arr) {
+            if (a > max) {
+                max = a;
+            }
+        }
+        return max;
+    }
+
 }

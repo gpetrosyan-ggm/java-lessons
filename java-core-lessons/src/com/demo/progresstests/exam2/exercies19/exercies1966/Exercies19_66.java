@@ -14,10 +14,10 @@ package com.demo.progresstests.exam2.exercies19.exercies1966;
 public class Exercies19_66 {
     boolean massive(int[] arr) {
         boolean b = false;
-        int a = arr.length - 2;
+        int a = arr.length - 1;
         for (int i = 0; i < a; i++) {
-            for (int j = i + 2; j < arr.length; j++) {
-                if (arr[j] == j - i + 1) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j] && arr[i] == j - i - 1) {
                     b = true;
                     break;
                 }

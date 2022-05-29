@@ -7,45 +7,44 @@ package com.demo.progresstests.exam2.exercies19.exercies1943;
 о выходной массив содержит значения 1, 2, 3, 5, 7, 9, 11.
  */
 
-import java.util.Arrays;
-
 public class Exercies19_43 {
     int[] massive(int[] arr1, int[] arr2) {
-        int k = 0;
-        int a = 0;
-        int count = 0;
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr2.length; j++) {
-                if (arr1[i] == arr2[j]) {
-                    count++;
+        int uniqueLength = uniqueLength(arr1, arr2);
+
+        int a1 = 0;
+        int a2 = 0;
+        int[] uniqueArr = new int[uniqueLength];
+        for (int i = 0; i < uniqueArr.length; i++) {
+            if (arr1.length > a1 && arr2.length > a2) {
+                if (arr1[a1] == arr2[a2]) {
+                    uniqueArr[i] = arr1[a1];
+                    a1++;
+                    a2++;
+                } else if (arr1[a1] > arr2[a2]) {
+                    uniqueArr[i] = arr2[a2++];
+                } else {
+                    uniqueArr[i] = arr1[a1++];
                 }
-
-
-            }
-        }
-
-        int[] revers1 = new int[arr1.length + arr2.length];
-
-        for (int i = 0; i < (arr1.length + arr2.length); i++) {
-            if (i < arr1.length) {
-                revers1[i] = arr1[i];
+            } else if (arr1.length <= a1) {
+                uniqueArr[i] = arr2[a2++];
             } else {
-                revers1[i] = arr2[k];
-                k++;
+                uniqueArr[i] = arr1[a1++];
             }
         }
-        Arrays.sort(revers1);
-        int[] revers = new int[arr1.length + arr2.length - count];
-        revers[0] = revers1[0];
-        for (int i = 1; i < revers1.length; i++) {
-            if (revers1[i] != revers1[i - 1]) {
-                revers[i - a] = revers1[i];
-            } else {
-                a++;
-            }
 
+        return uniqueArr;
+    }
+
+    private int uniqueLength(int[] arr1, int[] arr2) {
+        int length = 0;
+        for (int k : arr1) {
+            for (int i : arr2) {
+                if (k == i) {
+                    length++;
+                }
+            }
         }
-        return revers;
+        return arr1.length + arr2.length - length;
     }
 
 }

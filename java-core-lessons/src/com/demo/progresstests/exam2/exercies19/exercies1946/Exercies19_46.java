@@ -10,41 +10,43 @@ import java.util.Arrays;
  */
 public class Exercies19_46 {
     void massive(int[] arr, int k) {
+        int shiftCount = shiftCount(k, arr.length);
+
         int[] shift = new int[arr.length];
-
-
-        if (k<0) {
-            while (k <= -arr.length) {
-                k += arr.length;
-            }
-            k = Math.abs(k);
-            int a = 0;
-            for (int i = k; i<arr.length; i++){
-                shift[a] = arr[i];
-                a++;
-            }
-            for (int i = 0; i<k;i++){
-                shift[k + i] = arr[i];
-            }
-
-        }else{
-
-        while (k>=arr.length){
-            k-=arr.length;
-        }
-        if (k >= 0) {
-
-            int a = 0;
-            for (int i = k; i < arr.length; i++) {
-                shift[i] = arr[a];
-                a++;
-            }
-            for (int i = 0; i < k; i++) {
-                shift[ i] = arr[i+k];
-            }
-        }
-
+        if (k < 0) {
+            shiftLeft(arr, shift, shiftCount);
+        } else {
+            shiftRight(arr, shift, shiftCount);
         }
         System.out.println(Arrays.toString(shift));
     }
+
+    private void shiftRight(int[] arr, int[] shift, int shiftCount) {
+        for (int i = 0; i < shift.length; i++) {
+            if (shiftCount <= 0) {
+                shiftCount = shift.length;
+            }
+            shift[i] = arr[shift.length - shiftCount];
+            shiftCount--;
+        }
+    }
+
+    private void shiftLeft(int[] arr, int[] shift, int shiftCount) {
+        for (int i = 0; i < shift.length; i++) {
+            if (shiftCount >= shift.length) {
+                shiftCount = 0;
+            }
+            shift[i] = arr[shiftCount];
+            shiftCount++;
+        }
+    }
+
+    private int shiftCount(int k, int length) {
+        k = Math.abs(k);
+        if (k < length) {
+            return k;
+        }
+        return k % length;
+    }
+
 }
