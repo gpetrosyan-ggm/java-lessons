@@ -1,0 +1,38 @@
+-- Enums
+    1. Սարքել Enum֊ներ
+        1. Սարքել 1 հատ սովորական Enum (առանց constructor, կամ փոփոխական)։
+        2. Սարքել 1 հատ Enum, որը կունենա 1 հատ constructor (առանց փոփոխական), կարաս ինչ֊որ բան տպես constructor֊ի մեջ։
+        3. Սարքել 1 հատ Enum, որը կունենա 1 հատ constructor և 1-2 փոփոխականներ։
+        4. Սարքել 1 հատ Enum, որը կունենա 2-3 constructor և 3-4 փոփոխականներ։
+    2.Օգտագործել սարքած Enum֊ները (որ մեկը կուզես, կամ մի քանիսը)
+        1. Օգտագործել if-ի մեջ։
+        2. Օգտագործել switch-ի մեջ։
+        3. Վերցնել Enum֊ի բոլոր արժեքները ու տպել (եթե փոփոխական ունի, դրանք էլ), տպել նայել իրենք ordinal֊ներն էլ
+
+-- Wrappers
+   1. Սարքել բոլոր wrapper class֊ների համար օրինակներ, առաձին մեթոդներով, ուղակի կարաս վերագրես ու տպես արժեքները,
+      կամ ինչ֊որ գործեղություն անես հետը, նոր տպես։
+   2. Քայլ առ քայլ գրի, որ տողի վրա ինչ է կատարվում (auto-boxing թե auto-unboxing),
+      հետևյալ method call֊երի ժամանակ
+
+      1. demo1(12);
+      2. demo1(new Integer(1));
+
+      3. demo2(true, 1);
+      4. demo2(false, Integer(1));
+      5. demo2(null, 10);
+
+    private double demo1(Integer i) {
+        Double d = 120.0;
+        return d + i;
+    }
+
+    private Integer demo2(Boolean b, Integer i) {
+        int a;
+        if (b) {
+            a = i;
+        } else {
+            a = 12;
+        }
+        return a + 1;
+    }
