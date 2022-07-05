@@ -12,50 +12,50 @@ public class WrappersTest {
       4. demo2(false, Integer(1));
       5. demo2(null, 10);
 ---------------------------------------------------------------------------------------------------------
-     1. demo1(12); sarqum auto-unboxing
-    private double demo1(Integer i) { sarquma auto-boxing
-        Double d = 120.0; auto-unboxing
-        return d + i; auto-boxing qani vor i-n auto-boxing e
+     1. demo1(12);
+    private double demo1(Integer i) { boxing
+        Double d = 120.0; boxing
+        return d + i; unboxing
     }
   -----------------------------------------------------------------------------------------------------
-    2. demo1(new Integer(1)); sarqum auto-boxing
-     private double demo1(Integer i) { mnum auto-boxing
-        Double d = 120.0; auto-unboxing
-        return d + i; auto-boxing qani vor i-n auto-boxing e
+    2. demo1(new Integer(1)); boxing
+     private double demo1(Integer i) { mnum boxing
+        Double d = 120.0; boxing
+        return d + i; unboxing
     }
   ------------------------------------------------------------------------------------------------------
-3. demo2(true, 1);auto-unboxing e @ndunum
-    private Integer demo2(Boolean b, Integer i) {  sarqum auto-boxing
-        int a; auto-unboxing
-        if (b) {  auto-unboxing, qani vor auto-boxing stugum chi anum
-            a = i; sarqu auto-boxing, qani vor i-n auto-boxing e
-        } else {
-            a = 12; chi poxvum auto-unboxing;
-        }
-        return a + 1; ete if()-i payman@ bavararvec uremn kpoxvi auto-unboxing, ete che uremn anpopox e
-    }
-
-    ---------------------------------------------------------------------------------------------------
-    4. demo2(false, Integer(1)); auto-unboxing, i-n sarqum auto-boxing
-     private Integer demo2(Boolean b, Integer i) {  sarqum auto-boxing, i-n mnuma nuyn@
-        int a; auto-unboxing
-        if (b) {  vochinch chi anum qani vor b-n iskzbane auto-unboxing e
-            a = i; sarqu auto-boxing, qani vor i-n auto-boxing e
-        } else {
-            a = 12; vochinch chi anum qani vor a-n i skzbane auto-unboxing e;
-        }
-        return a + 1; kaxvac if-ic an kam mnuma auto-unboxing, kam poxvum darnum e auto-unboxing;
-    }
-    ----------------------------------------------------------------------------------------------------
-    5. demo2(null, 10);
-     private Integer demo2(Boolean b, Integer i) {  sarqum auto-boxing i-n
-        int a; auto-unboxing
-        if (b) {  kqci error, qani vor if()-um bacarac chi null-i pah@
-            a = i;
+3. demo2(true, 1);
+    private Integer demo2(Boolean b, Integer i) {  boxing
+        int a;
+        if (b) { unboxing, qani vor auto-boxing stugum chi anum
+            a = i; unboxing
         } else {
             a = 12;
         }
-        return a + 1;
+        return a + 1; boxing gumarumic heto, vorovhetev return type Integer e.
+    }
+
+    ---------------------------------------------------------------------------------------------------
+    4. demo2(false, Integer(1)); boxing Integer-i hamar
+     private Integer demo2(Boolean b, Integer i) {  boxing boolean type hamar,
+        int a;
+        if (b) { unboxing
+            a = i; unboxing
+        } else {
+            a = 12;
+        }
+        return a + 1; boxing gumarumic heto, vorovhetev return type Integer e.
+    }
+    ----------------------------------------------------------------------------------------------------
+    5. demo2(null, 10);
+     private Integer demo2(Boolean b, Integer i) {  boxing erkusn el
+        int a;
+        if (b) {  kqci error, qani vor if()-um bacarac chi null-i pah@
+            a = i; unboxing
+        } else {
+            a = 12;
+        }
+        return a + 1; boxing gumarumic heto, vorovhetev return type Integer e.
     }
      */
 
