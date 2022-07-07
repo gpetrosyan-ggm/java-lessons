@@ -36,3 +36,12 @@
         }
         return a + 1;
     }
+
+------------------------------------------------
+1. Սարքել սովորական annotation, որը կունենա փոփոխականներ ու որոշ փոփոխականեր կունենան default արժեքներ
+2. Սարքել marker annotation:
+3. Սարքել single-member annotation:
+4. Սարքել repeating annotation:
+5. Սարքած annotation-ներում, օգտագործի @Retention, @Target, @Documented:
+6. Սարքած annotation-ները օգտագործի (class, variable, method, ...)
+7. Փորձի օգտագործելով reflection, վերցնես annotation-ի փոփոխականների արժեքները
