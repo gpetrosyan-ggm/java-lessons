@@ -1,4 +1,4 @@
-package com.demo.lesson12.homework.annotation;
+package com.demo.lesson12.homework.marker.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

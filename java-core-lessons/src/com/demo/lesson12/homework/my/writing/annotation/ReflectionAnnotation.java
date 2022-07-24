@@ -1,4 +1,4 @@
-package com.demo.lesson12.homework.annotation;
+package com.demo.lesson12.homework.my.writing.annotation;
 
 public class ReflectionAnnotation {
     @MyWritingAnnotation(age = 35)
@@ -23,4 +23,6 @@ public class ReflectionAnnotation {
     public void setSrName(String srName) {
         this.srName = srName;
     }
+
+
 }

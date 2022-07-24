@@ -1,6 +1,4 @@
-package com.demo.lesson12.homework.annotation;
-
-import com.demo.lesson12.classroom.annotations.general.FirstAnnotation;
+package com.demo.lesson12.homework.my.writing.annotation;
 
 import java.lang.reflect.Field;
 
@@ -8,6 +6,7 @@ public class ReflectionAnnotationDemo {
     public static void main(String[] args) throws IllegalAccessException {
         ReflectionAnnotation reflectionAnnotation = new ReflectionAnnotation();
         reflectionAnnotation.setName("Arni");
+        reflectionAnnotation.setSrName("Martirosyan");
         annotationTest(reflectionAnnotation);
     }
 
